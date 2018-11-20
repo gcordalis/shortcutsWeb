@@ -1,4 +1,0 @@
-"This JavaScript is similar to a script that is known to be unsafe. For your security it will not run." = "Αυτός ο κώδικας JavaScript είναι παρόμοιος με γνωστό μη ασφαλές σκριπτ. Για λόγους ασφάλειας, δεν θα εκτελεστεί.";
-"Unsafe JavaScript" = "Μη ασφαλής JavaScript";
-"Use of `eval()` not allowed" = "Δεν επιτρέπεται η χρήση της `eval()`";
-"Using `eval()` in JavaScript is unsafe. Instead, please write JavaScript code directly." = "Η χρήση της `eval()` στην JavaScript δεν είναι ασφαλής. Γράψτε απευθείας κώδικα JavaScript.";

@@ -1,4 +1,0 @@
-"This JavaScript is similar to a script that is known to be unsafe. For your security it will not run." = "JavaScript này giống với một tập lệnh đã biết là không an toàn. Để bảo mật, tập lệnh sẽ không chạy.";
-"Unsafe JavaScript" = "JavaScript không an toàn";
-"Use of `eval()` not allowed" = "Không cho phép sử dụng `eval()`";
-"Using `eval()` in JavaScript is unsafe. Instead, please write JavaScript code directly." = "Sử dụng `eval()` trong JavaScript không an toàn. Thay vào đó, vui lòng viết trực tiếp mã JavaScript.";

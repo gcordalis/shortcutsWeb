@@ -1,4 +1,0 @@
-"This JavaScript is similar to a script that is known to be unsafe. For your security it will not run." = "此 JavaScript 與已知為不安全的程式碼類似。為了保安理由將不會執行。";
-"Unsafe JavaScript" = "不安全的 JavaScript";
-"Use of `eval()` not allowed" = "不允許使用 `eval()`";
-"Using `eval()` in JavaScript is unsafe. Instead, please write JavaScript code directly." = "在 JavaScript 使用 `eval()` 不安全。請直接編寫 JavaScript 程式碼。";

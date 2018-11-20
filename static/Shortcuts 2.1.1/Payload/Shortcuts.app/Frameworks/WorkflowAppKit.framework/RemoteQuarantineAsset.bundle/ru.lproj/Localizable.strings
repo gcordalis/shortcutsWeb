@@ -1,4 +1,0 @@
-"This JavaScript is similar to a script that is known to be unsafe. For your security it will not run." = "Этот скрипт JavaScript аналогичен другому скрипту, который является небезопасным. В целях безопасности он не будет запущен.";
-"Unsafe JavaScript" = "Небезопасный JavaScript";
-"Use of `eval()` not allowed" = "Использование `eval()` запрещено";
-"Using `eval()` in JavaScript is unsafe. Instead, please write JavaScript code directly." = "Использовать `eval()` в JavaScript небезопасно. Вместо этого напишите код JavaScript напрямую.";

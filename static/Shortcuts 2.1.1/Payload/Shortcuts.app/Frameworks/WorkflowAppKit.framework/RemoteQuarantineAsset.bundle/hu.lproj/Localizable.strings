@@ -1,4 +1,0 @@
-"This JavaScript is similar to a script that is known to be unsafe. For your security it will not run." = "Ez a JavaScript hasonló egy nem biztonságosként ismert szkripthez. A biztonsága érdekében a szkript nem lesz futtatva.";
-"Unsafe JavaScript" = "Nem biztonságos JavaScript";
-"Use of `eval()` not allowed" = "Az `eval()` paraméter használata nem megengedett";
-"Using `eval()` in JavaScript is unsafe. Instead, please write JavaScript code directly." = "Az `eval()` paraméter használata JavaScriptben nem biztonságos. Ehelyett írja meg közvetlenül a JavaScript-kódot.";

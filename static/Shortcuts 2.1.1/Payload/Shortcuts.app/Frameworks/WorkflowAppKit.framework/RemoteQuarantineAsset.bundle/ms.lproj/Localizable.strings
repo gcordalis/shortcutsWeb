@@ -1,4 +1,0 @@
-"This JavaScript is similar to a script that is known to be unsafe. For your security it will not run." = "JavaScript ini serupa dengan skrip yang diketahui tidak selamat. Untuk keselamatan anda, ia tidak akan berjalan.";
-"Unsafe JavaScript" = "JavaScript Tidak Selamat";
-"Use of `eval()` not allowed" = "Penggunaan `eval()` tidak dibenarkan";
-"Using `eval()` in JavaScript is unsafe. Instead, please write JavaScript code directly." = "Menggunakan `eval()` dalam JavaScript adalah tidak selamat. Sebaliknya, sila tuliskan kod JavaScript secara terus.";
