@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>%d actions would be deleted. (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>other</key>
+			<string>%d tác vụ sẽ bị xóa.</string>
+		</dict>
+	</dict>
+	<key>%d items (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>other</key>
+			<string>%d mục</string>
+		</dict>
+	</dict>
+	<key>%d minutes (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>other</key>
+			<string>%d phút</string>
+		</dict>
+	</dict>
+	<key>%d seconds (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>other</key>
+			<string>%d giây</string>
+		</dict>
+	</dict>
+	<key>%d shortcuts (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>other</key>
+			<string>%d phím tắt</string>
+		</dict>
+	</dict>
+	<key>%ld Selected (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>other</key>
+			<string>Đã chọn %ld</string>
+		</dict>
+	</dict>
+	<key>Add %d Actions (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>other</key>
+			<string>Thêm %d tác vụ</string>
+		</dict>
+	</dict>
+	<key>Delete %d Shortcuts (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>other</key>
+			<string>Xóa %d phím tắt</string>
+		</dict>
+	</dict>
+	<key>Move %d Actions (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>other</key>
+			<string>Di chuyển %d tác vụ</string>
+		</dict>
+	</dict>
+	<key>Remove %d Actions (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>other</key>
+			<string>Xóa %d tác vụ</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

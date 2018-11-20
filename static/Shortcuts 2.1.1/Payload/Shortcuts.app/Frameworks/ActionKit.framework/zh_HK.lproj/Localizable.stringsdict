@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>%2$@ and %1$d other files (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>other</key>
+			<string>「%2$@」和其他 %1$d 個檔案</string>
+		</dict>
+	</dict>
+	<key>%d App Store apps (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>other</key>
+			<string>%d 個 App Store 的 App</string>
+		</dict>
+	</dict>
+	<key>%d Bar codes (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>other</key>
+			<string>%d 個條碼</string>
+		</dict>
+	</dict>
+	<key>%d Blood pressures (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>other</key>
+			<string>%d 個血壓</string>
+		</dict>
+	</dict>
+	<key>%d Box files (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>other</key>
+			<string>%d 個 Box 檔案</string>
+		</dict>
+	</dict>
+	<key>%d Dropbox files (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>other</key>
+			<string>%d 個 Dropbox 檔案</string>
+		</dict>
+	</dict>
+	<key>%d Evernote notes (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>other</key>
+			<string>%d 份 Evernote 筆記</string>
+		</dict>
+	</dict>
+	<key>%d Giphy items (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>other</key>
+			<string>%d 個 Giphy 項目</string>
+		</dict>
+	</dict>
+	<key>%d Health samples (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>other</key>
+			<string>%d 項健康樣本</string>
+		</dict>
+	</dict>
+	<key>%d Text matches (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>other</key>
+			<string>%d 個相符文字</string>
+		</dict>
+	</dict>
+	<key>%d Trello boards (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>other</key>
+			<string>%d 個 Trello 看板</string>
+		</dict>
+	</dict>
+	<key>%d Trello cards (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>other</key>
+			<string>%d 個 Trello 卡片</string>
+		</dict>
+	</dict>
+	<key>%d Trello items (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>other</key>
+			<string>%d 個 Trello 項目</string>
+		</dict>
+	</dict>
+	<key>%d Trello lists (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>other</key>
+			<string>%d 個 Trello 項目</string>
+		</dict>
+	</dict>
+	<key>%d Ulysses sheets (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>other</key>
+			<string>%d 個 Ulysses 工作表</string>
+		</dict>
+	</dict>
+	<key>%d Weather Conditions (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>other</key>
+			<string>%d 個天氣概況</string>
+		</dict>
+	</dict>
+	<key>%d Workout samples (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>other</key>
+			<string>%d 個體能訓練樣本</string>
+		</dict>
+	</dict>
+	<key>%d iTunes artists (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>other</key>
+			<string>%d 個 iTunes 藝人</string>
+		</dict>
+	</dict>
+	<key>%d iTunes products (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>other</key>
+			<string>%d 個 iTunes 產品</string>
+		</dict>
+	</dict>
+	<key>%d items (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>other</key>
+			<string>%d 個項目</string>
+		</dict>
+	</dict>
+	<key>Are you ABSOLUTELY POSITIVELY sure you want to delete %1$@ and %2$d other notes? (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>other</key>
+			<string>你十分確定要刪除「%1$@」和其他 %2$d 個備忘錄嗎？</string>
+		</dict>
+	</dict>
+	<key>Are you ABSOLUTELY sure you want to delete %1$@ and %2$d other notes? (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>other</key>
+			<string>你十分確定要刪除「%1$@」和其他 %2$d 個備忘錄嗎？</string>
+		</dict>
+	</dict>
+	<key>Are you sure you want to delete %1$@ and %2$d other notes? (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>other</key>
+			<string>你確定要刪除「%1$@」和其他 %2$d 個備忘錄嗎？</string>
+		</dict>
+	</dict>
+	<key>Delete %1$@ and %2$d other notes? (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>other</key>
+			<string>要刪除「%1$@」和其他 %2$d 個備忘錄嗎？</string>
+		</dict>
+	</dict>
+	<key>Remove %d Events? (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>other</key>
+			<string>要移除 %d 個行程嗎？</string>
+		</dict>
+	</dict>
+	<key>Remove %d Reminders? (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>other</key>
+			<string>要移除 %d 個提醒事項嗎？</string>
+		</dict>
+	</dict>
+	<key>This is a permanent action. Are you ABSOLUTELY POSITIVELY sure you want to remove these items? (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>other</key>
+			<string>這是一個無法取消的動作。\n你十分確定要刪除這些項目嗎？</string>
+		</dict>
+	</dict>
+	<key>This is a permanent action. Are you ABSOLUTELY sure you want to delete these items? (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>other</key>
+			<string>這是一個無法取消的動作。\n你十分確定要刪除這些項目嗎？</string>
+		</dict>
+	</dict>
+	<key>This is a permanent action. Are you sure you want to remove these items? (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>other</key>
+			<string>這是一個無法取消的動作。\n你確定要移除這些項目嗎？</string>
+		</dict>
+	</dict>
+	<key>of %d photos (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>other</key>
+			<string>/ %d 張相片</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

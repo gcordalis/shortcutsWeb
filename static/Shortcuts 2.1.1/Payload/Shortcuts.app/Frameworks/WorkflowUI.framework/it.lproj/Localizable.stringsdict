@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>%d actions would be deleted. (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>one</key>
+			<string>Un'azione verrebbe eliminata.</string>
+			<key>other</key>
+			<string>%d azioni verrebbero eliminate.</string>
+		</dict>
+	</dict>
+	<key>%d items (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>one</key>
+			<string>%d elemento</string>
+			<key>other</key>
+			<string>%d elementi</string>
+		</dict>
+	</dict>
+	<key>%d minutes (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>one</key>
+			<string>%d minuto</string>
+			<key>other</key>
+			<string>%d minuti</string>
+		</dict>
+	</dict>
+	<key>%d seconds (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>one</key>
+			<string>%d secondo</string>
+			<key>other</key>
+			<string>%d secondi</string>
+		</dict>
+	</dict>
+	<key>%d shortcuts (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>one</key>
+			<string>%d comando rapido</string>
+			<key>other</key>
+			<string>%d comandi rapidi</string>
+		</dict>
+	</dict>
+	<key>%ld Selected (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>one</key>
+			<string>%ld selezionato</string>
+			<key>other</key>
+			<string>%ld selezionati</string>
+		</dict>
+	</dict>
+	<key>Add %d Actions (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>one</key>
+			<string>Aggiungi azione</string>
+			<key>other</key>
+			<string>Aggiungi %d azioni</string>
+		</dict>
+	</dict>
+	<key>Delete %d Shortcuts (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>one</key>
+			<string>Elimina comando rapido</string>
+			<key>other</key>
+			<string>Elimina %d comandi rapidi</string>
+		</dict>
+	</dict>
+	<key>Move %d Actions (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>one</key>
+			<string>Sposta azione</string>
+			<key>other</key>
+			<string>Sposta %d azioni</string>
+		</dict>
+	</dict>
+	<key>Remove %d Actions (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>one</key>
+			<string>Rimuovi azione</string>
+			<key>other</key>
+			<string>Rimuovi %d azioni</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

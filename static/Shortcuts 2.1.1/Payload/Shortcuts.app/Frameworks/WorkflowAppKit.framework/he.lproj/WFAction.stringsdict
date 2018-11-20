@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Article (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>many</key>
+			<string>%d מאמרים</string>
+			<key>one</key>
+			<string>מאמר אחד</string>
+			<key>other</key>
+			<string>%d מאמרים</string>
+			<key>two</key>
+			<string>שני מאמרים</string>
+		</dict>
+	</dict>
+	<key>Bookmark (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>many</key>
+			<string>%d סימניות</string>
+			<key>one</key>
+			<string>סימניה אחת</string>
+			<key>other</key>
+			<string>%d סימניות</string>
+			<key>two</key>
+			<string>שתי סימניות</string>
+		</dict>
+	</dict>
+	<key>Burst (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>many</key>
+			<string>%d פרצי תמונות</string>
+			<key>one</key>
+			<string>פרץ תמונות אחד</string>
+			<key>other</key>
+			<string>%d פרצי תמונות</string>
+			<key>two</key>
+			<string>שני פרצי תמונות</string>
+		</dict>
+	</dict>
+	<key>Calendar event (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>many</key>
+			<string>%d אירועים בלוח השנה</string>
+			<key>one</key>
+			<string>אירוע אחד בלוח השנה</string>
+			<key>other</key>
+			<string>%d אירועים בלוח השנה</string>
+			<key>two</key>
+			<string>שני אירועים בלוח השנה</string>
+		</dict>
+	</dict>
+	<key>Contact (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>many</key>
+			<string>%d אנשי קשר</string>
+			<key>one</key>
+			<string>איש קשר אחד</string>
+			<key>other</key>
+			<string>%d אנשי קשר</string>
+			<key>two</key>
+			<string>שני אנשי קשר</string>
+		</dict>
+	</dict>
+	<key>Decimal Place (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>many</key>
+			<string>%d מקומות עשרוניים</string>
+			<key>one</key>
+			<string>מקום עשרוני אחד</string>
+			<key>other</key>
+			<string>%d מקומות עשרוניים</string>
+			<key>two</key>
+			<string>שני מקומות עשרוניים</string>
+		</dict>
+	</dict>
+	<key>Event (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>many</key>
+			<string>%d אירועים</string>
+			<key>one</key>
+			<string>אירוע אחד</string>
+			<key>other</key>
+			<string>‏%d אירועים</string>
+			<key>two</key>
+			<string>שני אירועים</string>
+		</dict>
+	</dict>
+	<key>Event attendee (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>many</key>
+			<string>%d משתתפים באירוע</string>
+			<key>one</key>
+			<string>משתתף אחד באירוע</string>
+			<key>other</key>
+			<string>%d משתתפים באירוע</string>
+			<key>two</key>
+			<string>שני משתתפים באירוע</string>
+		</dict>
+	</dict>
+	<key>Extra Ingredient (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>many</key>
+			<string>%d מרכיבים נוספים</string>
+			<key>one</key>
+			<string>מרכיב נוסף אחד</string>
+			<key>other</key>
+			<string>%d מרכיבים נוספים</string>
+			<key>two</key>
+			<string>שני מרכיבים נוספים</string>
+		</dict>
+	</dict>
+	<key>File (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>many</key>
+			<string>%d קבצים</string>
+			<key>one</key>
+			<string>קובץ אחד</string>
+			<key>other</key>
+			<string>%d קבצים</string>
+			<key>two</key>
+			<string>שני קבצים</string>
+		</dict>
+	</dict>
+	<key>GIF (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>many</key>
+			<string>%d קבצי GIF</string>
+			<key>one</key>
+			<string>קובץ GIF אחד</string>
+			<key>other</key>
+			<string>%d קבצי GIF</string>
+			<key>two</key>
+			<string>שני קבצי GIF</string>
+		</dict>
+	</dict>
+	<key>Health sample (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>many</key>
+			<string>%d דגימות בריאות</string>
+			<key>one</key>
+			<string>דגימת בריאות אחת</string>
+			<key>other</key>
+			<string>%d דגימות בריאות</string>
+			<key>two</key>
+			<string>שתי דגימות בריאות</string>
+		</dict>
+	</dict>
+	<key>Image (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>many</key>
+			<string>‏%d תמונות</string>
+			<key>one</key>
+			<string>תמונה אחת</string>
+			<key>other</key>
+			<string>‏%d תמונות</string>
+			<key>two</key>
+			<string>שתי תמונות</string>
+		</dict>
+	</dict>
+	<key>Item (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>many</key>
+			<string>%d פריטים</string>
+			<key>one</key>
+			<string>פריט אחד</string>
+			<key>other</key>
+			<string>%d פריטים</string>
+			<key>two</key>
+			<string>שני פריטים</string>
+		</dict>
+	</dict>
+	<key>Live Photo (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>many</key>
+			<string>%d תמונות Live Photo</string>
+			<key>one</key>
+			<string>תמונת Live Photo אחת</string>
+			<key>other</key>
+			<string>%d תמונות Live Photo</string>
+			<key>two</key>
+			<string>שתי תמונות Live Photo</string>
+		</dict>
+	</dict>
+	<key>Location (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>many</key>
+			<string>%d מיקומים</string>
+			<key>one</key>
+			<string>מיקום אחד</string>
+			<key>other</key>
+			<string>%d מיקומים</string>
+			<key>two</key>
+			<string>שני מיקומים</string>
+		</dict>
+	</dict>
+	<key>Note (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>many</key>
+			<string>%d פתקים</string>
+			<key>one</key>
+			<string>פתק אחד</string>
+			<key>other</key>
+			<string>%d פתקים</string>
+			<key>two</key>
+			<string>שני פתקים</string>
+		</dict>
+	</dict>
+	<key>Photo (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>many</key>
+			<string>‏%d תמונות</string>
+			<key>one</key>
+			<string>תמונה אחת</string>
+			<key>other</key>
+			<string>‏%d תמונות</string>
+			<key>two</key>
+			<string>שתי תמונות</string>
+		</dict>
+	</dict>
+	<key>Reminder (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>many</key>
+			<string>%d תזכורות</string>
+			<key>one</key>
+			<string>תזכורת אחת</string>
+			<key>other</key>
+			<string>%d תזכורות</string>
+			<key>two</key>
+			<string>שתי תזכורות</string>
+		</dict>
+	</dict>
+	<key>Screenshot (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>many</key>
+			<string>%d צילומי מסך</string>
+			<key>one</key>
+			<string>צילום מסך אחד</string>
+			<key>other</key>
+			<string>%d צילומי מסך</string>
+			<key>two</key>
+			<string>שני צילומי מסך</string>
+		</dict>
+	</dict>
+	<key>Second (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>many</key>
+			<string>%d שניות</string>
+			<key>one</key>
+			<string>שניה אחת</string>
+			<key>other</key>
+			<string>‏%d שניות</string>
+			<key>two</key>
+			<string>שתי שניות</string>
+		</dict>
+	</dict>
+	<key>Time (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>many</key>
+			<string>%d פעמים</string>
+			<key>one</key>
+			<string>פעם אחת</string>
+			<key>other</key>
+			<string>%d פעמים</string>
+			<key>two</key>
+			<string>פעמיים</string>
+		</dict>
+	</dict>
+	<key>Video (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>many</key>
+			<string>%d סרטים</string>
+			<key>one</key>
+			<string>סרט אחד</string>
+			<key>other</key>
+			<string>%d סרטים</string>
+			<key>two</key>
+			<string>שני סרטים</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

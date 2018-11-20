@@ -1,0 +1,546 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>%2$@ and %1$d other files (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%2$@ i %1$d druge datoteke</string>
+			<key>one</key>
+			<string>%2$@ i %1$d druga datoteka</string>
+			<key>other</key>
+			<string>%2$@ i %1$d drugih datoteka</string>
+		</dict>
+	</dict>
+	<key>%d App Store apps (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d App Store aplikacije</string>
+			<key>one</key>
+			<string>%d App Store aplikacija</string>
+			<key>other</key>
+			<string>%d App Store aplikacija</string>
+		</dict>
+	</dict>
+	<key>%d Bar codes (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d bar koda</string>
+			<key>one</key>
+			<string>%d bar kod</string>
+			<key>other</key>
+			<string>%d bar kodova</string>
+		</dict>
+	</dict>
+	<key>%d Blood pressures (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d krvna tlaka</string>
+			<key>one</key>
+			<string>%d krvni tlak</string>
+			<key>other</key>
+			<string>%d krvnih tlakova</string>
+		</dict>
+	</dict>
+	<key>%d Box files (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d Box datoteke</string>
+			<key>one</key>
+			<string>%d Box datoteka</string>
+			<key>other</key>
+			<string>%d Box datoteka</string>
+		</dict>
+	</dict>
+	<key>%d Dropbox files (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d Dropbox datoteke</string>
+			<key>one</key>
+			<string>%d Dropbox datoteka</string>
+			<key>other</key>
+			<string>%d Dropbox datoteka</string>
+		</dict>
+	</dict>
+	<key>%d Evernote notes (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d Evernote bilješke</string>
+			<key>one</key>
+			<string>%d Evernote bilješka</string>
+			<key>other</key>
+			<string>%d Evernote bilješki</string>
+		</dict>
+	</dict>
+	<key>%d Giphy items (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d stavke Giphyja</string>
+			<key>one</key>
+			<string>%d stavka Giphyja</string>
+			<key>other</key>
+			<string>%d stavki Giphyja</string>
+		</dict>
+	</dict>
+	<key>%d Health samples (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d zdravstvena uzorka</string>
+			<key>one</key>
+			<string>%d zdravstveni uzorak</string>
+			<key>other</key>
+			<string>%d zdravstvenih uzoraka</string>
+		</dict>
+	</dict>
+	<key>%d Text matches (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d tekstualna podudaranja</string>
+			<key>one</key>
+			<string>%d tekstualno podudaranje</string>
+			<key>other</key>
+			<string>%d tekstualnih podudaranja</string>
+		</dict>
+	</dict>
+	<key>%d Trello boards (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d Trello ploče</string>
+			<key>one</key>
+			<string>%d Trello ploča</string>
+			<key>other</key>
+			<string>%d Trello ploča</string>
+		</dict>
+	</dict>
+	<key>%d Trello cards (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d Trello kartice</string>
+			<key>one</key>
+			<string>%d Trello kartica</string>
+			<key>other</key>
+			<string>%d Trello kartica</string>
+		</dict>
+	</dict>
+	<key>%d Trello items (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d Trello stavke</string>
+			<key>one</key>
+			<string>%d Trello stavka</string>
+			<key>other</key>
+			<string>%d Trello stavki</string>
+		</dict>
+	</dict>
+	<key>%d Trello lists (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d Trello popisa</string>
+			<key>one</key>
+			<string>%d Trello popis</string>
+			<key>other</key>
+			<string>%d Trello popisa</string>
+		</dict>
+	</dict>
+	<key>%d Ulysses sheets (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d Ulysses lista</string>
+			<key>one</key>
+			<string>%d Ulysses list</string>
+			<key>other</key>
+			<string>%d Ulysses listova</string>
+		</dict>
+	</dict>
+	<key>%d Weather Conditions (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d vremenska uvjeta</string>
+			<key>one</key>
+			<string>%d vremenski uvjet</string>
+			<key>other</key>
+			<string>%d vremenskih uvjeta</string>
+		</dict>
+	</dict>
+	<key>%d Workout samples (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d primjera treninga</string>
+			<key>one</key>
+			<string>%d primjer treninga</string>
+			<key>other</key>
+			<string>%d primjera treninga</string>
+		</dict>
+	</dict>
+	<key>%d iTunes artists (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d iTunes izvođača</string>
+			<key>one</key>
+			<string>%d iTunes izvođač</string>
+			<key>other</key>
+			<string>%d iTunes izvođača</string>
+		</dict>
+	</dict>
+	<key>%d iTunes products (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d iTunes proizvoda</string>
+			<key>one</key>
+			<string>%d iTunes proizvod</string>
+			<key>other</key>
+			<string>%d iTunes proizvoda</string>
+		</dict>
+	</dict>
+	<key>%d items (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d stavke</string>
+			<key>one</key>
+			<string>%d stavka</string>
+			<key>other</key>
+			<string>%d stavki</string>
+		</dict>
+	</dict>
+	<key>Are you ABSOLUTELY POSITIVELY sure you want to delete %1$@ and %2$d other notes? (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>Jeste li POSVE U POTPUNOSTI sigurni da želite obrisati %1$@ i %2$d druge bilješke?</string>
+			<key>one</key>
+			<string>Jeste li SASVIM sigurni da želite obrisati %@ i još jednu bilješku?</string>
+			<key>other</key>
+			<string>Jeste li SASVIM sigurni da želite obrisati %1$@ i %2$d drugih bilježaka?</string>
+		</dict>
+	</dict>
+	<key>Are you ABSOLUTELY sure you want to delete %1$@ and %2$d other notes? (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>Jeste li U POTPUNOSTI sigurni da želite obrisati %1$@ i %2$d druge bilješke?</string>
+			<key>one</key>
+			<string>Jeste li U POTPUNOSTI sigurni da želite obrisati %@ i još jednu bilješku?</string>
+			<key>other</key>
+			<string>Jeste li SASVIM sigurni da želite obrisati %1$@ i %2$d drugih bilježaka?</string>
+		</dict>
+	</dict>
+	<key>Are you sure you want to delete %1$@ and %2$d other notes? (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>Sigurno želite obrisati %1$@ i %2$d druge bilješke?</string>
+			<key>one</key>
+			<string>Sigurno želite obrisati %@ i još jednu bilješku?</string>
+			<key>other</key>
+			<string>Sigurno želite obrisati %1$@ i %2$d drugih bilježaka?</string>
+		</dict>
+	</dict>
+	<key>Delete %1$@ and %2$d other notes? (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>Obrisati %1$@ i %2$d druge bilješke?</string>
+			<key>one</key>
+			<string>Obrisati %@ i još jednu bilješku?</string>
+			<key>other</key>
+			<string>Obrisati %1$@ i %2$d drugih billježaka?</string>
+		</dict>
+	</dict>
+	<key>Remove %d Events? (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>Ukloniti %d događaja?</string>
+			<key>one</key>
+			<string>Ukloniti %d događaj?</string>
+			<key>other</key>
+			<string>Ukloniti %d događaja?</string>
+		</dict>
+	</dict>
+	<key>Remove %d Reminders? (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>Ukloniti %d podsjetnika?</string>
+			<key>one</key>
+			<string>Ukloniti %d podsjetnik?</string>
+			<key>other</key>
+			<string>Ukloniti %d podsjetnika?</string>
+		</dict>
+	</dict>
+	<key>This is a permanent action. Are you ABSOLUTELY POSITIVELY sure you want to remove these items? (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>Ovo je trajna radnja.\nJeste li POSVE U POTPUNOSTI sigurni da želite ukloniti ove stavke?</string>
+			<key>one</key>
+			<string>Ovo je trajna radnja.\nJeste li SASVIM sigurni da želite ukloniti ovu stavku?</string>
+			<key>other</key>
+			<string>Ovo je trajna radnja.\nJeste li SASVIM sigurni da želite ukloniti ove stavke?</string>
+		</dict>
+	</dict>
+	<key>This is a permanent action. Are you ABSOLUTELY sure you want to delete these items? (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>Ovo je trajna radnja.\nJeste li POSVE sigurni da želite obrisati ove stavke?</string>
+			<key>one</key>
+			<string>Ovo je trajna radnja.\nJeste li POSVE sigurni da želite obrisati ukloniti ovu stavku?</string>
+			<key>other</key>
+			<string>Ovo je trajna radnja.\nJeste li POSVE sigurni da želite obrisati ove stavke?</string>
+		</dict>
+	</dict>
+	<key>This is a permanent action. Are you sure you want to remove these items? (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>Ovo je trajna radnja.\nJeste li sigurni da želite ukloniti ove stavke?</string>
+			<key>one</key>
+			<string>Ovo je trajna radnja.\nJeste li sigurni da želite ukloniti ovu stavku?</string>
+			<key>other</key>
+			<string>Ovo je trajna radnja.\nJeste li sigurni da želite ukloniti ove stavke?</string>
+		</dict>
+	</dict>
+	<key>of %d photos (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>od %d\nfotografije</string>
+			<key>one</key>
+			<string>od %d\nfotografije</string>
+			<key>other</key>
+			<string>od %d\nfotografija</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

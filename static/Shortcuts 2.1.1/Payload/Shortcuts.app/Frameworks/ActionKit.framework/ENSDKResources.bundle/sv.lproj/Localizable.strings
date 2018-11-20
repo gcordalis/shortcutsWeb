@@ -1,0 +1,31 @@
+/* 
+  Localizable.strings
+  evernote-sdk-ios
+
+  Created by Eric Cheng on 1/26/15.
+  Copyright (c) 2015 Evernote Corporation. All rights reserved.
+*/
+
+"Save to Evernote" = "Spara i Evernote";
+
+"Add Title" = "Lägg till titel";
+
+"Add Tag" = "Lägg till tagg";
+
+"Untitled note" = "Namnlös anteckning";
+
+"Untitled" = "Namnlös";
+
+"Notebooks" = "Anteckningsböcker";
+
+"Current" = "Aktuell";
+
+"Recent Notebooks" = "Senaste anteckningsböcker";
+
+"All Notebooks" = "Alla anteckningsböcker";
+
+"Notebook" = "Anteckningsbok";
+
+"Evernote-International" = "Evernote – internationell";
+
+"Evernote-China" = "Evernote – Kina";

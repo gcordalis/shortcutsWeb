@@ -1,0 +1,31 @@
+/* 
+  Localizable.strings
+  evernote-sdk-ios
+
+  Created by Eric Cheng on 1/26/15.
+  Copyright (c) 2015 Evernote Corporation. All rights reserved.
+*/
+
+"Save to Evernote" = "Uložiť do Evernote";
+
+"Add Title" = "Pridať názov";
+
+"Add Tag" = "Pridať značku";
+
+"Untitled note" = "Poznámka bez názvu";
+
+"Untitled" = "Bez názvu";
+
+"Notebooks" = "Zápisníky";
+
+"Current" = "Aktuálne";
+
+"Recent Notebooks" = "Posledné zápisníky";
+
+"All Notebooks" = "Všetky zápisníky";
+
+"Notebook" = "Zápisník";
+
+"Evernote-International" = "Evernote – medzinárodné";
+
+"Evernote-China" = "Evernote – Čína";

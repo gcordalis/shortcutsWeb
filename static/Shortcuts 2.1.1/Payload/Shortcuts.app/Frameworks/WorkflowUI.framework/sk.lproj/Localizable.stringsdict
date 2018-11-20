@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>%d actions would be deleted. (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>Vymažú sa %d akcie.</string>
+			<key>many</key>
+			<string>Vymaže sa %d akcie.</string>
+			<key>one</key>
+			<string>Vymaže sa %d akcia.</string>
+			<key>other</key>
+			<string>Vymaže sa %d akcií.</string>
+		</dict>
+	</dict>
+	<key>%d items (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d položky</string>
+			<key>many</key>
+			<string>%d položky</string>
+			<key>one</key>
+			<string>%d položka</string>
+			<key>other</key>
+			<string>%d položiek</string>
+		</dict>
+	</dict>
+	<key>%d minutes (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d minúty</string>
+			<key>many</key>
+			<string>%d minúty</string>
+			<key>one</key>
+			<string>%d minúta</string>
+			<key>other</key>
+			<string>%d minút</string>
+		</dict>
+	</dict>
+	<key>%d seconds (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d s</string>
+			<key>many</key>
+			<string>%d s</string>
+			<key>one</key>
+			<string>%d s</string>
+			<key>other</key>
+			<string>%d s</string>
+		</dict>
+	</dict>
+	<key>%d shortcuts (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d skratky</string>
+			<key>many</key>
+			<string>%d skratky</string>
+			<key>one</key>
+			<string>%d skratka</string>
+			<key>other</key>
+			<string>%d skratiek</string>
+		</dict>
+	</dict>
+	<key>%ld Selected (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%ld vybrané</string>
+			<key>many</key>
+			<string>%ld vybranej</string>
+			<key>one</key>
+			<string>%ld vybraná</string>
+			<key>other</key>
+			<string>%ld vybraných</string>
+		</dict>
+	</dict>
+	<key>Add %d Actions (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>Pridať %d akcie</string>
+			<key>many</key>
+			<string>Pridať %d akcie</string>
+			<key>one</key>
+			<string>Pridať akciu</string>
+			<key>other</key>
+			<string>Pridať %d akcií</string>
+		</dict>
+	</dict>
+	<key>Delete %d Shortcuts (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>Vymazať %d skratky</string>
+			<key>many</key>
+			<string>Vymazať %d skratky</string>
+			<key>one</key>
+			<string>Vymazať skratku</string>
+			<key>other</key>
+			<string>Vymazať %d skratiek</string>
+		</dict>
+	</dict>
+	<key>Move %d Actions (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>Presunúť %d akcie</string>
+			<key>many</key>
+			<string>Presunúť %d akcie</string>
+			<key>one</key>
+			<string>Presunúť akciu</string>
+			<key>other</key>
+			<string>Presunúť %d akcií</string>
+		</dict>
+	</dict>
+	<key>Remove %d Actions (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>Odstrániť %d akcie</string>
+			<key>many</key>
+			<string>Odstrániť %d akcie</string>
+			<key>one</key>
+			<string>Odstrániť akciu</string>
+			<key>other</key>
+			<string>Odstrániť %d akcií</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

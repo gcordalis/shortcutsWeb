@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SinfPaths</key>
+	<array>
+		<string>SC_Info/Shortcuts.sinf</string>
+	</array>
+	<key>SinfReplicationPaths</key>
+	<array>
+		<string>Frameworks/ActionKit.framework/SC_Info/ActionKit.sinf</string>
+		<string>Frameworks/BoxContentSDK.framework/SC_Info/BoxContentSDK.sinf</string>
+		<string>Frameworks/ComponentKit.framework/SC_Info/ComponentKit.sinf</string>
+		<string>Frameworks/ContentKit.framework/SC_Info/ContentKit.sinf</string>
+		<string>Frameworks/Interchange.framework/SC_Info/Interchange.sinf</string>
+		<string>Frameworks/MailCore.framework/SC_Info/MailCore.sinf</string>
+		<string>Frameworks/Mantle.framework/SC_Info/Mantle.sinf</string>
+		<string>Frameworks/Realm.framework/SC_Info/Realm.sinf</string>
+		<string>Frameworks/WFLogging.framework/SC_Info/WFLogging.sinf</string>
+		<string>Frameworks/WorkflowAppKit.framework/SC_Info/WorkflowAppKit.sinf</string>
+		<string>Frameworks/WorkflowUI.framework/SC_Info/WorkflowUI.sinf</string>
+		<string>PlugIns/RunShortcut.appex/SC_Info/RunShortcut.sinf</string>
+		<string>PlugIns/ShortcutsIntents.appex/SC_Info/ShortcutsIntents.sinf</string>
+		<string>PlugIns/ShortcutsIntentsUI.appex/SC_Info/ShortcutsIntentsUI.sinf</string>
+		<string>PlugIns/ShortcutsWidget.appex/SC_Info/ShortcutsWidget.sinf</string>
+		<string>SC_Info/Shortcuts.sinf</string>
+	</array>
+</dict>
+</plist>

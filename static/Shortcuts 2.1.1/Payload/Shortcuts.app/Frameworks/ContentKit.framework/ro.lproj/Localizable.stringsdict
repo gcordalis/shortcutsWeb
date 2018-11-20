@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>%d Articles (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d articole</string>
+			<key>one</key>
+			<string>%d articol</string>
+			<key>other</key>
+			<string>%d de articole</string>
+		</dict>
+	</dict>
+	<key>%d Booleans (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d expresii booleene</string>
+			<key>one</key>
+			<string>%d expresie booleană</string>
+			<key>other</key>
+			<string>%d de expresii booleene</string>
+		</dict>
+	</dict>
+	<key>%d Calendar events (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d evenimente din calendar</string>
+			<key>one</key>
+			<string>%d eveniment din calendar</string>
+			<key>other</key>
+			<string>%d de evenimente din calendar</string>
+		</dict>
+	</dict>
+	<key>%d Calendar items (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d articole din calendar</string>
+			<key>one</key>
+			<string>%d articol din calendar</string>
+			<key>other</key>
+			<string>%d de articole din calendar</string>
+		</dict>
+	</dict>
+	<key>%d Contacts (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d contacte</string>
+			<key>one</key>
+			<string>%d contact</string>
+			<key>other</key>
+			<string>%d de contacte</string>
+		</dict>
+	</dict>
+	<key>%d Dates (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d date</string>
+			<key>one</key>
+			<string>%d dată</string>
+			<key>other</key>
+			<string>%d de date</string>
+		</dict>
+	</dict>
+	<key>%d Dictionaries (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d dicționare</string>
+			<key>one</key>
+			<string>%d dicționar</string>
+			<key>other</key>
+			<string>%d de dicționare</string>
+		</dict>
+	</dict>
+	<key>%d Email addresses (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d adrese e-mail</string>
+			<key>one</key>
+			<string>%d adresă e-mail</string>
+			<key>other</key>
+			<string>%d de adrese e-mail</string>
+		</dict>
+	</dict>
+	<key>%d Event attendees (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d participanți la eveniment</string>
+			<key>one</key>
+			<string>%d participant la eveniment</string>
+			<key>other</key>
+			<string>%d de participanți la eveniment</string>
+		</dict>
+	</dict>
+	<key>%d Extension items (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d articole extensie</string>
+			<key>one</key>
+			<string>%d articol extensie</string>
+			<key>other</key>
+			<string>%d de articole extensie</string>
+		</dict>
+	</dict>
+	<key>%d FTP directories (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d directoare FTP</string>
+			<key>one</key>
+			<string>%d director FTP</string>
+			<key>other</key>
+			<string>%d de directoare FTP</string>
+		</dict>
+	</dict>
+	<key>%d File sizes (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d dimensiuni de fișier</string>
+			<key>one</key>
+			<string>%d dimensiune de fișier</string>
+			<key>other</key>
+			<string>%d de dimensiuni de fișier</string>
+		</dict>
+	</dict>
+	<key>%d Files (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d fișiere</string>
+			<key>one</key>
+			<string>%d fișier</string>
+			<key>other</key>
+			<string>%d de fișiere</string>
+		</dict>
+	</dict>
+	<key>%d Images (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d imagini</string>
+			<key>one</key>
+			<string>%d imagine</string>
+			<key>other</key>
+			<string>%d de imagini</string>
+		</dict>
+	</dict>
+	<key>%d Item providers (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d furnizori articol</string>
+			<key>one</key>
+			<string>%d furnizor articol</string>
+			<key>other</key>
+			<string>%d de furnizori articol</string>
+		</dict>
+	</dict>
+	<key>%d Items (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d articole</string>
+			<key>one</key>
+			<string>%d articol</string>
+			<key>other</key>
+			<string>%d de articole</string>
+		</dict>
+	</dict>
+	<key>%d Locations (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d locuri</string>
+			<key>one</key>
+			<string>%d loc</string>
+			<key>other</key>
+			<string>%d de locuri</string>
+		</dict>
+	</dict>
+	<key>%d Maps links (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d linkuri Hărți</string>
+			<key>one</key>
+			<string>%d link Hărți</string>
+			<key>other</key>
+			<string>%d de linkuri Hărți</string>
+		</dict>
+	</dict>
+	<key>%d Measurements (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d măsurători</string>
+			<key>one</key>
+			<string>%d măsurătoare</string>
+			<key>other</key>
+			<string>%d de măsurători</string>
+		</dict>
+	</dict>
+	<key>%d Numbers (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d numere</string>
+			<key>one</key>
+			<string>%d număr</string>
+			<key>other</key>
+			<string>%d de numere</string>
+		</dict>
+	</dict>
+	<key>%d PDFs (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d PDF-uri</string>
+			<key>one</key>
+			<string>%d PDF</string>
+			<key>other</key>
+			<string>%d de PDF-uri</string>
+		</dict>
+	</dict>
+	<key>%d Phone numbers (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d numere de telefon</string>
+			<key>one</key>
+			<string>%d număr de telefon</string>
+			<key>other</key>
+			<string>%d de numere de telefon</string>
+		</dict>
+	</dict>
+	<key>%d Places (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d locuri</string>
+			<key>one</key>
+			<string>%d loc</string>
+			<key>other</key>
+			<string>%d de locuri</string>
+		</dict>
+	</dict>
+	<key>%d Reminders (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d mementouri</string>
+			<key>one</key>
+			<string>%d memento</string>
+			<key>other</key>
+			<string>%d de mementouri</string>
+		</dict>
+	</dict>
+	<key>%d Safari web pages (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d pagini web Safari</string>
+			<key>one</key>
+			<string>%d pagină web Safari</string>
+			<key>other</key>
+			<string>%d de pagini web Safari</string>
+		</dict>
+	</dict>
+	<key>%d Time intervals (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d intervale de timp</string>
+			<key>one</key>
+			<string>%d interval de timp</string>
+			<key>other</key>
+			<string>%d de intervale de timp</string>
+		</dict>
+	</dict>
+	<key>%d URLs (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d URL-uri</string>
+			<key>one</key>
+			<string>%d URL</string>
+			<key>other</key>
+			<string>%d de URL-uri</string>
+		</dict>
+	</dict>
+	<key>%d iCalendar items (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d articole iCalendar</string>
+			<key>one</key>
+			<string>%d articol iCalendar</string>
+			<key>other</key>
+			<string>%d de articole iCalendar</string>
+		</dict>
+	</dict>
+	<key>%d vCards (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d vCarduri</string>
+			<key>one</key>
+			<string>%d vCard</string>
+			<key>other</key>
+			<string>%d de vCarduri</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

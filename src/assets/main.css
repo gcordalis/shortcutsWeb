@@ -1,0 +1,82 @@
+.actionCard {
+  box-shadow: 0 0 50px 0 rgba(0,0,0,0.15);
+  border-radius: 27px;
+  min-width: 1000px;
+  margin-bottom: 30px
+}
+
+.v-card__title {
+  padding: 10px 20px 10px 20px;
+}
+
+.v-card__text {
+  padding: 0px 20px 0px 20px;
+}
+
+.v-list__tile__content {
+  min-height: 56px
+}
+
+ h3 .headline {
+  min-height: 56px
+ }
+
+.headline {
+  font-size: 20px
+}
+
+.v-input__slot {
+  margin-bottom: 0;
+}
+
+.v-text-field {
+  margin-top: 0
+}
+
+.v-text-field.v-text-field--solo:not(.v-text-field--solo-flat) .v-input__slot {
+  box-shadow: none
+}
+
+.v-text-field__slot {
+  text-align: right
+}
+
+.v-avatar {
+  width: 100% !important;
+}
+
+.v-text-field>.v-input__control>.v-input__slot:before {
+  display: none
+}
+
+.actionIcon {
+  width: 35px;
+  height: 35px;
+  border-radius: 25%;
+  margin-right: 18px
+}
+
+.actionCloseIcon {
+  color: rgb(203, 207, 212) !important;
+}
+
+.removeIcon {
+  color: rgb(248, 37, 37) !important;
+}
+
+.addIcon {
+  color: rgb(63, 215, 82) !important;
+}
+
+.glyphs {
+    display: inline-block;
+    background-image: url(/static/fonts/WorkflowGlyphs.svg);
+    background-repeat: no-repeat;
+}
+
+.colorPicker {
+  width: 35px;
+  height: 35px;
+  border-radius: 25%;
+  margin-right: 4px;
+}

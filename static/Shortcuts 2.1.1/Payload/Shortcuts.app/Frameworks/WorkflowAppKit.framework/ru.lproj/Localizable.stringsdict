@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>%d Shortcuts (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d быстрые команды</string>
+			<key>many</key>
+			<string>%d быстрых команд</string>
+			<key>one</key>
+			<string>%d быстрая команда</string>
+			<key>other</key>
+			<string>%d быстрой команды</string>
+		</dict>
+	</dict>
+	<key>%d actions (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d действия</string>
+			<key>many</key>
+			<string>%d действий</string>
+			<key>one</key>
+			<string>%d действие</string>
+			<key>other</key>
+			<string>%d действия</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

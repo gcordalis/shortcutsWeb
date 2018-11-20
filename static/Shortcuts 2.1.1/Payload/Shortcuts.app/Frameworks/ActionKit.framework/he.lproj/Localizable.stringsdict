@@ -1,0 +1,606 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>%2$@ and %1$d other files (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>many</key>
+			<string>%2$@ ו-%1$d קבצים נוספים</string>
+			<key>one</key>
+			<string>%2$@ וקובץ אחד נוסף</string>
+			<key>other</key>
+			<string>%2$@ ו-%1$d קבצים נוספים</string>
+			<key>two</key>
+			<string>%2$@ ושני קבצים נוספים</string>
+		</dict>
+	</dict>
+	<key>%d App Store apps (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>many</key>
+			<string>%d יישומים של ה-App Store</string>
+			<key>one</key>
+			<string>יישום אחד של ה-App Store</string>
+			<key>other</key>
+			<string>%d יישומים של ה-App Store</string>
+			<key>two</key>
+			<string>שני יישומים של ה-App Store</string>
+		</dict>
+	</dict>
+	<key>%d Bar codes (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>many</key>
+			<string>%d ברקודים</string>
+			<key>one</key>
+			<string>ברקוד אחד</string>
+			<key>other</key>
+			<string>%d ברקודים</string>
+			<key>two</key>
+			<string>שני ברקודים</string>
+		</dict>
+	</dict>
+	<key>%d Blood pressures (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>many</key>
+			<string>%d מדידות לחץ דם</string>
+			<key>one</key>
+			<string>מדידת לחץ דם אחת</string>
+			<key>other</key>
+			<string>%d מדידות לחץ דם</string>
+			<key>two</key>
+			<string>שתי מדידות לחץ דם</string>
+		</dict>
+	</dict>
+	<key>%d Box files (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>many</key>
+			<string>%d קבצים של Box</string>
+			<key>one</key>
+			<string>קובץ אחד של Box</string>
+			<key>other</key>
+			<string>%d קבצים של Box</string>
+			<key>two</key>
+			<string>שני קבצים של Box</string>
+		</dict>
+	</dict>
+	<key>%d Dropbox files (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>many</key>
+			<string>%d קבצים של Dropbox</string>
+			<key>one</key>
+			<string>קובץ אחד של Dropbox</string>
+			<key>other</key>
+			<string>%d קבצים של Dropbox</string>
+			<key>two</key>
+			<string>שני קבצים של Dropbox</string>
+		</dict>
+	</dict>
+	<key>%d Evernote notes (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>many</key>
+			<string>%d פתקים של Evernote</string>
+			<key>one</key>
+			<string>פתק אחד של Evernote</string>
+			<key>other</key>
+			<string>%d פתקים של Evernote</string>
+			<key>two</key>
+			<string>שני פתקים של Evernote</string>
+		</dict>
+	</dict>
+	<key>%d Giphy items (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>many</key>
+			<string>%d פריטים של Giphy</string>
+			<key>one</key>
+			<string>פריט אחד של Giphy</string>
+			<key>other</key>
+			<string>%d פריטים של Giphy</string>
+			<key>two</key>
+			<string>שני פריטים של Giphy</string>
+		</dict>
+	</dict>
+	<key>%d Health samples (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>many</key>
+			<string>%d דגימות בריאות</string>
+			<key>one</key>
+			<string>דגימת בריאות אחת</string>
+			<key>other</key>
+			<string>%d דגימות בריאות</string>
+			<key>two</key>
+			<string>שתי דגימות בריאות</string>
+		</dict>
+	</dict>
+	<key>%d Text matches (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>many</key>
+			<string>%d התאמות מלל</string>
+			<key>one</key>
+			<string>התאמת מלל אחת</string>
+			<key>other</key>
+			<string>%d התאמות מלל</string>
+			<key>two</key>
+			<string>שתי התאמות מלל</string>
+		</dict>
+	</dict>
+	<key>%d Trello boards (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>many</key>
+			<string>%d לוחות Trello</string>
+			<key>one</key>
+			<string>לוח Trello אחד</string>
+			<key>other</key>
+			<string>%d לוחות Trello</string>
+			<key>two</key>
+			<string>שני לוחות Trello</string>
+		</dict>
+	</dict>
+	<key>%d Trello cards (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>many</key>
+			<string>%d כרטיסי Trello</string>
+			<key>one</key>
+			<string>כרטיס Trello אחד</string>
+			<key>other</key>
+			<string>%d כרטיסי Trello</string>
+			<key>two</key>
+			<string>שני כרטיסי Trello</string>
+		</dict>
+	</dict>
+	<key>%d Trello items (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>many</key>
+			<string>%d פריטי Trello</string>
+			<key>one</key>
+			<string>פריט Trello אחד</string>
+			<key>other</key>
+			<string>%d פריטי Trello</string>
+			<key>two</key>
+			<string>שני פריטי Trello</string>
+		</dict>
+	</dict>
+	<key>%d Trello lists (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>many</key>
+			<string>%d רשימות Trello</string>
+			<key>one</key>
+			<string>רשימת Trello אחת</string>
+			<key>other</key>
+			<string>%d רשימות Trello</string>
+			<key>two</key>
+			<string>שתי רשימות Trello</string>
+		</dict>
+	</dict>
+	<key>%d Ulysses sheets (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>many</key>
+			<string>%d גליונות Ulysses</string>
+			<key>one</key>
+			<string>גיליון Ulysses אחד</string>
+			<key>other</key>
+			<string>%d גליונות Ulysses</string>
+			<key>two</key>
+			<string>שני גליונות Ulysses</string>
+		</dict>
+	</dict>
+	<key>%d Weather Conditions (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>many</key>
+			<string>%d תנאי מזג אוויר</string>
+			<key>one</key>
+			<string>תנאי מזג אוויר אחד</string>
+			<key>other</key>
+			<string>%d תנאי מזג אוויר</string>
+			<key>two</key>
+			<string>שני תנאי מזג אוויר</string>
+		</dict>
+	</dict>
+	<key>%d Workout samples (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>many</key>
+			<string>%d דגימות אימון</string>
+			<key>one</key>
+			<string>דגימת אימון אחת</string>
+			<key>other</key>
+			<string>%d דגימות אימון</string>
+			<key>two</key>
+			<string>שתי דגימות אימון</string>
+		</dict>
+	</dict>
+	<key>%d iTunes artists (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>many</key>
+			<string>%d אמני iTunes</string>
+			<key>one</key>
+			<string>אמן iTunes אחד</string>
+			<key>other</key>
+			<string>%d אמני iTunes</string>
+			<key>two</key>
+			<string>שני אמני iTunes</string>
+		</dict>
+	</dict>
+	<key>%d iTunes products (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>many</key>
+			<string>%d מוצרים של iTunes</string>
+			<key>one</key>
+			<string>מוצר אחד של iTunes</string>
+			<key>other</key>
+			<string>%d מוצרים של iTunes</string>
+			<key>two</key>
+			<string>שני מוצרים של iTunes</string>
+		</dict>
+	</dict>
+	<key>%d items (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>many</key>
+			<string>%d פריטים</string>
+			<key>one</key>
+			<string>פריט אחד</string>
+			<key>other</key>
+			<string>‏%d פריטים</string>
+			<key>two</key>
+			<string>שני פריטים</string>
+		</dict>
+	</dict>
+	<key>Are you ABSOLUTELY POSITIVELY sure you want to delete %1$@ and %2$d other notes? (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>many</key>
+			<string>האם הינך בטוח/ה באופן סופי ומוחלט שברצונך למחוק את %1$@ ו-%2$d פתקים אחרים?</string>
+			<key>one</key>
+			<string>האם הינך בטוח/ה באופן סופי ומוחלט שברצונך למחוק את %@ ופתק אחד אחר?</string>
+			<key>other</key>
+			<string>האם הינך בטוח/ה באופן סופי ומוחלט שברצונך למחוק את %1$@ ו-%2$d פתקים אחרים?</string>
+			<key>two</key>
+			<string>האם הינך בטוח/ה באופן סופי ומוחלט שברצונך למחוק את %1$@ ושני פתקים אחרים?</string>
+		</dict>
+	</dict>
+	<key>Are you ABSOLUTELY sure you want to delete %1$@ and %2$d other notes? (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>many</key>
+			<string>האם הינך בטוח/ה באופן מוחלט שברצונך למחוק את %1$@ ו-%2$d פתקים אחרים?</string>
+			<key>one</key>
+			<string>האם הינך בטוח/ה באופן מוחלט שברצונך למחוק את %@ ופתק אחד אחר?</string>
+			<key>other</key>
+			<string>האם הינך בטוח/ה באופן מוחלט שברצונך למחוק את %1$@ ו-%2$d פתקים אחרים?</string>
+			<key>two</key>
+			<string>האם הינך בטוח/ה באופן מוחלט שברצונך למחוק את %1$@ ושני פתקים אחרים?</string>
+		</dict>
+	</dict>
+	<key>Are you sure you want to delete %1$@ and %2$d other notes? (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>many</key>
+			<string>האם הינך בטוח/ה שברצונך למחוק את %1$@ ו-%2$d פתקים אחרים?</string>
+			<key>one</key>
+			<string>האם הינך בטוח/ה שברצונך למחוק את %@ ופתק אחד אחר?</string>
+			<key>other</key>
+			<string>האם הינך בטוח/ה שברצונך למחוק את %1$@ ו-%2$d פתקים אחרים?</string>
+			<key>two</key>
+			<string>האם הינך בטוח/ה שברצונך למחוק את %1$@ ושני פתקים אחרים?</string>
+		</dict>
+	</dict>
+	<key>Delete %1$@ and %2$d other notes? (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>many</key>
+			<string>למחוק את %1$@ ו-%2$d פתקים אחרים?</string>
+			<key>one</key>
+			<string>למחוק את %@ ופתק אחד אחר?</string>
+			<key>other</key>
+			<string>למחוק את %1$@ ו-%2$d פתקים אחרים?</string>
+			<key>two</key>
+			<string>למחוק את %1$@ ושני פתקים אחרים?</string>
+		</dict>
+	</dict>
+	<key>Remove %d Events? (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>many</key>
+			<string>להסיר %d אירועים?</string>
+			<key>one</key>
+			<string>להסיר אירוע אחד?</string>
+			<key>other</key>
+			<string>להסיר %d אירועים?</string>
+			<key>two</key>
+			<string>להסיר שני אירועים?</string>
+		</dict>
+	</dict>
+	<key>Remove %d Reminders? (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>many</key>
+			<string>להסיר %d תזכורות?</string>
+			<key>one</key>
+			<string>להסיר משימה אחת?</string>
+			<key>other</key>
+			<string>להסיר %d תזכורות?</string>
+			<key>two</key>
+			<string>להסיר שתי תזכורות?</string>
+		</dict>
+	</dict>
+	<key>This is a permanent action. Are you ABSOLUTELY POSITIVELY sure you want to remove these items? (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>many</key>
+			<string>זוהי פעולה שאינה ניתנת לביטול .\nהאם הינך בטוח/ה באופן סופי ומוחלט שברצונך להסיר פריטים אלה?</string>
+			<key>one</key>
+			<string>זוהי פעולה שאינה ניתנת לביטול .\nהאם הינך בטוח/ה באופן סופי ומוחלט שברצונך להסיר פריט זה?</string>
+			<key>other</key>
+			<string>זוהי פעולה שאינה ניתנת לביטול .\nהאם הינך בטוח/ה באופן סופי ומוחלט שברצונך להסיר פריטים אלה?</string>
+			<key>two</key>
+			<string>זוהי פעולה שאינה ניתנת לביטול .\nהאם הינך בטוח/ה באופן סופי ומוחלט שברצונך להסיר פריטים אלה?</string>
+		</dict>
+	</dict>
+	<key>This is a permanent action. Are you ABSOLUTELY sure you want to delete these items? (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>many</key>
+			<string>זוהי פעולה שאינה ניתנת לביטול .\nהאם הינך בטוח/ה באופן מוחלט שברצונך למחוק פריטים אלה?</string>
+			<key>one</key>
+			<string>זוהי פעולה שאינה ניתנת לביטול .\nהאם הינך בטוח/ה באופן מוחלט שברצונך להסיר פריט זה?</string>
+			<key>other</key>
+			<string>זוהי פעולה שאינה ניתנת לביטול .\nהאם הינך בטוח/ה באופן מוחלט שברצונך למחוק פריטים אלה?</string>
+			<key>two</key>
+			<string>זוהי פעולה שאינה ניתנת לביטול .\nהאם הינך בטוח/ה באופן מוחלט שברצונך למחוק פריטים אלה?</string>
+		</dict>
+	</dict>
+	<key>This is a permanent action. Are you sure you want to remove these items? (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>many</key>
+			<string>זוהי פעולה שאינה ניתנת לביטול .\nהאם הינך בטוח/ה שברצונך להסיר פריטים אלה?</string>
+			<key>one</key>
+			<string>זוהי פעולה שאינה ניתנת לביטול .\nהאם הינך בטוח/ה שברצונך להסיר פריט זה?</string>
+			<key>other</key>
+			<string>זוהי פעולה שאינה ניתנת לביטול .\nהאם הינך בטוח/ה שברצונך להסיר פריטים אלה?</string>
+			<key>two</key>
+			<string>זוהי פעולה שאינה ניתנת לביטול .\nהאם הינך בטוח/ה שברצונך להסיר פריטים אלה?</string>
+		</dict>
+	</dict>
+	<key>of %d photos (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>many</key>
+			<string>מתוך %d\nתמונות</string>
+			<key>one</key>
+			<string>מתוך תמונה\nאחת</string>
+			<key>other</key>
+			<string>מתוך %d\nתמונות</string>
+			<key>two</key>
+			<string>מתוך שתי\nתמונות</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

@@ -1,0 +1,558 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Article (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>‏%d مقالات</string>
+			<key>many</key>
+			<string>‏%d مقالة</string>
+			<key>one</key>
+			<string>مقالة واحدة</string>
+			<key>other</key>
+			<string>‏%d مقالة</string>
+			<key>two</key>
+			<string>مقالتان</string>
+			<key>zero</key>
+			<string>‏%d مقالة</string>
+		</dict>
+	</dict>
+	<key>Bookmark (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>‏%d إشارات مرجعية</string>
+			<key>many</key>
+			<string>‏%d إشارة مرجعية</string>
+			<key>one</key>
+			<string>إشارة مرجعية</string>
+			<key>other</key>
+			<string>‏%d إشارة مرجعية</string>
+			<key>two</key>
+			<string>إشارتان مرجعيتان</string>
+			<key>zero</key>
+			<string>‏%d إشارة مرجعية</string>
+		</dict>
+	</dict>
+	<key>Burst (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>‏%d صور تتابع</string>
+			<key>many</key>
+			<string>‏%d صورة تتابع</string>
+			<key>one</key>
+			<string>صورة تتابع واحدة</string>
+			<key>other</key>
+			<string>‏%d صورة تتابع</string>
+			<key>two</key>
+			<string>صورتا تتابع</string>
+			<key>zero</key>
+			<string>‏%d تتابع</string>
+		</dict>
+	</dict>
+	<key>Calendar event (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>‏%d أحداث في التقويم</string>
+			<key>many</key>
+			<string>‏%d حدثًا في التقويم</string>
+			<key>one</key>
+			<string>حدث واحد في التقويم</string>
+			<key>other</key>
+			<string>‏%d حدث في التقويم</string>
+			<key>two</key>
+			<string>حدثان في التقويم</string>
+			<key>zero</key>
+			<string>‏%d حدث في التقويم</string>
+		</dict>
+	</dict>
+	<key>Contact (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>‏%d جهات اتصال</string>
+			<key>many</key>
+			<string>‏%d جهة اتصال</string>
+			<key>one</key>
+			<string>جهة اتصال واحدة</string>
+			<key>other</key>
+			<string>‏%d جهة اتصال</string>
+			<key>two</key>
+			<string>جهتي اتصال</string>
+			<key>zero</key>
+			<string>‏%d جهة اتصال</string>
+		</dict>
+	</dict>
+	<key>Decimal Place (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>‏%d منازل عشرية</string>
+			<key>many</key>
+			<string>‏%d منزلاً عشريًا</string>
+			<key>one</key>
+			<string>منزل عشري واحد</string>
+			<key>other</key>
+			<string>‏%d منزل عشري</string>
+			<key>two</key>
+			<string>منزلان عشريان</string>
+			<key>zero</key>
+			<string>‏%d منزل عشري</string>
+		</dict>
+	</dict>
+	<key>Event (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>‏%d أحداث</string>
+			<key>many</key>
+			<string>‏%d حدثًا</string>
+			<key>one</key>
+			<string>حدث واحد</string>
+			<key>other</key>
+			<string>‏%d حدث</string>
+			<key>two</key>
+			<string>حدثين</string>
+			<key>zero</key>
+			<string>‏%d حدث</string>
+		</dict>
+	</dict>
+	<key>Event attendee (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>‏%d حاضرين في الحدث</string>
+			<key>many</key>
+			<string>‏%d حاضرًا في الحدث</string>
+			<key>one</key>
+			<string>حاضر واحد في الحدث</string>
+			<key>other</key>
+			<string>‏%d حاضر في الحدث</string>
+			<key>two</key>
+			<string>حاضران في الحدث</string>
+			<key>zero</key>
+			<string>‏%d حاضر في الحدث</string>
+		</dict>
+	</dict>
+	<key>Extra Ingredient (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>‏%d مكونات إضافية</string>
+			<key>many</key>
+			<string>‏%d مكونًا إضافيًا</string>
+			<key>one</key>
+			<string>مكون إضافي</string>
+			<key>other</key>
+			<string>‏%d مكون إضافي</string>
+			<key>two</key>
+			<string>مكونان إضافيان</string>
+			<key>zero</key>
+			<string>‏%d مكون إضافي</string>
+		</dict>
+	</dict>
+	<key>File (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>‏%d ملفات</string>
+			<key>many</key>
+			<string>‏%d ملفًا</string>
+			<key>one</key>
+			<string>ملف واحد</string>
+			<key>other</key>
+			<string>‏%d ملف</string>
+			<key>two</key>
+			<string>ملفان</string>
+			<key>zero</key>
+			<string>‏%d ملف</string>
+		</dict>
+	</dict>
+	<key>GIF (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>‏%d صور GIF</string>
+			<key>many</key>
+			<string>‏%d صورة GIF</string>
+			<key>one</key>
+			<string>‏GIF واحدة</string>
+			<key>other</key>
+			<string>‏%d صورة GIF</string>
+			<key>two</key>
+			<string>صورتا GIF</string>
+			<key>zero</key>
+			<string>‏%d ‏GIF</string>
+		</dict>
+	</dict>
+	<key>Health sample (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>‏%d عينات من "صحتي"</string>
+			<key>many</key>
+			<string>‏%d عينة من "صحتي"</string>
+			<key>one</key>
+			<string>عينة صحة واحدة</string>
+			<key>other</key>
+			<string>‏%d عينة من "صحتي"</string>
+			<key>two</key>
+			<string>عينتان من "صحتي"</string>
+			<key>zero</key>
+			<string>‏%d عينة من "صحتي"</string>
+		</dict>
+	</dict>
+	<key>Image (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>‏%d صور</string>
+			<key>many</key>
+			<string>‏%d صورة</string>
+			<key>one</key>
+			<string>صورة واحدة</string>
+			<key>other</key>
+			<string>‏%d صورة</string>
+			<key>two</key>
+			<string>صورتان</string>
+			<key>zero</key>
+			<string>‏%d صورة</string>
+		</dict>
+	</dict>
+	<key>Item (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>‏%d عناصر</string>
+			<key>many</key>
+			<string>‏%d عنصرًا</string>
+			<key>one</key>
+			<string>عنصر واحد</string>
+			<key>other</key>
+			<string>‏%d عنصر</string>
+			<key>two</key>
+			<string>عنصران</string>
+			<key>zero</key>
+			<string>‏%d عنصر</string>
+		</dict>
+	</dict>
+	<key>Live Photo (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>‏%d صور Live Photos</string>
+			<key>many</key>
+			<string>‏%d صورة Live Photos</string>
+			<key>one</key>
+			<string>‏Live Photo واحدة</string>
+			<key>other</key>
+			<string>‏%d صورة Live Photos</string>
+			<key>two</key>
+			<string>صورتا Live Photo</string>
+			<key>zero</key>
+			<string>‏%d ‏Live Photo</string>
+		</dict>
+	</dict>
+	<key>Location (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>‏%d مواقع</string>
+			<key>many</key>
+			<string>‏%d موقعًا</string>
+			<key>one</key>
+			<string>موقع واحد</string>
+			<key>other</key>
+			<string>‏%d موقع</string>
+			<key>two</key>
+			<string>موقعان</string>
+			<key>zero</key>
+			<string>‏%d موقع</string>
+		</dict>
+	</dict>
+	<key>Note (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>‏%d ملاحظات</string>
+			<key>many</key>
+			<string>‏%d ملاحظة</string>
+			<key>one</key>
+			<string>ملاحظة واحدة</string>
+			<key>other</key>
+			<string>‏%d ملاحظة</string>
+			<key>two</key>
+			<string>ملاحظتان</string>
+			<key>zero</key>
+			<string>‏%d ملاحظة</string>
+		</dict>
+	</dict>
+	<key>Photo (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>‏%d صور</string>
+			<key>many</key>
+			<string>‏%d صورة</string>
+			<key>one</key>
+			<string>صورة واحدة</string>
+			<key>other</key>
+			<string>‏%d صورة</string>
+			<key>two</key>
+			<string>صورتان</string>
+			<key>zero</key>
+			<string>لا توجد صور</string>
+		</dict>
+	</dict>
+	<key>Reminder (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>‏%d تذكيرات</string>
+			<key>many</key>
+			<string>‏%d تذكيرًا</string>
+			<key>one</key>
+			<string>تذكير واحد</string>
+			<key>other</key>
+			<string>‏%d تذكير</string>
+			<key>two</key>
+			<string>تذكيران</string>
+			<key>zero</key>
+			<string>‏%d تذكير</string>
+		</dict>
+	</dict>
+	<key>Screenshot (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>‏%d لقطات شاشة</string>
+			<key>many</key>
+			<string>‏%d لقطة شاشة</string>
+			<key>one</key>
+			<string>لقطة شاشة واحدة</string>
+			<key>other</key>
+			<string>‏%d لقطة شاشة</string>
+			<key>two</key>
+			<string>لقطتا شاشة</string>
+			<key>zero</key>
+			<string>‏%d لقطة شاشة</string>
+		</dict>
+	</dict>
+	<key>Second (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>‏%d ثوانٍ</string>
+			<key>many</key>
+			<string>‏%d ثانية</string>
+			<key>one</key>
+			<string>ثانية واحدة</string>
+			<key>other</key>
+			<string>‏%d ثانية</string>
+			<key>two</key>
+			<string>ثانيتان</string>
+			<key>zero</key>
+			<string>‏%d ثانية</string>
+		</dict>
+	</dict>
+	<key>Time (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>‏%d مرات</string>
+			<key>many</key>
+			<string>‏%d مرة</string>
+			<key>one</key>
+			<string>مرة واحدة</string>
+			<key>other</key>
+			<string>‏%d مرة</string>
+			<key>two</key>
+			<string>مرتان</string>
+			<key>zero</key>
+			<string>‏%d مرات</string>
+		</dict>
+	</dict>
+	<key>Video (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>‏%d فيديوهات</string>
+			<key>many</key>
+			<string>‏%d فيديو</string>
+			<key>one</key>
+			<string>فيديو واحد</string>
+			<key>other</key>
+			<string>‏%d فيديو</string>
+			<key>two</key>
+			<string>فيديوهان</string>
+			<key>zero</key>
+			<string>‏%d فيديو</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

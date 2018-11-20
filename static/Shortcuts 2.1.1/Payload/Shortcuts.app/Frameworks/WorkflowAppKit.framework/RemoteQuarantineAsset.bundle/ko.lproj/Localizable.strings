@@ -1,0 +1,4 @@
+"This JavaScript is similar to a script that is known to be unsafe. For your security it will not run." = "This JavaScript is similar to a script that is known to be unsafe. For your security it will not run.";
+"Unsafe JavaScript" = "Unsafe JavaScript";
+"Use of `eval()` not allowed" = "`eval()` 사용이 허용되지 않음";
+"Using `eval()` in JavaScript is unsafe. Instead, please write JavaScript code directly." = "JavaScript에서`eval()` 사용은 안전하지 않습니다. 그 대신 JavaScript 코드를 바로 작성하십시오.";

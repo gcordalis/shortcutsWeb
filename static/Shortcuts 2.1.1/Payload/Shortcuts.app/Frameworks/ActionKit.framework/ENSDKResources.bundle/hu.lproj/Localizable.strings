@@ -1,0 +1,31 @@
+/* 
+  Localizable.strings
+  evernote-sdk-ios
+
+  Created by Eric Cheng on 1/26/15.
+  Copyright (c) 2015 Evernote Corporation. All rights reserved.
+*/
+
+"Save to Evernote" = "Mentés az Evernote-ba";
+
+"Add Title" = "Cím hozzáadása";
+
+"Add Tag" = "Címke hozzáadása";
+
+"Untitled note" = "Névtelen jegyzet";
+
+"Untitled" = "Névtelen";
+
+"Notebooks" = "Jegyzettömbök";
+
+"Current" = "Jelenlegi";
+
+"Recent Notebooks" = "Legutóbbi jegyzettömbök";
+
+"All Notebooks" = "Összes jegyzettömb";
+
+"Notebook" = "Jegyzettömb";
+
+"Evernote-International" = "Evernote – nemzetközi";
+
+"Evernote-China" = "Evernote – Kína";

@@ -1,0 +1,606 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>%2$@ and %1$d other files (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%2$@ i %1$d inne pliki</string>
+			<key>many</key>
+			<string>%2$@ i %1$d innych plików</string>
+			<key>one</key>
+			<string>%2$@ i %1$d inny plik</string>
+			<key>other</key>
+			<string>%2$@ i %1$d innego pliku</string>
+		</dict>
+	</dict>
+	<key>%d App Store apps (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d aplikacje z App Store</string>
+			<key>many</key>
+			<string>%d aplikacji z App Store</string>
+			<key>one</key>
+			<string>%d aplikacja z App Store</string>
+			<key>other</key>
+			<string>%d aplikacji z App Store</string>
+		</dict>
+	</dict>
+	<key>%d Bar codes (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d kody paskowe</string>
+			<key>many</key>
+			<string>%d kodów paskowych</string>
+			<key>one</key>
+			<string>%d kod paskowy</string>
+			<key>other</key>
+			<string>%d kodu paskowego</string>
+		</dict>
+	</dict>
+	<key>%d Blood pressures (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d ciśnienia tętnicze</string>
+			<key>many</key>
+			<string>%d ciśnień tętniczych</string>
+			<key>one</key>
+			<string>%d ciśnienie tętnicze</string>
+			<key>other</key>
+			<string>%d ciśnienia tętniczego</string>
+		</dict>
+	</dict>
+	<key>%d Box files (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d pliki Box</string>
+			<key>many</key>
+			<string>%d plików Box</string>
+			<key>one</key>
+			<string>%d plik Box</string>
+			<key>other</key>
+			<string>%d pliku Box</string>
+		</dict>
+	</dict>
+	<key>%d Dropbox files (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d pliki Dropbox</string>
+			<key>many</key>
+			<string>%d plików Dropbox</string>
+			<key>one</key>
+			<string>%d plik Dropbox</string>
+			<key>other</key>
+			<string>%d pliku Dropbox</string>
+		</dict>
+	</dict>
+	<key>%d Evernote notes (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d notatki Evernote</string>
+			<key>many</key>
+			<string>%d notatek Evernote</string>
+			<key>one</key>
+			<string>%d notatka Evernote</string>
+			<key>other</key>
+			<string>%d notatki Evernote</string>
+		</dict>
+	</dict>
+	<key>%d Giphy items (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d rzeczy Giphy</string>
+			<key>many</key>
+			<string>%d rzeczy Giphy</string>
+			<key>one</key>
+			<string>%d rzecz Giphy</string>
+			<key>other</key>
+			<string>%d rzeczy Giphy</string>
+		</dict>
+	</dict>
+	<key>%d Health samples (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d próbki zdrowia</string>
+			<key>many</key>
+			<string>%d próbek zdrowia</string>
+			<key>one</key>
+			<string>%d próbka zdrowia</string>
+			<key>other</key>
+			<string>%d próbki zdrowia</string>
+		</dict>
+	</dict>
+	<key>%d Text matches (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d dopasowania tekstu</string>
+			<key>many</key>
+			<string>%d dopasowań tekstu</string>
+			<key>one</key>
+			<string>%d dopasowanie tekstu</string>
+			<key>other</key>
+			<string>%d dopasowania tekstu</string>
+		</dict>
+	</dict>
+	<key>%d Trello boards (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d tablice Trello</string>
+			<key>many</key>
+			<string>%d tablic Trello</string>
+			<key>one</key>
+			<string>%d tablica Trello</string>
+			<key>other</key>
+			<string>%d tablicy Trello</string>
+		</dict>
+	</dict>
+	<key>%d Trello cards (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d karty Trello</string>
+			<key>many</key>
+			<string>%d kart Trello</string>
+			<key>one</key>
+			<string>%d karta Trello</string>
+			<key>other</key>
+			<string>%d karty Trello</string>
+		</dict>
+	</dict>
+	<key>%d Trello items (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d rzeczy Trello</string>
+			<key>many</key>
+			<string>%d rzeczy Trello</string>
+			<key>one</key>
+			<string>%d rzecz Trello</string>
+			<key>other</key>
+			<string>%d rzeczy Trello</string>
+		</dict>
+	</dict>
+	<key>%d Trello lists (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d listy Trello</string>
+			<key>many</key>
+			<string>%d list Trello</string>
+			<key>one</key>
+			<string>%d lista Trello</string>
+			<key>other</key>
+			<string>%d listy Trello</string>
+		</dict>
+	</dict>
+	<key>%d Ulysses sheets (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d arkusze Ulysses</string>
+			<key>many</key>
+			<string>%d arkuszy Ulysses</string>
+			<key>one</key>
+			<string>%d arkusz Ulysses</string>
+			<key>other</key>
+			<string>%d arkusza Ulysses</string>
+		</dict>
+	</dict>
+	<key>%d Weather Conditions (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d zestawy warunków pogodowych</string>
+			<key>many</key>
+			<string>%d zestawów warunków pogodowych</string>
+			<key>one</key>
+			<string>%d zestaw warunków pogodowych</string>
+			<key>other</key>
+			<string>%d zestawu warunków pogodowych</string>
+		</dict>
+	</dict>
+	<key>%d Workout samples (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d próbki treningu</string>
+			<key>many</key>
+			<string>%d próbek treningu</string>
+			<key>one</key>
+			<string>%d próbka treningu</string>
+			<key>other</key>
+			<string>%d próbki treningu</string>
+		</dict>
+	</dict>
+	<key>%d iTunes artists (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d wykonawców iTunes</string>
+			<key>many</key>
+			<string>%d wykonawców iTunes</string>
+			<key>one</key>
+			<string>%d wykonawca iTunes</string>
+			<key>other</key>
+			<string>%d wykonawcy iTunes</string>
+		</dict>
+	</dict>
+	<key>%d iTunes products (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d produkty iTunes</string>
+			<key>many</key>
+			<string>%d produktów iTunes</string>
+			<key>one</key>
+			<string>%d produkt iTunes</string>
+			<key>other</key>
+			<string>%d produktu iTunes</string>
+		</dict>
+	</dict>
+	<key>%d items (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d rzeczy</string>
+			<key>many</key>
+			<string>%d rzeczy</string>
+			<key>one</key>
+			<string>%d rzecz</string>
+			<key>other</key>
+			<string>%d rzeczy</string>
+		</dict>
+	</dict>
+	<key>Are you ABSOLUTELY POSITIVELY sure you want to delete %1$@ and %2$d other notes? (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>Czy NA PEWNO chcesz usunąć %1$@ oraz %2$d inne notatki?</string>
+			<key>many</key>
+			<string>Czy NA PEWNO chcesz usunąć %1$@ oraz %2$d innych notatek?</string>
+			<key>one</key>
+			<string>Czy NA PEWNO chcesz usunąć %@ i jedną inną notatkę?</string>
+			<key>other</key>
+			<string>Czy NA PEWNO chcesz usunąć %1$@ oraz %2$d innej notatki?</string>
+		</dict>
+	</dict>
+	<key>Are you ABSOLUTELY sure you want to delete %1$@ and %2$d other notes? (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>Czy NA PEWNO chcesz usunąć %1$@ oraz %2$d inne notatki?</string>
+			<key>many</key>
+			<string>Czy NA PEWNO chcesz usunąć %1$@ oraz %2$d innych notatek?</string>
+			<key>one</key>
+			<string>Czy NA PEWNO chcesz usunąć %@ i jedną inną notatkę?</string>
+			<key>other</key>
+			<string>Czy NA PEWNO chcesz usunąć %1$@ oraz %2$d innej notatki?</string>
+		</dict>
+	</dict>
+	<key>Are you sure you want to delete %1$@ and %2$d other notes? (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>Czy na pewno chcesz usunąć %1$@ oraz %2$d inne notatki?</string>
+			<key>many</key>
+			<string>Czy na pewno chcesz usunąć %1$@ oraz %2$d innych notatek?</string>
+			<key>one</key>
+			<string>Czy na pewno chcesz usunąć %@ oraz jedną inną notatkę?</string>
+			<key>other</key>
+			<string>Czy na pewno chcesz usunąć %1$@ oraz %2$d innej notatki?</string>
+		</dict>
+	</dict>
+	<key>Delete %1$@ and %2$d other notes? (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>Usunąć %1$@ i %2$d inne notatki?</string>
+			<key>many</key>
+			<string>Usunąć %1$@ i %2$d innych notatek?</string>
+			<key>one</key>
+			<string>Usunąć %@ i jedną inną notatkę?</string>
+			<key>other</key>
+			<string>Usunąć %1$@ i %2$d innej notatki?</string>
+		</dict>
+	</dict>
+	<key>Remove %d Events? (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>Usunąć %d wydarzenia?</string>
+			<key>many</key>
+			<string>Usunąć %d wydarzeń?</string>
+			<key>one</key>
+			<string>Usunąć %d wydarzenie?</string>
+			<key>other</key>
+			<string>Usunąć %d wydarzenia?</string>
+		</dict>
+	</dict>
+	<key>Remove %d Reminders? (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>Usunąć %d przypomnienia?</string>
+			<key>many</key>
+			<string>Usunąć %d przypomnień?</string>
+			<key>one</key>
+			<string>Usunąć %d przypomnienie?</string>
+			<key>other</key>
+			<string>Usunąć %d przypomnienia?</string>
+		</dict>
+	</dict>
+	<key>This is a permanent action. Are you ABSOLUTELY POSITIVELY sure you want to remove these items? (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>Ta zmiana jest trwała.\nCzy NA PEWNO chcesz usunąć te rzeczy?</string>
+			<key>many</key>
+			<string>Ta zmiana jest trwała.\nCzy NA PEWNO chcesz usunąć te rzeczy?</string>
+			<key>one</key>
+			<string>Ta zmiana jest trwała.\nCzy NA PEWNO chcesz usunąć tę rzecz?</string>
+			<key>other</key>
+			<string>Ta zmiana jest trwała.\nCzy NA PEWNO chcesz usunąć te rzeczy?</string>
+		</dict>
+	</dict>
+	<key>This is a permanent action. Are you ABSOLUTELY sure you want to delete these items? (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>Ta zmiana jest trwała.\nCzy NA PEWNO chcesz usunąć te rzeczy?</string>
+			<key>many</key>
+			<string>Ta zmiana jest trwała.\nCzy NA PEWNO chcesz usunąć te rzeczy?</string>
+			<key>one</key>
+			<string>Ta zmiana jest trwała.\nCzy NA PEWNO chcesz usunąć tę rzecz?</string>
+			<key>other</key>
+			<string>Ta zmiana jest trwała.\nCzy NA PEWNO chcesz usunąć te rzeczy?</string>
+		</dict>
+	</dict>
+	<key>This is a permanent action. Are you sure you want to remove these items? (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>Ta zmiana jest trwała.\nCzy na pewno chcesz usunąć te rzeczy?</string>
+			<key>many</key>
+			<string>Ta zmiana jest trwała.\nCzy na pewno chcesz usunąć te rzeczy?</string>
+			<key>one</key>
+			<string>Ta zmiana jest trwała.\nCzy na pewno chcesz usunąć tę rzecz?</string>
+			<key>other</key>
+			<string>Ta zmiana jest trwała.\nCzy na pewno chcesz usunąć te rzeczy?</string>
+		</dict>
+	</dict>
+	<key>of %d photos (Pluralization)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@format_key@</string>
+		<key>format_key</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>z %d\nzdjęć</string>
+			<key>many</key>
+			<string>z %d\nzdjęć</string>
+			<key>one</key>
+			<string>z %d\nzdjęcia</string>
+			<key>other</key>
+			<string>z %d\nzdjęcia</string>
+		</dict>
+	</dict>
+</dict>
+</plist>
