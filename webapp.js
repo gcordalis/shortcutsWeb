@@ -49,7 +49,7 @@ webapp_io.on('connection', function(socket){
         console.log('Building Shortcut', data.shortcutName)
         
         const shortcut = buildShortcut(actions);
-        var shortcutPath = 'static/shortcuts/'+data.shortcutName+'.shortcut'
+        var shortcutPath = 'dist/static/shortcuts/'+data.shortcutName+'.shortcut'
         
         fs.writeFile(shortcutPath, shortcut, (err) => {
       if (err) {
@@ -57,7 +57,7 @@ webapp_io.on('connection', function(socket){
         return;
       }
       console.log(data.shortcutName+'.shortcut'+' created!');
-      socket.emit('shortcut-result', shortcutPath)      
+      socket.emit('shortcut-result', 'static/shortcuts/' +data.shortcutName+'.shortcut')
     });
     })
 
