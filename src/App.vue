@@ -20,26 +20,16 @@
 <!--       <v-btn>
         Edit
       </v-btn> -->
-      <v-alert
-        v-model="alert"
-        dismissible
-        type="success"
-        transition="slide-x-reverse-transition"
-        style="margin: 10px"
+      <div
+        v-for="i in shortcutColors"
+        :key="i.workflowColor"
+        class="colorPicker"
+        v-if="colorPicker"
       >
-        <v-icon>smartphone</v-icon>
-        <a :href="shortcutUrl" target="_blank" download><v-icon>save</v-icon></a>
-      </v-alert>
-        <div
-          v-for="i in shortcutColors"
-          :key="i.workflowColor"
-          class="colorPicker"
-          v-if="dialog"
-        >
-          <v-icon class="colorPicker" :style="'background-color: ' + i.rgb + '; color: #FFF'" @click="shortcutRgb = 'background-color: ' + i.rgb, shortcutColor = i.workflowColor, dialog = false">edit</v-icon>
-            
-        </div>
-        <v-icon class="actionIcon" :style="shortcutRgb + '; color: #FFF'" @click="dialog = !dialog">edit</v-icon>
+        <v-icon class="colorPicker" :style="'background-color: ' + i.rgb + '; color: #FFF'" @click="shortcutRgb = 'background-color: ' + i.rgb, shortcutColor = i.workflowColor, colorPicker = false">edit</v-icon>
+          
+      </div>
+      <v-icon class="actionIcon" :style="shortcutRgb + '; color: #FFF'" @click="colorPicker = !colorPicker; qrAlert = !qrAlert">edit</v-icon>
       <v-toolbar-title>
           <v-text-field
           label="Shortcut Name"
@@ -51,6 +41,28 @@
       </v-btn>
     </v-toolbar>
     <v-content>
+      <v-snackbar
+        v-model="qrAlert"
+        right='right'
+        :timeout="qrTimeout"
+        top='top'
+        class="completionAlert"
+      >
+        <v-container>
+          <v-layout row wrap>
+            <v-flex xs12>
+                <a :href="shortcutUrl" download>
+                  <v-img
+                    src="static/qr.png"
+                    class="grey lighten-2 qrBorderRadius"
+                  >
+                  </v-img>
+                </a>
+
+            </v-flex>
+          </v-layout>
+        </v-container>
+      </v-snackbar>
       <v-container>
         <v-slide-y-transition mode="out-in">
           <v-layout column>
@@ -73,13 +85,15 @@ export default {
       clipped: true,
       drawer: true,
       title: 'editcuts',
-      socket: require('socket.io-client')('http://localhost:8086'),
-      shortcutName: '',
-      alert: false,
+      // socket: require('socket.io-client')('45.76.114.106:8086'),
+      socket: require('socket.io-client')('localhost:8086'),
+      shortcutName: 'Shortcut-' + (new Date()).getTime(),
       shortcutUrl: '',
       shortcutColor: '4282601983',
       shortcutRgb: 'background-color: rgb(252, 17, 57)',
-      dialog: false
+      qrAlert: false,
+      qrTimeout: 5000,
+      colorPicker: false
     }
   },
   components: {
@@ -102,7 +116,7 @@ export default {
 
       that.socket.on('shortcut-result', function (data) {
         console.log('Got shortcut result', data)
-        that.alert = true
+        that.qrAlert = true
         that.shortcutUrl = '/' + data
       })
     })

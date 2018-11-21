@@ -79,3 +79,21 @@
   border-radius: 25%;
   margin-right: 4px;
 }
+
+.completionAlert {
+  height: 420px;
+}
+
+/* Completion alert box size + placement */
+.v-snack__content {
+  height: 288px;
+  max-height: 400px
+}
+
+.v-snack__wrapper {
+  border-radius: 27px
+}
+
+.qrBorderRadius {
+  border-radius: 9px;
+}
