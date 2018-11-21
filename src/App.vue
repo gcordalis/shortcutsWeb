@@ -51,9 +51,9 @@
         <v-container>
           <v-layout row wrap>
             <v-flex xs12>
-                <a :href="shortcutUrl" target="_blank" download>
+                <a :href="'static/shortcuts' + shortcutUrl" target="_blank" download>
                   <v-img
-                    src="static/qr.png"
+                    :src="'static/shortcuts/qr/'+shortcutName+'.svg'"
                     class="grey lighten-2 qrBorderRadius"
                   >
                   </v-img>
@@ -85,8 +85,8 @@ export default {
       clipped: true,
       drawer: true,
       title: 'editcuts',
-      socket: require('socket.io-client')('45.76.114.106:8086'),
-      // socket: require('socket.io-client')('localhost:8086'),
+      // socket: require('socket.io-client')('45.76.114.106:8086'),
+      socket: require('socket.io-client')('localhost:8086'),
       shortcutName: 'Shortcut-' + (new Date()).getTime(),
       shortcutUrl: '',
       shortcutColor: '4282601983',

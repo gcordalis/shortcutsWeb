@@ -2,6 +2,8 @@ const express = require('express')
 var path = require('path')
 const cors = require('cors')
 var fs = require('fs')
+var qr = require('qr-image');
+
 const {
   buildShortcut,
   withVariables,
@@ -52,12 +54,19 @@ webapp_io.on('connection', function(socket){
         var shortcutPath = 'dist/static/shortcuts/'+data.shortcutName+'.shortcut'
         
         fs.writeFile(shortcutPath, shortcut, (err) => {
-      if (err) {
-        console.error('Something went wrong :(', err);
-        return;
-      }
-      console.log(data.shortcutName+'.shortcut'+' created!');
-      socket.emit('shortcut-result', 'static/shortcuts/' +data.shortcutName+'.shortcut')
+          if (err) {
+            console.error('Something went wrong :(', err);
+            return;
+        }
+        console.log(data.shortcutName+'.shortcut'+' created!');
+
+        // Generating QR Code
+        console.log('Generating QR code for ', data.shortcutName, '.shortcut')
+        var shortcutQr = qr.image('shortcuts://import-workflow?url=http://45.76.114.106/static/shortcuts/'  +data.shortcutName+'.shortcut&name=' + data.shortcutName, { type: 'svg' });
+        shortcutQr.pipe(require('fs').createWriteStream('dist/static/shortcuts/qr/'+data.shortcutName+'.svg'));
+        console.log('QR code generated and saved to: ', 'dist/static/shortcuts/qr/'+data.shortcutName+'.svg')
+
+        socket.emit('shortcut-result', data.shortcutName+'.shortcut')
     });
     })
 
