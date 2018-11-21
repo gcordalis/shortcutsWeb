@@ -2,7 +2,7 @@
   <v-card class="actionCard">
     <v-card-title primary-title :style="action.titleColor">
       <v-layout>
-        <v-flex xs11 class="text-xs-left">
+        <v-flex xs8 class="text-xs-left">
           <h3 class="headline mb-0">
             <v-icon v-html="action.icon" class="actionIcon" :style="action.iconColor"></v-icon>
             {{ action.name }}
@@ -11,7 +11,7 @@
 <!--         <v-flex xs10>
           <h3 class="headline mb-0">{{ action.name }}</h3>
         </v-flex> -->
-        <v-flex xs1 class="text-xs-right">
+        <v-flex xs4 class="text-xs-right">
           <h3 class="headline mb-0">
             <v-icon class="actionCloseIcon" @click="action.isVisible = !action.isVisible">remove_circle</v-icon>
             <v-icon class="actionCloseIcon" @click="removeActionLocal(action)">cancel</v-icon>
