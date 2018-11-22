@@ -87,7 +87,8 @@
 /* Completion alert box size + placement */
 .v-snack__content {
   height: 288px;
-  max-height: 400px
+  max-height: 400px;
+  padding: 0;
 }
 
 .v-snack__wrapper {

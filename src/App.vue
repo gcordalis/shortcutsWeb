@@ -29,7 +29,7 @@
         <v-icon class="colorPicker" :style="'background-color: ' + i.rgb + '; color: #FFF'" @click="shortcutRgb = 'background-color: ' + i.rgb, shortcutColor = i.workflowColor, colorPicker = false">edit</v-icon>
           
       </div>
-      <v-icon class="actionIcon" :style="shortcutRgb + '; color: #FFF'" @click="colorPicker = !colorPicker; qrAlert = !qrAlert">edit</v-icon>
+      <v-icon class="actionIcon" :style="shortcutRgb + '; color: #FFF'" @click="colorPicker = !colorPicker">edit</v-icon>
       <v-toolbar-title>
           <v-text-field
           label="Shortcut Name"
@@ -50,7 +50,7 @@
       >
         <v-container>
           <v-layout row wrap>
-            <v-flex xs12>
+            <v-flex xs12 text-xs-center>
                 <a :href="'static/shortcuts' + shortcutUrl" target="_blank" download>
                   <v-img
                     :src="'static/shortcuts/qr/'+shortcutName+'.svg'"
@@ -84,7 +84,7 @@ export default {
     return {
       clipped: true,
       drawer: true,
-      title: 'editcuts',
+      title: 'Shortcuts Web',
       // socket: require('socket.io-client')('45.76.114.106:8086'),
       socket: require('socket.io-client')('localhost:8086'),
       shortcutName: 'Shortcut-' + (new Date()).getTime(),
@@ -92,7 +92,7 @@ export default {
       shortcutColor: '4282601983',
       shortcutRgb: 'background-color: rgb(252, 17, 57)',
       qrAlert: false,
-      qrTimeout: 5000,
+      qrTimeout: 500000,
       colorPicker: false
     }
   },
