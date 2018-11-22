@@ -9,7 +9,7 @@
     "start": "node server.js",
     "lint": "eslint --ext .js,.vue src",
     "build": "node build/build.js",
-    "heroku-postbuild": "webpack -p"
+    "heroku-postbuild": "npm install --only=dev --no-shrinkwrap && npm run build"
   },
   "dependencies": {
     "@joshfarrant/shortcuts-js": "^0.1.5",
