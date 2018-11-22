@@ -20,6 +20,7 @@ const {
   getContentsOfUrl
 } = require('@joshfarrant/shortcuts-js/actions')
 
+app.use(express.static(__dirname + '/dist'));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(cors())
