@@ -5,5 +5,5 @@ const prodEnv = require('./prod.env')
 module.exports = merge(prodEnv, {
   NODE_ENV: '"development"',
   SERVER_URL: '"http://localhost"',
-  port: '"8086"',
+  PORT: '"8086"',
 })

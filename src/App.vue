@@ -113,12 +113,12 @@ export default {
   created () {
     if (process.env.NODE_ENV === 'production') {
       this.serverUrl = process.env.SERVER_URL
-      this.serverPort = process.env.port
-      console.log('This is the port:', process.env.port)
+      this.serverPort = process.env.PORT
+      console.log('This is the port:', process.env.PORT)
       console.log(this.serverUrl, ':', this.serverPort)
     } else {
       this.serverUrl = process.env.SERVER_URL
-      this.serverPort = '8086'
+      this.serverPort = process.env.PORT
       console.log(this.serverUrl, ':', this.serverPort)
     }
   },
