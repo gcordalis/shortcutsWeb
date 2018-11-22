@@ -93,7 +93,8 @@ export default {
       qrAlert: false,
       qrPath: '',
       qrTimeout: 10000,
-      colorPicker: false
+      colorPicker: false,
+      serverUrl: ''
     }
   },
   components: {
@@ -108,12 +109,19 @@ export default {
     })
   },
   name: 'App',
+  created () {
+    if (process.env.NODE_ENV === 'production') {
+      this.serverUrl = '45.76.114.106'
+    } else {
+      this.serverUrl = 'localhost'
+    }
+  },
 
   methods: {
     processShortcut: function () {
       // Send shortcut request to server
-      // this.axios.post('http://45.76.114.106:8086/createShortcut', {
-      this.axios.post('http://localhost:8086/createShortcut', {
+      this.axios.post('http://' + this.serverUrl + ':8086/createShortcut', {
+      // this.axios.post('http://localhost:8086/createShortcut', {
         actions: this.actionsUsed,
         shortcutName: this.shortcutName,
         shortcutColor: this.shortcutColor
