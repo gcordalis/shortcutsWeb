@@ -65,6 +65,7 @@ app.post('/createShortcut', (req, res) => {
 });
 
 app.listen(process.env.PORT || 8086)
+console.log('Started on', process.env.PORT)
 // app.listen(port, () => console.log(`Editcuts is listening on port ${port}!`))
 
 const actionMap = {

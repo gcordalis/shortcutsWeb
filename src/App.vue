@@ -114,16 +114,18 @@ export default {
     if (process.env.NODE_ENV === 'production') {
       this.serverUrl = '45.76.114.106'
       this.serverPort = process.env.PORT
+      console.log(this.serverUrl, ':', this.serverPort)
     } else {
       this.serverUrl = 'localhost'
       this.serverPort = '8086'
+      console.log(this.serverUrl, ':', this.serverPort)
     }
   },
 
   methods: {
     processShortcut: function () {
       // Send shortcut request to server
-      this.axios.post('http://' + this.serverUrl + ':' + serverPort+ '/createShortcut', {
+      this.axios.post('http://' + this.serverUrl + ':' + this.serverPort + '/createShortcut', {
       // this.axios.post('http://localhost:8086/createShortcut', {
         actions: this.actionsUsed,
         shortcutName: this.shortcutName,
