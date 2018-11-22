@@ -1,4 +1,5 @@
 const express = require('express')
+const cors = require('cors')
 const app = express()
 const port = 8086
 const bodyParser = require('body-parser')
@@ -21,6 +22,7 @@ const {
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
+app.use(cors())
 
 app.post('/createShortcut', (req, res) => {
   console.log('Request to create shortcut')

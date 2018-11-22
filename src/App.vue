@@ -92,7 +92,7 @@ export default {
       shortcutRgb: 'background-color: rgb(252, 17, 57)',
       qrAlert: false,
       qrPath: '',
-      qrTimeout: 5000,
+      qrTimeout: 10000,
       colorPicker: false
     }
   },
@@ -112,6 +112,7 @@ export default {
   methods: {
     processShortcut: function () {
       // Send shortcut request to server
+      // this.axios.post('http://45.76.114.106:8086/createShortcut', {
       this.axios.post('http://localhost:8086/createShortcut', {
         actions: this.actionsUsed,
         shortcutName: this.shortcutName,
@@ -121,7 +122,7 @@ export default {
         console.log(res.data.shortcutsResult.shortcutName, 'created')
         this.qrAlert = true
         this.shortcutUrl = res.data.shortcutsResult.shortcutPath
-        this.qrPath = '/' + res.data.shortcutsResult.qrPath
+        this.qrPath = res.data.shortcutsResult.qrPath
       })
       .catch((error) => {
         console.error(error)
