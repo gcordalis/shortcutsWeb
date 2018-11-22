@@ -1,8 +1,8 @@
 const express = require('express')
 var path = require('path')
-const cors = require('cors')
 var fs = require('fs')
 var qr = require('qr-image');
+const cors = require('cors')
 
 const {
   buildShortcut,
@@ -42,6 +42,7 @@ webapp_io.on('connection', function(socket){
     console.log('New connection to the webapp socket')
     socket.on('createShortcut',function(data){
         console.log('Creating a shortcut')
+        console.log(data)
 
         const actions = []
         

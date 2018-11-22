@@ -51,9 +51,9 @@
         <v-container>
           <v-layout row wrap>
             <v-flex xs12 text-xs-center>
-                <a :href="'static/shortcuts' + shortcutUrl" target="_blank" download>
+                <a :href="shortcutUrl" target="_blank" download>
                   <v-img
-                    :src="'static/shortcuts/qr/'+shortcutName+'.svg'"
+                    :src="qrPath"
                     class="grey lighten-2 qrBorderRadius"
                   >
                   </v-img>
@@ -85,14 +85,14 @@ export default {
       clipped: true,
       drawer: true,
       title: 'Shortcuts Web',
-      // socket: require('socket.io-client')('45.76.114.106:8086'),
-      socket: require('socket.io-client')('localhost:8086'),
+      axios: require('axios'),
       shortcutName: 'Shortcut-' + (new Date()).getTime(),
       shortcutUrl: '',
       shortcutColor: '4282601983',
       shortcutRgb: 'background-color: rgb(252, 17, 57)',
       qrAlert: false,
-      qrTimeout: 500000,
+      qrPath: '',
+      qrTimeout: 5000,
       colorPicker: false
     }
   },
@@ -108,36 +108,24 @@ export default {
     })
   },
   name: 'App',
-  created: function () {
-    var that = this
-    this.socket.on('connect', function (socket) {
-      that.socket.emit('hello')
-      console.log('Said hello to server')
 
-      that.socket.on('shortcut-result', function (data) {
-        console.log('Got shortcut result', data)
-        that.qrAlert = true
-        that.shortcutUrl = '/' + data
-      })
-    })
-  },
   methods: {
     processShortcut: function () {
-      // Send websocket to backend
-      if (this.socket.connected) {
-        console.log('Create Shortcut')
-        // console.log(this.actionsUsed)
-        this.socket.emit('createShortcut', {
-          actions: this.actionsUsed,
-          // actionName: this.actionsUsed[1].actionName,
-          // text: this.actionsUsed[1].text,
-          // number: this.actionsUsed[1].number,
-          shortcutName: this.shortcutName,
-          shortcutColor: this.shortcutColor
-        })
-        return
-      }
-      console.log('Tried to send a data but no connection to socket')
+      // Send shortcut request to server
+      this.axios.post('http://localhost:8086/createShortcut', {
+        actions: this.actionsUsed,
+        shortcutName: this.shortcutName,
+        shortcutColor: this.shortcutColor
+      })
+      .then((res) => {
+        console.log(res.data.shortcutsResult.shortcutName, 'created')
+        this.qrAlert = true
+        this.shortcutUrl = res.data.shortcutsResult.shortcutPath
+        this.qrPath = '/' + res.data.shortcutsResult.qrPath
+      })
+      .catch((error) => {
+        console.error(error)
+      })
     }
   }
 
