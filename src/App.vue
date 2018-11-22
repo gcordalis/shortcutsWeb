@@ -94,7 +94,8 @@ export default {
       qrPath: '',
       qrTimeout: 10000,
       colorPicker: false,
-      serverUrl: ''
+      serverUrl: '',
+      serverPort: ''
     }
   },
   components: {
@@ -112,15 +113,17 @@ export default {
   created () {
     if (process.env.NODE_ENV === 'production') {
       this.serverUrl = '45.76.114.106'
+      this.serverPort = process.env.PORT
     } else {
       this.serverUrl = 'localhost'
+      this.serverPort = '8086'
     }
   },
 
   methods: {
     processShortcut: function () {
       // Send shortcut request to server
-      this.axios.post('http://' + this.serverUrl + ':8086/createShortcut', {
+      this.axios.post('http://' + this.serverUrl + ':' + serverPort+ '/createShortcut', {
       // this.axios.post('http://localhost:8086/createShortcut', {
         actions: this.actionsUsed,
         shortcutName: this.shortcutName,
