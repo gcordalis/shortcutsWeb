@@ -112,7 +112,7 @@ export default {
   name: 'App',
   created () {
     if (process.env.NODE_ENV === 'production') {
-      this.serverUrl = '45.76.114.106'
+      this.serverUrl = process.env.HOST
       this.serverPort = process.env.PORT
       console.log(this.serverUrl, ':', this.serverPort)
     } else {
