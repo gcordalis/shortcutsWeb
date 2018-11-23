@@ -115,19 +115,17 @@ export default {
       this.serverUrl = process.env.SERVER_URL
       this.serverPort = process.env.PORT
       console.log('This is the port:', process.env.PORT)
-      console.log(this.serverUrl, ':', this.serverPort)
     } else {
       this.serverUrl = process.env.SERVER_URL
       this.serverPort = process.env.PORT
-      console.log(this.serverUrl, ':', this.serverPort)
     }
   },
 
   methods: {
     processShortcut: function () {
       // Send shortcut request to server
-      this.axios.post('/createShortcut', {
-      // this.axios.post('http://localhost:8086/createShortcut', {
+      // this.axios.post('/createShortcut', {
+      this.axios.post('http://localhost:8086/createShortcut', {
         actions: this.actionsUsed,
         shortcutName: this.shortcutName,
         shortcutColor: this.shortcutColor

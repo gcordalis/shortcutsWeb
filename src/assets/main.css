@@ -98,3 +98,8 @@
 .qrBorderRadius {
   border-radius: 9px;
 }
+
+/* Remove hover on button bar (torch for example) */
+.v-btn-toggle--selected {
+  box-shadow: none
+}

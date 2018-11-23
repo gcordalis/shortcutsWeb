@@ -8,6 +8,15 @@ export const actions = [{
   text: ''
 },
 {
+  icon: 'notes',
+  name: 'Text',
+  actionName: 'text',
+  titleColor: 'background-color: #F2F3F5',
+  iconColor: 'background-color: rgb(251, 195, 6); color: #FFF',
+  bodyColor: 'background-color: #FFF',
+  text: ''
+},
+{
   icon: 'dialpad',
   name: 'Number',
   actionName: 'number',
@@ -36,6 +45,42 @@ export const actions = [{
   text: ''
 },
 {
+  icon: 'settings',
+  name: 'Wait',
+  actionName: 'wait',
+  titleColor: 'background-color: #F2F3F5',
+  iconColor: 'background-color: rgb(118, 118, 123); color: #FFF',
+  bodyColor: 'background-color: #FFF',
+  text: ''
+},
+{
+  icon: 'settings',
+  name: 'Wait to Return',
+  actionName: 'waitToReturn',
+  titleColor: 'background-color: #F2F3F5',
+  iconColor: 'background-color: rgb(118, 118, 123); color: #FFF',
+  bodyColor: 'background-color: #FFF',
+  text: ''
+},
+{
+  icon: 'category',
+  name: 'View Content Graph',
+  actionName: 'viewContentGraph',
+  titleColor: 'background-color: #F2F3F5',
+  iconColor: 'background-color: rgb(41, 88, 212); color: #FFF',
+  bodyColor: 'background-color: #FFF',
+  text: ''
+},
+{
+  icon: 'lens',
+  name: 'Vibrate Device',
+  actionName: 'vibrateDevice',
+  titleColor: 'background-color: #F2F3F5',
+  iconColor: 'background-color: rgb(248, 37, 37); color: #FFF',
+  bodyColor: 'background-color: #FFF',
+  text: ''
+},
+{
   icon: 'link',
   name: 'URL',
   actionName: 'url',
@@ -45,22 +90,49 @@ export const actions = [{
   url: ''
 },
 {
-  icon: 'link',
-  name: 'Get Contents of URL',
-  actionName: 'getContentsOfUrl',
+  icon: 'flash_on',
+  name: 'Set Torch',
+  actionName: 'setTorch',
   titleColor: 'background-color: #F2F3F5',
-  iconColor: 'background-color: rgb(32, 178, 6); color: #FFF',
-  bodyColor: 'background-color: #FFF',
-  headers: [],
-  headersVisible: false,
-  method: '',
-  methodOptions: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE'],
-  requestBodyType: '',
-  requestBody: {},
-  requestOptions: ['JSON', 'Form', 'File']
+  iconColor: 'background-color: rgb(4, 95, 254); color: #FFF',
+  bodyColor: 'background-color: #FFF'
+},
+{
+  icon: 'settings',
+  name: 'Set Name',
+  actionName: 'setName',
+  titleColor: 'background-color: #F2F3F5',
+  iconColor: 'background-color: rgb(118, 118, 123); color: #FFF',
+  bodyColor: 'background-color: #FFF'
+},
+{
+  icon: 'battery_full',
+  name: 'Set Low Power Mode',
+  actionName: 'setLowPowerMode',
+  titleColor: 'background-color: #F2F3F5',
+  iconColor: 'background-color: rgb(63, 215, 82); color: #FFF',
+  bodyColor: 'background-color: #FFF'
 }
 ]
 
 export default {
   actions
 }
+
+// Actions to be added later
+
+// {
+//   icon: 'link',
+//   name: 'Get Contents of URL',
+//   actionName: 'getContentsOfUrl',
+//   titleColor: 'background-color: #F2F3F5',
+//   iconColor: 'background-color: rgb(32, 178, 6); color: #FFF',
+//   bodyColor: 'background-color: #FFF',
+//   headers: [],
+//   headersVisible: false,
+//   method: '',
+//   methodOptions: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE'],
+//   requestBodyType: '',
+//   requestBody: {},
+//   requestOptions: ['JSON', 'Form', 'File']
+// }

@@ -8,9 +8,6 @@
             {{ action.name }}
           </h3>
         </v-flex>
-<!--         <v-flex xs10>
-          <h3 class="headline mb-0">{{ action.name }}</h3>
-        </v-flex> -->
         <v-flex xs4 class="text-xs-right">
           <h3 class="headline mb-0">
             <v-icon class="actionCloseIcon" @click="action.isVisible = !action.isVisible">remove_circle</v-icon>
@@ -23,7 +20,15 @@
       <div v-if="action.name === 'Comment'">
         <v-textarea
           name="input-7-4"
-          label="Enter Comment..."
+          label="Enter comment..."
+          value=""
+          v-model="action.text"
+        ></v-textarea>
+      </div>
+      <div v-if="action.name === 'Text'">
+        <v-textarea
+          name="input-7-4"
+          label="Enter text..."
           value=""
           v-model="action.text"
         ></v-textarea>
@@ -94,6 +99,24 @@
           value=""
           v-model="action.text"
         ></v-textarea>
+      </div>
+      <div v-if="action.name === 'Wait'">
+        <v-layout>  
+          <v-flex xs3>
+            <v-list-tile-content>
+              <v-list-tile-title v-if="action.time !== 1"v-text="action.time + ' Seconds' "></v-list-tile-title>
+              <v-list-tile-title v-if="action.time === 1"v-text="action.time + ' Second' "></v-list-tile-title>
+            </v-list-tile-content>
+          </v-flex>
+          <v-flex xs9>
+            <v-text-field
+              placeholder="1"
+              type="number"
+              v-model="action.time"
+              reverse
+            ></v-text-field>
+          </v-flex>
+        </v-layout>
       </div>
       <div v-if="action.name === 'URL'">
         <v-layout>
@@ -196,6 +219,68 @@
             <v-list-tile-content>
               <v-list-tile-title v-text="'Add new field'"></v-list-tile-title>
             </v-list-tile-content>
+          </v-flex>
+        </v-layout>
+      </div>
+      <div v-if="action.name === 'Set Torch'">
+        <v-layout align-center justify-center>
+          <v-flex xs11>
+            <v-list-tile-content>
+              <v-list-tile-title v-text="'Torch'"></v-list-tile-title>
+            </v-list-tile-content>
+          </v-flex>
+          <v-flex xs1>
+            <v-btn-toggle v-model="toggle_exclusive">
+              <v-btn flat @click="action.setting = 'off'">
+                <v-icon>flash_off</v-icon>
+              </v-btn>
+              <v-btn flat @click="action.setting = 'on'">
+                <v-icon>flash_on</v-icon>
+              </v-btn>
+            </v-btn-toggle>
+          </v-flex>
+        </v-layout>
+      </div>
+      <div v-if="action.name === 'Set Name'">
+        <v-layout>
+          <v-flex xs3>
+            <v-list-tile-content>
+              <v-list-tile-title v-text="'Number'"></v-list-tile-title>
+            </v-list-tile-content>
+          </v-flex>
+          <v-flex xs9>
+            <v-text-field
+              placeholder="example"
+              type="text"
+              v-model="action.text"
+              reverse
+            ></v-text-field>
+          </v-flex>
+        </v-layout>
+        <v-layout>
+          <v-flex xs11>
+            <v-list-tile-content>
+              <v-list-tile-title v-text="'Don\'t Include File Extension'"></v-list-tile-title>
+            </v-list-tile-content>
+          </v-flex>
+          <v-flex xs1>
+            <v-switch
+              v-model="action.dontIncludeFileExtension"
+            ></v-switch>
+          </v-flex>
+        </v-layout>
+      </div>
+      <div v-if="action.name === 'Set Low Power Mode'">
+        <v-layout>
+          <v-flex xs11>
+            <v-list-tile-content>
+              <v-list-tile-title v-text="'Low Power Mode'"></v-list-tile-title>
+            </v-list-tile-content>
+          </v-flex>
+          <v-flex xs1>
+            <v-switch
+              v-model="action.value"
+            ></v-switch>
           </v-flex>
         </v-layout>
       </div>

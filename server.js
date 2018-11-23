@@ -19,7 +19,15 @@ const {
   number,
   showResult,
   url,
-  getContentsOfUrl
+  getContentsOfUrl,
+  wait,
+  waitToReturn,
+  viewContentGraph,
+  vibrateDevice,
+  text,
+  setTorch,
+  setName,
+  setLowPowerMode
 } = require('@joshfarrant/shortcuts-js/actions')
 
 app.use(express.static(__dirname + '/dist'));
@@ -30,6 +38,7 @@ app.use(cors())
 app.post('/createShortcut', (req, res) => {
   console.log('Request to create shortcut')
   console.log('Creating a shortcut')
+  console.log(req.body)
 
   const actions = []
   
@@ -68,7 +77,7 @@ app.post('/createShortcut', (req, res) => {
 });
 
 app.listen(process.env.PORT || 8086)
-console.log('Started on', process.env.PORT)
+console.log('Shortcuts Web has started on port', process.env.PORT)
 // app.listen(port, () => console.log(`Editcuts is listening on port ${port}!`))
 
 const actionMap = {
@@ -78,4 +87,12 @@ const actionMap = {
    showResult: (action) => showResult({text: action.text}),
    url: (action) => url({url: action.url}),
    getContentsOfUrl: (action) => getContentsOfUrl({headers: '', method: action.method, requestBodyType: action.requestBodyType, requestBody: action.requestBody}),
+   wait: (action) => wait({time: parseInt(action.time)}),
+   waitToReturn: (action) => waitToReturn({}),
+   viewContentGraph: (action) => viewContentGraph({}),
+   vibrateDevice: (action) => vibrateDevice({}),
+   text: (action) => text({text: action.text}),
+   setTorch: (action) => setTorch({setting: action.setting}),
+   setName : (action) => setName({name: action.text, dontIncludeFileExtension: action.dontIncludeFileExtension}),
+   setLowPowerMode: (action) => setLowPowerMode({value: action.value})
 }

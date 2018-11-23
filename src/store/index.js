@@ -73,7 +73,7 @@ const store = new Vuex.Store({
     ]
   },
   mutations: {
-    addAction (state, { name, icon, actionName, titleColor, bodyColor, iconColor, iconBgColor, methodOptions, requestOptions }) {
+    addAction (state, { name, icon, actionName, titleColor, bodyColor, iconColor, iconBgColor, methodOptions, requestOptions, time, setting, dontIncludeFileExtension, value }) {
       console.log('Added ', name)
       // console.log('Action Name: ', name, '\nAction Icon: ', icon, '\nTitle Color: ', titleColor, '\nBody Color: ', bodyColor)
       state.actionsUsed.push({
@@ -97,7 +97,11 @@ const store = new Vuex.Store({
         methodOptions,
         requestBodyType: '',
         requestBody: {},
-        requestOptions
+        requestOptions,
+        time: 1,
+        setting: true,
+        dontIncludeFileExtension: false,
+        value: true
       })
     },
     removeAction (state, id) {
