@@ -124,7 +124,7 @@ export default {
   methods: {
     processShortcut: function () {
       // Send shortcut request to server
-      this.axios.post('/createShortcut', {
+      this.axios.post('https://editcuts.herokuapp.com/createShortcut', {
       // this.axios.post('http://localhost:8086/createShortcut', {
         actions: this.actionsUsed,
         shortcutName: this.shortcutName,
