@@ -48,7 +48,7 @@ app.post('/createShortcut', (req, res) => {
 
     // Generating QR Code
     console.log('Generating QR code for ', req.body.shortcutName, '.shortcut')
-    var shortcutQr = qr.image('shortcuts://import-workflow?url=http://45.76.114.106/static/shortcuts/'  +req.body.shortcutName+'.shortcut&name=' + req.body.shortcutName, { type: 'svg' });
+    var shortcutQr = qr.image('shortcuts://import-workflow?url='+process.env.SERVER_URL+'/static/shortcuts/'  +req.body.shortcutName+'.shortcut&name=' + req.body.shortcutName, { type: 'svg' });
     shortcutQr.pipe(require('fs').createWriteStream('dist/static/shortcuts/qr/'+req.body.shortcutName+'.svg'));
     shortcutQr.pipe(require('fs').createWriteStream('static/shortcuts/qr/'+req.body.shortcutName+'.svg'));
     console.log('QR code generated and saved to: ', 'dist/static/shortcuts/qr/'+req.body.shortcutName+'.svg')
