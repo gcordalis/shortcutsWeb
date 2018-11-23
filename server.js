@@ -38,7 +38,7 @@ app.use(cors())
 app.post('/createShortcut', (req, res) => {
   console.log('Request to create shortcut')
   console.log('Creating a shortcut')
-  console.log(req.body)
+  // console.log(req.body)
 
   const actions = []
   
