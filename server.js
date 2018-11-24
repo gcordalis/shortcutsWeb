@@ -92,8 +92,8 @@ app.post("/createShortcut", (req, res) => {
 
 const port = process.env.PORT || 8086;
 
-app.listen(port);
-console.log("Shortcuts Web has started on port", port);
+app.listen(process.env.PORT || 8086);
+console.log("Shortcuts Web has started on port", process.env.PORT);
 
 const actionMap = {
   addToVariable: action => addToVariable({ name: action.text }),
