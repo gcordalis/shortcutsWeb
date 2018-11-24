@@ -90,8 +90,6 @@ app.post("/createShortcut", (req, res) => {
   });
 });
 
-const port = process.env.PORT || 8086;
-
 app.listen(process.env.PORT || 8086);
 console.log("Shortcuts Web has started on port", process.env.PORT);
 
