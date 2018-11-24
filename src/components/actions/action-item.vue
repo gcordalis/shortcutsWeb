@@ -1,7 +1,7 @@
 <template>
   <v-card class="actionCard">
     <v-card-title primary-title :style="action.titleColor">
-      <v-layout>
+      <v-layout align-center justify-center>
         <v-flex xs8 class="text-xs-left">
           <h3 class="headline mb-0">
             <v-icon v-html="action.icon" class="actionIcon" :style="action.iconColor"></v-icon>
@@ -34,7 +34,7 @@
         ></v-textarea>
       </div>
       <div v-if="action.name === 'Number'">
-        <v-layout>
+        <v-layout align-center justify-center>
           <v-flex xs3>
             <v-list-tile-content>
               <v-list-tile-title v-text="'Number'"></v-list-tile-title>
@@ -51,7 +51,7 @@
         </v-layout>
       </div>
       <div v-if="action.name === 'Calculate'">
-        <v-layout>
+        <v-layout align-center justify-center>
           <v-flex xs3>
             <v-list-tile-content>
               <v-list-tile-title v-text="'Operation'"></v-list-tile-title>
@@ -76,7 +76,7 @@
             </v-btn> -->
           </v-flex>
         </v-layout>
-        <v-layout>
+        <v-layout align-center justify-center>
           <v-flex xs3>
             <v-list-tile-content>
               <v-list-tile-title v-text="'Operand'"></v-list-tile-title>
@@ -101,7 +101,7 @@
         ></v-textarea>
       </div>
       <div v-if="action.name === 'Wait'">
-        <v-layout>  
+        <v-layout align-center justify-center>  
           <v-flex xs3>
             <v-list-tile-content>
               <v-list-tile-title v-if="action.time !== 1"v-text="action.time + ' Seconds' "></v-list-tile-title>
@@ -119,7 +119,7 @@
         </v-layout>
       </div>
       <div v-if="action.name === 'URL'">
-        <v-layout>
+        <v-layout align-center justify-center>
           <v-flex xs3>
             <v-list-tile-content>
               <v-list-tile-title v-text="'URL'"></v-list-tile-title>
@@ -136,7 +136,7 @@
         </v-layout>
       </div>
       <div v-if="action.name === 'Get Contents of URL'">
-        <v-layout>
+        <v-layout align-center justify-center>
           <v-flex xs11>
             <v-list-tile-content>
               <v-list-tile-title v-text="'Method'"></v-list-tile-title>
@@ -149,7 +149,7 @@
             ></v-select>
           </v-flex>
         </v-layout>
-        <v-layout>
+        <v-layout align-center justify-center>
           <v-flex xs11>
             <v-list-tile-content>
               <v-list-tile-title v-text="'Headers'"></v-list-tile-title>
@@ -230,7 +230,7 @@
             </v-list-tile-content>
           </v-flex>
           <v-flex xs1>
-            <v-btn-toggle v-model="toggle_exclusive">
+            <v-btn-toggle>
               <v-btn flat @click="action.setting = 'off'">
                 <v-icon>flash_off</v-icon>
               </v-btn>
@@ -242,10 +242,10 @@
         </v-layout>
       </div>
       <div v-if="action.name === 'Set Name'">
-        <v-layout>
+        <v-layout align-center justify-center>
           <v-flex xs3>
             <v-list-tile-content>
-              <v-list-tile-title v-text="'Number'"></v-list-tile-title>
+              <v-list-tile-title v-text="'Name'"></v-list-tile-title>
             </v-list-tile-content>
           </v-flex>
           <v-flex xs9>
@@ -257,7 +257,7 @@
             ></v-text-field>
           </v-flex>
         </v-layout>
-        <v-layout>
+        <v-layout align-center justify-center>
           <v-flex xs11>
             <v-list-tile-content>
               <v-list-tile-title v-text="'Don\'t Include File Extension'"></v-list-tile-title>
@@ -271,16 +271,137 @@
         </v-layout>
       </div>
       <div v-if="action.name === 'Set Low Power Mode'">
-        <v-layout>
-          <v-flex xs11>
+          <v-layout align-center justify-center>
+            <v-flex xs11>
+              <v-list-tile-content>
+                <v-list-tile-title v-text="'Low Power Mode'"></v-list-tile-title>
+              </v-list-tile-content>
+            </v-flex>
+            <v-flex xs1>
+              <v-switch
+                v-model="action.value"
+              ></v-switch>
+            </v-flex>
+          </v-layout>
+      </div>
+      <div v-if="action.name === 'Add to Variable'">
+          <v-layout align-center justify-center>
+            <v-flex xs3>
+              <v-list-tile-content>
+                <v-list-tile-title v-text="'Variable'"></v-list-tile-title>
+              </v-list-tile-content>
+            </v-flex>
+            <v-flex xs9>
+              <v-text-field
+                placeholder="Variable Name"
+                type="text"
+                v-model="action.text"
+                reverse
+              ></v-text-field>
+            </v-flex>
+          </v-layout>
+      </div>
+      <div v-if="action.name === 'Set Variable'">
+          <v-layout align-center justify-center>
+            <v-flex xs3>
+              <v-list-tile-content>
+                <v-list-tile-title v-text="'Variable'"></v-list-tile-title>
+              </v-list-tile-content>
+            </v-flex>
+            <v-flex xs9>
+              <v-text-field
+                placeholder="Variable Name"
+                type="text"
+                v-model="action.text"
+                reverse
+              ></v-text-field>
+            </v-flex>
+          </v-layout>
+      </div>
+      <div v-if="action.name === 'Get Variable'">
+          <v-layout align-center justify-center>
+            <v-flex xs3>
+              <v-list-tile-content>
+                <v-list-tile-title v-text="'Variable'"></v-list-tile-title>
+              </v-list-tile-content>
+            </v-flex>
+            <v-flex xs9>
+              <v-text-field
+                placeholder="Variable Name"
+                type="text"
+                v-model="action.text"
+                reverse
+              ></v-text-field>
+            </v-flex>
+          </v-layout>
+      </div>
+      <div v-if="action.name === 'Ask for Input'">
+        <v-layout align-center justify-center>
+          <v-flex xs3>
             <v-list-tile-content>
-              <v-list-tile-title v-text="'Low Power Mode'"></v-list-tile-title>
+              <v-list-tile-title v-text="'Question'"></v-list-tile-title>
             </v-list-tile-content>
           </v-flex>
-          <v-flex xs1>
-            <v-switch
-              v-model="action.value"
-            ></v-switch>
+          <v-flex xs9>
+            <v-text-field
+              placeholder="Enter text"
+              type="text"
+              v-model="action.text"
+              reverse
+            ></v-text-field>
+          </v-flex>
+        </v-layout>
+        <v-layout align-center justify-center>
+          <v-flex xs3>
+            <v-list-tile-content>
+              <v-list-tile-title v-text="'Default Answer'"></v-list-tile-title>
+            </v-list-tile-content>
+          </v-flex>
+          <v-flex xs9>
+            <v-text-field
+              placeholder="optional"
+              type="text"
+              v-model="action.defaultAnswer"
+              reverse
+            ></v-text-field>
+          </v-flex>
+        </v-layout>
+        <v-layout align-center justify-center>
+          <v-flex xs9>
+            <v-list-tile-content>
+              <v-list-tile-title v-text="'Input Type'"></v-list-tile-title>
+            </v-list-tile-content>
+          </v-flex>
+          <v-flex xs3>
+            <v-btn-toggle>
+              <v-btn flat @click="action.inputType = 'Text'">
+                Text
+              </v-btn>
+              <v-btn flat @click="action.inputType = 'Number'">
+                Number
+              </v-btn>
+              <v-btn flat @click="action.inputType = 'URL'">
+                URL
+              </v-btn>
+              <v-btn flat @click="action.inputType = 'Date'">
+                Date
+              </v-btn>
+            </v-btn-toggle>
+          </v-flex>
+        </v-layout>
+      </div>
+      <div v-if="action.name === 'Count'">
+        <v-layout align-center justify-center>
+          <v-flex xs10>
+            <v-list-tile-content>
+              <v-list-tile-title v-text="'Count'"></v-list-tile-title>
+            </v-list-tile-content>
+          </v-flex>
+          <v-flex xs2>
+            <v-select
+              :items="action.countOptions"
+              v-model="action.text"
+            ></v-select>
           </v-flex>
         </v-layout>
       </div>

@@ -14,20 +14,27 @@ const {
   withVariables,
 } = require('@joshfarrant/shortcuts-js')
 const {
+  addToVariable,
+  ask,
   calculate,
   comment,
-  number,
-  showResult,
-  url,
+  continueShortcutInApp,
+  count,
   getContentsOfUrl,
-  wait,
-  waitToReturn,
-  viewContentGraph,
-  vibrateDevice,
-  text,
-  setTorch,
+  getVariable,
+  number,
+  setLowPowerMode,
   setName,
-  setLowPowerMode
+  setTorch,
+  setVariable,
+  showResult,
+  text,
+  url,
+  vibrateDevice,
+  viewContentGraph,
+  wait,
+  waitToReturn
+
 } = require('@joshfarrant/shortcuts-js/actions')
 
 app.use(express.static(__dirname + '/dist'));
@@ -81,18 +88,24 @@ console.log('Shortcuts Web has started on port', process.env.PORT)
 // app.listen(port, () => console.log(`Editcuts is listening on port ${port}!`))
 
 const actionMap = {
-   comment: (action) => comment({text: action.text}),
-   number: (action) => number({number: parseInt(action.number)}),
+   addToVariable: (action) => addToVariable({name: action.text}),
+   ask: (action) => ask({inputType: action.inputType, defaultAnswer: action.defaultAnswer, question: action.text}),
    calculate: (action) => calculate({operand: parseInt(action.operand), operation: action.operation}),
-   showResult: (action) => showResult({text: action.text}),
-   url: (action) => url({url: action.url}),
+   comment: (action) => comment({text: action.text}),
+   continueShortcutInApp: (action) => continueShortcutInApp({}),
+   count: (action) => count({type: action.text}),
    getContentsOfUrl: (action) => getContentsOfUrl({headers: '', method: action.method, requestBodyType: action.requestBodyType, requestBody: action.requestBody}),
-   wait: (action) => wait({time: parseInt(action.time)}),
-   waitToReturn: (action) => waitToReturn({}),
-   viewContentGraph: (action) => viewContentGraph({}),
-   vibrateDevice: (action) => vibrateDevice({}),
-   text: (action) => text({text: action.text}),
-   setTorch: (action) => setTorch({setting: action.setting}),
+   getVariable: (action) => getVariable({variable: action.text}),
+   number: (action) => number({number: parseInt(action.number)}),
+   setLowPowerMode: (action) => setLowPowerMode({value: action.value}),
    setName : (action) => setName({name: action.text, dontIncludeFileExtension: action.dontIncludeFileExtension}),
-   setLowPowerMode: (action) => setLowPowerMode({value: action.value})
+   setTorch: (action) => setTorch({setting: action.setting}),
+   setVariable: (action) => setVariable({name: action.text}),
+   showResult: (action) => showResult({text: action.text}),
+   text: (action) => text({text: action.text}),
+   url: (action) => url({url: action.url}),
+   vibrateDevice: (action) => vibrateDevice({}),
+   viewContentGraph: (action) => viewContentGraph({}),
+   wait: (action) => wait({time: parseInt(action.time)}),
+   waitToReturn: (action) => waitToReturn({})
 }
