@@ -40,6 +40,7 @@ app.use(cors());
 
 app.post("/createShortcut", (req, res) => {
   const actions = [];
+  var shortcutName = req.body.shortcutName.replace(/\s/g, '');
 
   if (!req.body || !req.body.actions || !req.body.actions.length > 0) {
     return res.end("Error");
@@ -51,7 +52,7 @@ app.post("/createShortcut", (req, res) => {
 
   const shortcut = buildShortcut(actions);
   var shortcutPath =
-    "dist/static/shortcuts/" + req.body.shortcutName + ".shortcut";
+    "dist/static/shortcuts/" + shortcutName + ".shortcut";
 
   fs.writeFile(shortcutPath, shortcut, err => {
     if (err) {
@@ -64,19 +65,19 @@ app.post("/createShortcut", (req, res) => {
       "shortcuts://import-workflow?url=" +
         serverUrl +
         "/static/shortcuts/" +
-        req.body.shortcutName +
+        shortcutName +
         ".shortcut&name=" +
         req.body.shortcutName,
       { type: "svg" }
     );
     shortcutQr.pipe(
       require("fs").createWriteStream(
-        "dist/static/shortcuts/qr/" + req.body.shortcutName + ".svg"
+        "dist/static/shortcuts/qr/" + shortcutName + ".svg"
       )
     );
     shortcutQr.pipe(
       require("fs").createWriteStream(
-        "static/shortcuts/qr/" + req.body.shortcutName + ".svg"
+        "static/shortcuts/qr/" + shortcutName + ".svg"
       )
     );
   });
@@ -84,8 +85,8 @@ app.post("/createShortcut", (req, res) => {
   res.send({
     shortcutsResult: {
       shortcutName: req.body.shortcutName,
-      shortcutPath: "static/shortcuts/" + req.body.shortcutName + ".shortcut",
-      qrPath: "static/shortcuts/qr/" + req.body.shortcutName + ".svg"
+      shortcutPath: "static/shortcuts/" + shortcutName + ".shortcut",
+      qrPath: "static/shortcuts/qr/" + shortcutName + ".svg"
     }
   });
 });
