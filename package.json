@@ -16,6 +16,7 @@
     "axios": "^0.18.0",
     "body-parser": "^1.18.3",
     "cors": "^2.8.5",
+    "eslint-plugin-vue": "^4.7.1",
     "express": "^4.16.4",
     "fs": "0.0.1-security",
     "http": "0.0.0",
