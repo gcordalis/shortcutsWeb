@@ -47,31 +47,26 @@
 </template>
 
 <script>
-import { mapState, mapMutations } from 'vuex'
+import { mapState, mapMutations } from "vuex";
 
 export default {
-  data () {
-    return {
-
-    }
+  data() {
+    return {};
   },
-  props: [
-    'action'
-  ],
+  props: ["action"],
   computed: {
     ...mapState({
       actions: state => state.actions,
       actionsUsed: state => state.actionsUsed
     })
   },
-  name: 'action-number',
+  name: "action-number",
   methods: {
-    ...mapMutations(['removeAction']),
-    removeActionLocal (action) {
-      console.log(action.id)
-      this.removeAction(action.id)
+    ...mapMutations(["removeAction"]),
+    removeActionLocal(action) {
+      console.log(action.id);
+      this.removeAction(action.id);
     }
-
   }
-}
+};
 </script>

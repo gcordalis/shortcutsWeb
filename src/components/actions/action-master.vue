@@ -9,14 +9,13 @@
 </template>
 
 <script>
-import { mapState } from 'vuex'
-import ActionItem from '@/components/actions/action-item'
+import { mapState } from "vuex";
+import ActionItem from "@/components/actions/action-item";
 
 export default {
-  data () {
-    return {
-
-    }
+  name: "ActionMaster",
+  data() {
+    return {};
   },
   components: {
     ActionItem
@@ -26,7 +25,6 @@ export default {
       actions: state => state.actions,
       actionsUsed: state => state.actionsUsed
     })
-  },
-  name: 'action-master'
-}
+  }
+};
 </script>

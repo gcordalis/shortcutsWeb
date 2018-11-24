@@ -75,28 +75,28 @@
 </template>
 
 <script>
-import ActionMaster from '@/components/actions/action-master'
-import NavActionList from '@/components/nav-action-list'
-import { mapState } from 'vuex'
+import ActionMaster from "@/components/actions/action-master";
+import NavActionList from "@/components/nav-action-list";
+import { mapState } from "vuex";
 
 export default {
-  data () {
+  data() {
     return {
       clipped: true,
       drawer: true,
-      title: 'Shortcuts Web',
-      axios: require('axios'),
-      shortcutName: 'Shortcut-' + (new Date()).getTime(),
-      shortcutUrl: '',
-      shortcutColor: '4282601983',
-      shortcutRgb: 'background-color: rgb(252, 17, 57)',
+      title: "Shortcuts Web",
+      axios: require("axios"),
+      shortcutName: "Shortcut-" + new Date().getTime(),
+      shortcutUrl: "",
+      shortcutColor: "4282601983",
+      shortcutRgb: "background-color: rgb(252, 17, 57)",
       qrAlert: false,
-      qrPath: '',
+      qrPath: "",
       qrTimeout: 10000,
       colorPicker: false,
-      serverUrl: '',
-      serverPort: ''
-    }
+      serverUrl: "",
+      serverPort: ""
+    };
   },
   components: {
     ActionMaster,
@@ -109,38 +109,38 @@ export default {
       shortcutColors: state => state.shortcutColors
     })
   },
-  name: 'App',
-  created () {
-    if (process.env.NODE_ENV === 'production') {
-      this.serverUrl = process.env.SERVER_URL
-      this.serverPort = process.env.PORT
-      console.log('This is the port:', process.env.PORT)
+  name: "App",
+  created() {
+    if (process.env.NODE_ENV === "production") {
+      this.serverUrl = process.env.SERVER_URL;
+      this.serverPort = process.env.PORT;
+      console.log("This is the port:", process.env.PORT);
     } else {
-      this.serverUrl = process.env.SERVER_URL
-      this.serverPort = process.env.PORT
+      this.serverUrl = process.env.SERVER_URL;
+      this.serverPort = process.env.PORT;
     }
   },
 
   methods: {
-    processShortcut: function () {
+    processShortcut: function() {
       // Send shortcut request to server
-      this.axios.post('https://editcuts.herokuapp.com/createShortcut', {
-      // this.axios.post('http://localhost:8086/createShortcut', {
-        actions: this.actionsUsed,
-        shortcutName: this.shortcutName,
-        shortcutColor: this.shortcutColor
-      })
-      .then((res) => {
-        console.log(res.data.shortcutsResult.shortcutName, 'created')
-        this.qrAlert = true
-        this.shortcutUrl = res.data.shortcutsResult.shortcutPath
-        this.qrPath = res.data.shortcutsResult.qrPath
-      })
-      .catch((error) => {
-        console.error(error)
-      })
+      this.axios
+        .post("/createShortcut", {
+          // this.axios.post('http://localhost:8086/createShortcut', {
+          actions: this.actionsUsed,
+          shortcutName: this.shortcutName,
+          shortcutColor: this.shortcutColor
+        })
+        .then(res => {
+          console.log(res.data.shortcutsResult.shortcutName, "created");
+          this.qrAlert = true;
+          this.shortcutUrl = res.data.shortcutsResult.shortcutPath;
+          this.qrPath = res.data.shortcutsResult.qrPath;
+        })
+        .catch(error => {
+          console.error(error);
+        });
     }
   }
-
-}
+};
 </script>

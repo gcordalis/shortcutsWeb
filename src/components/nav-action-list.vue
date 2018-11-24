@@ -16,8 +16,8 @@
         <v-icon v-html="action.icon" class="actionIcon" :style="action.iconColor"></v-icon>
       </v-list-tile-action>
       <v-list-tile-content>
-        <button @click="addActionLocal(action); search = ''">
-          <v-list-tile-title v-text="action.name"></v-list-tile-title>
+        <button @click="addAction(action); search = ''">
+          <v-list-tile-title v-text="action.title"></v-list-tile-title>
         </button>  
       </v-list-tile-content>
     </v-list-tile>
@@ -25,30 +25,31 @@
 </template>
 
 <script>
-import { mapState, mapMutations } from 'vuex'
+import { mapState, mapMutations } from "vuex";
 
 export default {
-  data () {
+  data() {
     return {
-      search: ''
-    }
+      search: ""
+    };
   },
   computed: {
     ...mapState({
       actions: state => state.actions,
       actionsUsed: state => state.actionsUsed
     }),
-    filteredActions: function () {
-      var self = this
-      return this.actions.filter(function (action) { return action.name.toLowerCase().indexOf(self.search.toLowerCase()) >= 0 })
+    filteredActions: function() {
+      var self = this;
+      return this.actions.filter(function(action) {
+        return (
+          action.name.toLowerCase().indexOf(self.search.toLowerCase()) >= 0
+        );
+      });
     }
   },
-  name: 'navigation-bar',
+  name: "navigation-bar",
   methods: {
-    ...mapMutations(['addAction']),
-    addActionLocal (action) {
-      this.addAction(action)
-    }
+    ...mapMutations(["addAction"])
   }
-}
+};
 </script>
