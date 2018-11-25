@@ -26,7 +26,7 @@
         class="colorPicker"
         v-if="colorPicker"
       >
-        <v-icon class="colorPicker" :style="'background-color: ' + i.rgb + '; color: #FFF'" @click="shortcutRgb = 'background-color: ' + i.rgb, shortcutColor = i.workflowColor, colorPicker = false">edit</v-icon>
+        <v-icon class="colorPicker" :style="'background-image: linear-gradient(to bottom right, ' + i.rgbTop + ', ' + i.rgbBottom +'); color: #FFF'" @click="shortcutRgb = 'background-color: ' + i.rgb, shortcutColor = i.workflowColor, colorPicker = false">edit</v-icon>
           
       </div>
       <v-icon class="actionIcon" :style="shortcutRgb + '; color: #FFF'" @click="colorPicker = !colorPicker">edit</v-icon>
@@ -89,7 +89,8 @@ export default {
       shortcutName: "Shortcut-" + new Date().getTime(),
       shortcutUrl: "",
       shortcutColor: "4282601983",
-      shortcutRgb: "background-color: rgb(252, 17, 57)",
+      shortcutRgb:
+        "background-image: linear-gradient(to bottom right, rgb(252, 17, 57), rgb(182, 0, 23)",
       qrAlert: false,
       qrPath: "",
       qrTimeout: 10000,
