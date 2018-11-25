@@ -7,7 +7,7 @@ var path = require("path");
 var fs = require("fs");
 var qr = require("qr-image");
 
-var serverUrl = "https://editcuts.herokuapp.com";
+var serverUrl = "https://shortcutsweb.app";
 
 const { buildShortcut, withVariables } = require("@joshfarrant/shortcuts-js");
 const {
@@ -114,7 +114,6 @@ const actionMap = {
     action.headers.forEach(header => {
       headers[header.key] = header.value;
     });
-    console.log(headers);
     return getContentsOfUrl({
       headers,
       method: action.method,
