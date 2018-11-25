@@ -124,6 +124,7 @@ export default {
   methods: {
     processShortcut: function() {
       // Send shortcut request to server
+      console.log(this.actionsUsed);
       this.axios
         .post("/createShortcut", {
           // this.axios.post('http://localhost:8086/createShortcut', {

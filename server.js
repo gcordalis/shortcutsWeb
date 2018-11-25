@@ -40,7 +40,7 @@ app.use(cors());
 
 app.post("/createShortcut", (req, res) => {
   const actions = [];
-  var shortcutName = req.body.shortcutName.replace(/\s/g, '');
+  var shortcutName = req.body.shortcutName.replace(/\s/g, "");
 
   if (!req.body || !req.body.actions || !req.body.actions.length > 0) {
     return res.end("Error");
@@ -51,8 +51,7 @@ app.post("/createShortcut", (req, res) => {
   });
 
   const shortcut = buildShortcut(actions);
-  var shortcutPath =
-    "dist/static/shortcuts/" + shortcutName + ".shortcut";
+  var shortcutPath = "dist/static/shortcuts/" + shortcutName + ".shortcut";
 
   fs.writeFile(shortcutPath, shortcut, err => {
     if (err) {
@@ -112,9 +111,10 @@ const actionMap = {
   count: action => count({ type: action.text }),
   getContentsOfUrl: action => {
     const headers = {};
-    action.headers.forEach(
-      header => (headers[header.key] = headers[header.value])
-    );
+    action.headers.forEach(header => {
+      headers[header.key] = header.value;
+    });
+    console.log(headers);
     return getContentsOfUrl({
       headers,
       method: action.method,

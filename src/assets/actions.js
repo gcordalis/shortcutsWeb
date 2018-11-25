@@ -54,6 +54,21 @@ export const actions = [
     countOptions: ["Items", "Characters", "Words", "Sentences", "Lines"]
   },
   {
+    icon: "link",
+    title: "Get Contents of URL",
+    name: "getContentsOfUrl",
+    titleColor: "background-color: #F2F3F5",
+    iconColor: "background-color: rgb(32, 178, 6); color: #FFF",
+    bodyColor: "background-color: #FFF",
+    headers: [{ key: "", value: "" }],
+    headersVisible: false,
+    method: "GET",
+    methodOptions: ["GET", "POST", "PUT", "PATCH", "DELETE"],
+    requestBodyType: "",
+    requestBody: {},
+    requestOptions: ["JSON", "Form", "File"]
+  },
+  {
     icon: "extension",
     title: "Get Variable",
     name: "getVariable",
@@ -168,21 +183,6 @@ export const actions = [
     iconColor: "background-color: rgb(118, 118, 123); color: #FFF",
     bodyColor: "background-color: #FFF",
     text: ""
-  },
-  {
-    icon: "link",
-    title: "Get Contents of URL",
-    name: "getContentsOfUrl",
-    titleColor: "background-color: #F2F3F5",
-    iconColor: "background-color: rgb(32, 178, 6); color: #FFF",
-    bodyColor: "background-color: #FFF",
-    headers: [{ key: "", value: "" }],
-    headersVisible: false,
-    method: "GET",
-    methodOptions: ["GET", "POST", "PUT", "PATCH", "DELETE"],
-    requestBodyType: "",
-    requestBody: {},
-    requestOptions: ["JSON", "Form", "File"]
   }
 ];
 
