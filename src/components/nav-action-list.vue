@@ -155,15 +155,14 @@ export default {
       this.serverUrl = process.env.SERVER_URL;
       this.serverPort = process.env.PORT;
     }
+    console.log("path", this.qrPath);
   },
   methods: {
     ...mapMutations(["addAction"]),
     processShortcut: function() {
       // Send shortcut request to server
-      console.log(this.actionsUsed);
       this.axios
         .post("/createShortcut", {
-          // this.axios.post('http://localhost:8086/createShortcut', {
           actions: this.actionsUsed,
           shortcutName: this.shortcutName,
           shortcutColor: this.shortcutColor,

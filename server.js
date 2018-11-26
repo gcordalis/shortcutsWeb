@@ -74,14 +74,16 @@ app.post("/createShortcut", (req, res) => {
     );
     shortcutQr.pipe(
       require("fs").createWriteStream(
-        "dist/static/shortcuts/qr/" + shortcutName + ".svg"
+        "dist/static/shortcuts/qr/" + shortcutName + ".svg",
+        console.log("Dist QR Saved")
       )
     );
-    // shortcutQr.pipe(
-    //   require("fs").createWriteStream(
-    //     "static/shortcuts/qr/" + shortcutName + ".svg"
-    //   )
-    // );
+    shortcutQr.pipe(
+      require("fs").createWriteStream(
+        "static/shortcuts/qr/" + shortcutName + ".svg",
+        console.log("Static QR Saved")
+      )
+    );
   });
 
   res.send({
