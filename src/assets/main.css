@@ -1,7 +1,7 @@
 .actionCard {
-  box-shadow: 0 0 50px 0 rgba(0,0,0,0.15);
+  box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.15);
   border-radius: 27px;
-  margin-bottom: 30px
+  margin-bottom: 30px;
 }
 
 .v-card__title {
@@ -13,15 +13,15 @@
 }
 
 .v-list__tile__content {
-  min-height: 56px
+  min-height: 56px;
 }
 
- h3 .headline {
-  min-height: 56px
- }
+h3 .headline {
+  min-height: 56px;
+}
 
 .headline {
-  font-size: 20px
+  font-size: 20px;
 }
 
 .v-input__slot {
@@ -29,30 +29,30 @@
 }
 
 .v-text-field {
-  margin-top: 0
+  margin-top: 0;
 }
 
 .v-text-field.v-text-field--solo:not(.v-text-field--solo-flat) .v-input__slot {
-  box-shadow: none
+  box-shadow: none;
 }
 
 .v-text-field__slot {
-  text-align: right
+  text-align: right;
 }
 
 .v-avatar {
   width: 100% !important;
 }
 
-.v-text-field>.v-input__control>.v-input__slot:before {
-  display: none
+.v-text-field > .v-input__control > .v-input__slot:before {
+  display: none;
 }
 
 .actionIcon {
   width: 35px;
   height: 35px;
   border-radius: 25%;
-  margin-right: 18px
+  margin-right: 18px;
 }
 
 .actionCloseIcon {
@@ -68,16 +68,16 @@
 }
 
 .glyphs {
-    display: inline-block;
-    background-image: url(/static/fonts/WorkflowGlyphs.svg);
-    background-repeat: no-repeat;
+  display: inline-block;
+  background-image: url(/static/fonts/WorkflowGlyphs.svg);
+  background-repeat: no-repeat;
 }
 
 .colorPicker {
-  width: 35px;
-  height: 35px;
-  border-radius: 25%;
-  margin-right: 4px;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  margin: 5px;
 }
 
 .completionAlert {
@@ -92,7 +92,7 @@
 }
 
 .v-snack__wrapper {
-  border-radius: 27px
+  border-radius: 27px;
 }
 
 .qrBorderRadius {
@@ -101,5 +101,9 @@
 
 /* Remove hover on button bar (torch for example) */
 .v-btn-toggle--selected {
-  box-shadow: none
+  box-shadow: none;
+}
+
+.iconViewer {
+  max-width: 1000px;
 }

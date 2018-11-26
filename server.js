@@ -50,6 +50,9 @@ app.post("/createShortcut", (req, res) => {
     actions.push(actionMap[action.name](action));
   });
 
+  // var shortcutColor = parseInt(req.body.shortcutColor);
+  // var shortcutGlyph = parseInt(req.body.shortcutGlyph, 16);
+
   const shortcut = buildShortcut(actions);
   var shortcutPath = "dist/static/shortcuts/" + shortcutName + ".shortcut";
 
@@ -91,7 +94,7 @@ app.post("/createShortcut", (req, res) => {
 });
 
 app.listen(process.env.PORT || 8086);
-console.log("Shortcuts Web has started on port", process.env.PORT);
+console.log("Shortcuts Web has started");
 
 const actionMap = {
   addToVariable: action => addToVariable({ name: action.text }),

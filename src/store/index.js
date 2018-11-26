@@ -2,6 +2,7 @@ import Vue from "vue";
 import Vuex from "vuex";
 import { actions } from "@/assets/actions";
 import { shortcutColors } from "@/assets/shortcutColors";
+import { shortcutGlyphs } from "@/assets/shortcutGlyphs";
 
 Vue.use(Vuex);
 
@@ -17,7 +18,11 @@ const store = new Vuex.Store({
   state: {
     actions,
     actionsUsed: [],
-    shortcutColors
+    shortcutColors,
+    shortcutGlyphs,
+    shortcutColor: "",
+    shortcutGlyph: "",
+    shortcutName: "Shortcut-" + new Date().getTime()
   },
   mutations: {
     addAction(state, action) {
