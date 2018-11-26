@@ -1,11 +1,10 @@
 .DS_Store
 node_modules/
-/dist/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-/static/reference/
-/static/shortcuts/
+# /static/reference/
+# /static/shortcuts/
 # Editor directories and files
 .idea
 .vscode
