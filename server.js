@@ -72,11 +72,11 @@ app.post("/createShortcut", (req, res) => {
         req.body.shortcutName,
       { type: "svg" }
     );
-    shortcutQr.pipe(
-      require("fs").createWriteStream(
-        "dist/static/shortcuts/qr/" + shortcutName + ".svg"
-      )
-    );
+    // shortcutQr.pipe(
+    //   require("fs").createWriteStream(
+    //     "dist/static/shortcuts/qr/" + shortcutName + ".svg"
+    //   )
+    // );
     shortcutQr.pipe(
       require("fs").createWriteStream(
         "static/shortcuts/qr/" + shortcutName + ".svg"
