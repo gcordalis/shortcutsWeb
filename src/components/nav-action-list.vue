@@ -174,6 +174,8 @@ export default {
           this.qrAlert = true;
           this.shortcutUrl = res.data.shortcutsResult.shortcutPath;
           this.qrPath = res.data.shortcutsResult.qrPath;
+          console.log(this.qrPath);
+          console.log(this.shortcutUrl);
         })
         .catch(error => {
           console.error(error);
