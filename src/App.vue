@@ -13,13 +13,13 @@
       :style="'background-image: linear-gradient(to bottom right,' + rgbTop + ',' + rgbBottom + '); color: #FFF'"
     >
       <v-toolbar-title v-text="title"></v-toolbar-title>
-      <v-spacer></v-spacer>
+<!--      <v-spacer></v-spacer>
       <router-link to="/">
         <v-btn>Editor</v-btn>
       </router-link>
       <router-link to="/inspector">
         <v-btn>Inspector</v-btn>
-      </router-link>
+      </router-link>-->
     </v-toolbar>
     <v-content>
       <router-view></router-view>
