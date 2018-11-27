@@ -89,7 +89,6 @@ export default {
   methods: {
     ...mapMutations(["removeAction"]),
     removeActionLocal(action) {
-      console.log(action.id);
       this.removeAction(action.id);
     }
   }

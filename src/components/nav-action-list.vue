@@ -74,12 +74,13 @@
       value="true"
       v-for="(action, index) in filteredActions"
       :key="action.name + '-' + index"
+      @click="addAction(action);"
     >
       <v-list-tile-action>
         <v-icon v-html="action.icon" class="actionIcon" :style="action.iconColor"></v-icon>
       </v-list-tile-action>
       <v-list-tile-content>
-        <button @click="addAction(action); search = ''">
+        <button @click="search = ''">
           <v-list-tile-title v-text="action.title"></v-list-tile-title>
         </button>  
       </v-list-tile-content>
@@ -125,11 +126,10 @@ export default {
       qrAlert: false,
       qrPath: "",
       qrTimeout: 10000,
-      serverUrl: "",
-      serverPort: "",
       iconSelector: false
     };
   },
+  name: "navigation-bar",
   computed: {
     ...mapState({
       actions: state => state.actions,
@@ -145,17 +145,6 @@ export default {
         );
       });
     }
-  },
-  name: "navigation-bar",
-  created() {
-    if (process.env.NODE_ENV === "production") {
-      this.serverUrl = process.env.SERVER_URL;
-      this.serverPort = process.env.PORT;
-    } else {
-      this.serverUrl = process.env.SERVER_URL;
-      this.serverPort = process.env.PORT;
-    }
-    console.log("path", this.qrPath);
   },
   methods: {
     ...mapMutations(["addAction"]),
@@ -173,8 +162,6 @@ export default {
           this.qrAlert = true;
           this.shortcutUrl = res.data.shortcutsResult.shortcutPath;
           this.qrPath = res.data.shortcutsResult.qrPath;
-          console.log(this.qrPath);
-          console.log(this.shortcutUrl);
         })
         .catch(error => {
           console.error(error);

@@ -42,7 +42,8 @@ module.exports = {
     cssSourceMap: true,
 
     proxyTable: {
-      "/createShortcut": "http://localhost:8086"
+      "/createShortcut": "http://localhost:8086",
+      "/inspectShortcut": "http://localhost:8086"
     }
   },
 

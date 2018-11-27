@@ -1,29 +1,24 @@
 <template>
   <v-app>
-    <v-navigation-drawer
-      persistent
-      :clipped="clipped"
-      enable-resize-watcher
-      fixed
-      app
-    >
-      <NavActionList /> 
-    </v-navigation-drawer>
+    <v-slide-y-transition mode="out-in">
+      <v-navigation-drawer clipped app v-if="['editor'].includes($route.name)">
+        <NavActionList/>
+      </v-navigation-drawer>
+    </v-slide-y-transition>
     <v-toolbar
-     align-center justify-center
+      align-center
+      justify-center
       app
       :clipped-left="clipped"
+      :style="'background-image: linear-gradient(to bottom right,' + rgbTop + ',' + rgbBottom + '); color: #FFF'"
     >
       <v-toolbar-title v-text="title"></v-toolbar-title>
+      <!-- <v-spacer></v-spacer>
+      <router-link to="/"><v-btn>Editor</v-btn></router-link>
+      <router-link to="/inspector"><v-btn>Inspector</v-btn></router-link>-->
     </v-toolbar>
     <v-content>
-      <v-container>
-        <v-slide-y-transition mode="out-in">
-          <v-layout column>
-            <ActionMaster/>
-          </v-layout>
-        </v-slide-y-transition>
-      </v-container>
+      <router-view></router-view>
     </v-content>
   </v-app>
 </template>
@@ -31,35 +26,35 @@
 <script>
 import ActionMaster from "@/components/actions/action-master";
 import NavActionList from "@/components/nav-action-list";
-import { mapState } from "vuex";
+import { mapState, mapMutations } from "vuex";
 
 export default {
   data() {
     return {
       clipped: true,
-      title: "Shortcuts Web"
+      title: "Shortcuts Web",
+      shortcutRgb:
+        "background-image: linear-gradient(to bottom right, rgb(252, 17, 57), rgb(182, 0, 23)",
+      rgbTop: "",
+      rgbBottom: ""
     };
   },
+  name: "App",
   components: {
     ActionMaster,
     NavActionList
   },
   computed: {
     ...mapState({
-      actions: state => state.actions,
-      actionsUsed: state => state.actionsUsed
+      shortcutColors: state => state.shortcutColors
     })
   },
-  name: "App",
   created() {
-    if (process.env.NODE_ENV === "production") {
-      this.serverUrl = process.env.SERVER_URL;
-      this.serverPort = process.env.PORT;
-      console.log("This is the port:", process.env.PORT);
-    } else {
-      this.serverUrl = process.env.SERVER_URL;
-      this.serverPort = process.env.PORT;
-    }
+    var colorTheme = this.shortcutColors[
+      Math.floor(Math.random() * this.shortcutColors.length)
+    ];
+    this.rgbTop = colorTheme.rgbTop;
+    this.rgbBottom = colorTheme.rgbBottom;
   }
 };
 </script>
