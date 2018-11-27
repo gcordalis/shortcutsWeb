@@ -101,11 +101,27 @@ app.post("/createShortcut", (req, res) => {
   });
 });
 
+app.get("/inspectShortcut", (req, res) => {
+  if (req.query.url) {
+    const id = shortcuts.idFromURL(req.query.url);
+
+    shortcuts
+      .getShortcutDetails(id)
+      .then(shortcut => {
+        res.redirect(
+          shortcut.downloadURL.replace("${f}", shortcut.name + ".shortcut")
+        );
+      })
+      .catch(error => {
+        console.log(`${error.code}? How could this happen!`);
+        res.send("Error retrieving shortcut");
+      });
+  }
+});
+
 app.post("/inspectShortcut", (req, res) => {
   if (req.query.url) {
-    console.log("if query true");
     const id = shortcuts.idFromURL(req.query.url);
-    console.log(id);
 
     shortcuts
       .getShortcutDetails(id)
