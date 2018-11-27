@@ -10,7 +10,16 @@
         </v-flex>
         <v-flex xs4 class="text-xs-right">
           <h3 class="headline mb-0">
-            <v-icon class="actionCloseIcon" @click="action.isVisible = !action.isVisible">remove_circle</v-icon>
+            <!-- <v-icon
+              class="actionCloseIcon"
+              @click="console.log('move up')"
+              style="transform: rotateZ(180deg);"
+            >arrow_drop_down_circle</v-icon>
+            <v-icon class="actionCloseIcon" @click="console.log('move down')">arrow_drop_down_circle</v-icon>-->
+            <v-icon
+              class="actionCloseIcon"
+              @click="action.isVisible = !action.isVisible"
+            >remove_circle</v-icon>
             <v-icon class="actionCloseIcon" @click="removeActionLocal(action)">cancel</v-icon>
           </h3>
         </v-flex>

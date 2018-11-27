@@ -5,43 +5,73 @@
       <v-layout row align-center justify-center>
         <v-flex xs2>
           <div class="text-xs-center">
-            <v-dialog
-              v-model="iconSelector"
-              width="1000"
-            >
+            <v-dialog v-model="iconSelector" width="1000">
               <div slot="activator" class="actionIcon" :style="shortcutRgb + '; color: #FFF'">
-                <svg :viewBox="shortcutGlyphs[shortcutGlyph].viewBox" style="width: 75%; fill: #FFF; margin: 3px 0px 0px 7px">
-                  <path :d="shortcutGlyphs[shortcutGlyph].d" transform="translate(0,1024) scale(1, -1)"></path>
+                <svg
+                  :viewBox="shortcutGlyphs[shortcutGlyph].viewBox"
+                  style="width: 75%; fill: #FFF; margin: 3px 0px 0px 7px"
+                >
+                  <path
+                    :d="shortcutGlyphs[shortcutGlyph].d"
+                    transform="translate(0,1024) scale(1, -1)"
+                  ></path>
                 </svg>
               </div>
               <v-card>
-                <v-card-title
-                  class="headline grey lighten-2"
-                  primary-title
-                >
+                <v-card-title class="headline grey lighten-2" primary-title>
                   <div class="actionIcon" :style="shortcutRgb + '; color: #FFF'">
-                    <svg :viewBox="shortcutGlyphs[shortcutGlyph].viewBox" style="width: 75%; fill: #FFF; margin: 3px 0px 0px 7px">
-                      <path :d="shortcutGlyphs[shortcutGlyph].d" transform="translate(0,1024) scale(1, -1)"></path>
+                    <svg
+                      :viewBox="shortcutGlyphs[shortcutGlyph].viewBox"
+                      style="width: 75%; fill: #FFF; margin: 3px 0px 0px 7px"
+                    >
+                      <path
+                        :d="shortcutGlyphs[shortcutGlyph].d"
+                        transform="translate(0,1024) scale(1, -1)"
+                      ></path>
                     </svg>
                   </div>
                   {{ shortcutName }}
                   <v-spacer></v-spacer>
-                  <v-btn @click="iconSelector = false" :style="shortcutRgb + '; color: #FFF'">
-                    Done
-                  </v-btn>
+                  <v-btn @click="iconSelector = false" :style="shortcutRgb + '; color: #FFF'">Done</v-btn>
                 </v-card-title>
                 <v-card-text>
                   <v-container class="iconViewer">
-                    <v-layout row wrap align-center justify-center text-xs-center style="margin-bottom: 15px">
+                    <v-layout
+                      row
+                      wrap
+                      align-center
+                      justify-center
+                      text-xs-center
+                      style="margin-bottom: 15px"
+                    >
                       <div v-for="i in shortcutColors" :key="i.workflowColor" class="colorPicker">
-                        <v-icon class="colorPicker" :style="'background-image: linear-gradient(to bottom right, ' + i.rgbTop + ', ' + i.rgbBottom +'); color: #FFF'" @click="shortcutRgb = 'background-image: linear-gradient(to bottom right, ' + i.rgbTop + ', ' + i.rgbBottom, shortcutColor = i.workflowColor, colorPicker = false"></v-icon>
+                        <v-icon
+                          class="colorPicker"
+                          :style="'background-image: linear-gradient(to bottom right, ' + i.rgbTop + ', ' + i.rgbBottom +'); color: #FFF'"
+                          @click="shortcutRgb = 'background-image: linear-gradient(to bottom right, ' + i.rgbTop + ', ' + i.rgbBottom, shortcutColor = i.workflowColor, colorPicker = false"
+                        ></v-icon>
                       </div>
                     </v-layout>
                     <v-layout row wrap align-center justify-center text-xs-center>
-                      <v-flex xs1 v-for="glyph in shortcutGlyphs" :key="glyph.id" :id="glyph.id" class="glyph">
-                        <v-btn fab outline @click="shortcutGlyph = glyph.id" style="overflow: hidden">
-                          <svg :viewBox="glyph.viewBox" style="max-height: 3em; width: 3em; margin: 3px 0 0 7px">
-                            <path :d="glyph.d" transform="translate(0,1024) scale(1, -1)" style="fill: currentcolor;"></path>
+                      <v-flex
+                        xs1
+                        v-for="glyph in shortcutGlyphs"
+                        :key="glyph.id"
+                        :id="glyph.id"
+                        class="glyph"
+                      >
+                        <v-btn
+                          fab
+                          outline
+                          @click="shortcutGlyph = glyph.id"
+                          style="overflow: hidden"
+                        >
+                          <svg :viewBox="glyph.viewBox" style="max-height: 3em; width: 3em;">
+                            <path
+                              :d="glyph.d"
+                              transform="translate(0,1024) scale(1, -1)"
+                              style="fill: currentcolor;"
+                            ></path>
                           </svg>
                         </v-btn>
                       </v-flex>
@@ -53,10 +83,7 @@
           </div>
         </v-flex>
         <v-flex xs9>
-          <v-text-field
-            label="Shortcut Name"
-            v-model="shortcutName"
-          ></v-text-field>
+          <v-text-field label="Shortcut Name" v-model="shortcutName"></v-text-field>
         </v-flex>
         <v-flex xs1>
           <v-icon @click="processShortcut()" v-if="actionsUsed">system_update</v-icon>
@@ -64,11 +91,7 @@
       </v-layout>
     </v-list-tile>
     <v-list-tile>
-      <v-text-field
-        label="Search"
-        v-model="search"
-
-      ></v-text-field>
+      <v-text-field label="Search" v-model="search"></v-text-field>
     </v-list-tile>
     <v-list-tile
       value="true"
@@ -82,26 +105,16 @@
       <v-list-tile-content>
         <button @click="search = ''">
           <v-list-tile-title v-text="action.title"></v-list-tile-title>
-        </button>  
+        </button>
       </v-list-tile-content>
     </v-list-tile>
-    <v-snackbar
-      v-model="qrAlert"
-      :timeout="qrTimeout"
-      top='top'
-      class="completionAlert"
-    >
+    <v-snackbar v-model="qrAlert" :timeout="qrTimeout" top="top" class="completionAlert">
       <v-container>
         <v-layout row wrap>
           <v-flex xs12 text-xs-center>
-              <a :href="shortcutUrl" target="_blank" download>
-                <v-img
-                  :src="qrPath"
-                  class="grey lighten-2 qrBorderRadius"
-                >
-                </v-img>
-              </a>
-
+            <a :href="shortcutUrl" target="_blank" download>
+              <v-img :src="qrPath" class="grey lighten-2 qrBorderRadius"></v-img>
+            </a>
           </v-flex>
         </v-layout>
       </v-container>

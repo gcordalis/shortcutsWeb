@@ -3,6 +3,7 @@ import Vuex from "vuex";
 import { actions } from "@/assets/actions";
 import { shortcutColors } from "@/assets/shortcutColors";
 import { shortcutGlyphs } from "@/assets/shortcutGlyphs";
+import { Stats } from "fs";
 
 Vue.use(Vuex);
 
@@ -46,6 +47,10 @@ const store = new Vuex.Store({
     updateAction(state, data) {
       const action = state.actionsUsed.find(action => action.id === data.id);
       Object.keys(data).forEach(key => Vue.set(action, key, data[key]));
+    },
+    reOrderActions(state, data) {
+      state.actionsUsed = [];
+      data.forEach(action => state.actionsUsed.push(action));
     }
   }
 });

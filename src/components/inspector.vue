@@ -17,32 +17,49 @@
           <v-progress-circular :width="3" color="red" indeterminate></v-progress-circular>
         </v-flex>
       </v-layout>
-      <v-layout row v-if="infoDisplay" align-center justify-center>
-        <v-flex xs12 md6>
-          <v-card flat outline>
-            <v-layout row>
-              <v-flex xs12 md10>
-                <v-card-title primary-title>
-                  <div>
-                    <div class="headline">{{ shortcut[0].name }}</div>
-                    <a :href="downloadUrl" _blank download>
-                      <v-btn>Download</v-btn>
-                    </a>
-                  </div>
-                </v-card-title>
-              </v-flex>
-              <v-flex xs12 md2>
-                <v-img
-                  src="/static/shortcuts/qr/google.svg"
-                  height="125px"
-                  contain
-                  style="margin: 10px 0"
-                ></v-img>
-              </v-flex>
-            </v-layout>
-          </v-card>
-        </v-flex>
-      </v-layout>
+      <v-container v-if="infoDisplay">
+        <v-layout row align-center justify-center>
+          <v-flex xs12 md6>
+            <v-card flat outline>
+              <v-layout row>
+                <v-flex xs12 md10>
+                  <v-card-title primary-title>
+                    <div>
+                      <div class="headline">{{ shortcut[0].name }}</div>
+                      <div
+                        class="caption"
+                      >{{ metadata[0].actions.length }} Actions, Shared {{ moment(shortcut[0].creationDate).fromNow() }}</div>
+                      <div class="caption"></div>
+                      <a :href="downloadUrl" _blank download>
+                        <v-btn>Download</v-btn>
+                      </a>
+                    </div>
+                  </v-card-title>
+                </v-flex>
+                <v-flex xs12 md2>
+                  <v-img
+                    src="/static/shortcuts/qr/google.svg"
+                    height="125px"
+                    contain
+                    style="margin: 10px 0"
+                  ></v-img>
+                </v-flex>
+              </v-layout>
+            </v-card>
+          </v-flex>
+        </v-layout>
+        <v-layout row align-center justify-center>
+          <v-flex xs12 md6>
+            <div class="headline">Import Questions</div>
+          </v-flex>
+        </v-layout>
+        <v-layout row align-center justify-center>
+          <v-flex xs12 md6 v-for="(i, index) in metadata[0].importQuestions" :key="index">
+            {{ i.parameterKey }}
+            {{ i.text }}
+          </v-flex>
+        </v-layout>
+      </v-container>
     </v-container>
   </v-app>
 </template>
@@ -52,6 +69,7 @@ export default {
   data() {
     return {
       axios: require("axios"),
+      moment: require("moment"),
       searchUrl: "",
       infoDisplay: false,
       loader: false,

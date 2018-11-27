@@ -53,6 +53,7 @@ h3 .headline {
   height: 35px;
   border-radius: 25%;
   margin-right: 18px;
+  overflow: hidden;
 }
 
 .actionCloseIcon {
