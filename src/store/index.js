@@ -27,6 +27,7 @@ const store = new Vuex.Store({
   },
   mutations: {
     addAction(state, action) {
+      console.log('Added Action', action.name)
       state.actionsUsed.push(
         Object.assign(
           {

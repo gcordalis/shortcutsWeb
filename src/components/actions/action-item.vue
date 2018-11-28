@@ -42,6 +42,10 @@
       <GetVariable :id="action.id" v-if="action.name === 'getVariable'"/>
       <Ask :id="action.id" v-if="action.name === 'ask'"/>
       <Count :id="action.id" v-if="action.name === 'count'"/>
+      <GetDictionaryValue :id="action.id" v-if="action.name === 'getDictionaryValue'"/>
+      <RunShortcut :id="action.id" v-if="action.name === 'runShortcut'"/>
+      <setAirplaneMode :id="action.id" v-if="action.name === 'setAirplaneMode'"/>
+      <setBrightness :id="action.id" v-if="action.name === 'setBrightness'"/>
     </v-card-text>
   </v-card>
 </template>
@@ -63,6 +67,10 @@ import SetVariable from "@/components/actions/templates/setVariable";
 import GetVariable from "@/components/actions/templates/getVariable";
 import Ask from "@/components/actions/templates/ask";
 import Count from "@/components/actions/templates/count";
+import GetDictionaryValue from "@/components/actions/templates/getDictionaryValue";
+import RunShortcut from "@/components/actions/templates/runShortcut";
+import SetAirplaneMode from "@/components/actions/templates/setAirplaneMode";
+import SetBrightness from "@/components/actions/templates/setBrightness";
 import { mapState, mapMutations } from "vuex";
 
 export default {
@@ -87,7 +95,11 @@ export default {
     SetVariable,
     GetVariable,
     Ask,
-    Count
+    Count,
+    GetDictionaryValue,
+    RunShortcut,
+    SetAirplaneMode,
+    SetBrightness
   },
   computed: {
     ...mapState({

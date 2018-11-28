@@ -54,6 +54,22 @@ export const actions = [
     countOptions: ["Items", "Characters", "Words", "Sentences", "Lines"]
   },
   {
+    icon: "settings",
+    title: "Exit Shortcut",
+    name: "exitShortcut",
+    titleColor: "background-color: #F2F3F5",
+    iconColor: "background-color: rgb(118, 118, 123); color: #FFF",
+    bodyColor: "background-color: #FFF"
+  },
+  {
+    icon: "battery_full",
+    title: "Get Battery Level",
+    name: "getBatteryLevel",
+    titleColor: "background-color: #F2F3F5",
+    iconColor: "background-color: rgb(63, 215, 82); color: #FFF",
+    bodyColor: "background-color: #FFF"
+  },
+  {
     icon: "link",
     title: "Get Contents of URL",
     name: "getContentsOfUrl",
@@ -69,11 +85,46 @@ export const actions = [
     requestOptions: ["JSON", "Form", "File"]
   },
   {
+    icon: "settings",
+    title: "Get Dictionary Value",
+    name: "getDictionaryValue",
+    titleColor: "background-color: #F2F3F5",
+    iconColor: "background-color: rgb(118, 118, 123); color: #FFF",
+    bodyColor: "background-color: #FFF",
+    getOptions: ["Value", "All Keys", "All Values"],
+    get: "Value",
+    key: ""
+  },
+  {
+    icon: "settings",
+    title: "Get Name",
+    name: "getName",
+    titleColor: "background-color: #F2F3F5",
+    iconColor: "background-color: rgb(118, 118, 123); color: #FFF",
+    bodyColor: "background-color: #FFF"
+  },
+  {
+    icon: "settings",
+    title: "Get Type",
+    name: "getType",
+    titleColor: "background-color: #F2F3F5",
+    iconColor: "background-color: rgb(118, 118, 123); color: #FFF",
+    bodyColor: "background-color: #FFF"
+  },
+  {
     icon: "extension",
     title: "Get Variable",
     name: "getVariable",
     titleColor: "background-color: #F2F3F5",
     iconColor: "background-color: rgb(248, 116, 15); color: #FFF",
+    bodyColor: "background-color: #FFF"
+  },
+  {
+    icon: "settings",
+    title: "Nothing",
+    name: "nothing",
+    titleColor: "background-color: #F2F3F5",
+    iconColor: "background-color: rgb(118, 118, 123); color: #FFF",
     bodyColor: "background-color: #FFF"
   },
   {
@@ -85,6 +136,34 @@ export const actions = [
     bodyColor: "background-color: #FFF",
     number: 0
   },
+  {
+    icon: "settings",
+    title: "Run Shortcut",
+    name: "runShortcut",
+    titleColor: "background-color: #F2F3F5",
+    iconColor: "background-color: rgb(118, 118, 123); color: #FFF",
+    bodyColor: "background-color: #FFF",
+    nameField: "",
+    show: true
+  },
+  {
+    icon: "airplanemode_active",
+    title: "Set Airplane Mode",
+    name: "setAirplaneMode",
+    titleColor: "background-color: #F2F3F5",
+    iconColor: "background-color: rgb(254, 149, 0); color: #FFF",
+    bodyColor: "background-color: #FFF",
+    value: true
+  },
+  // {
+  //   icon: "wb_sunny",
+  //   title: "Set Brightness",
+  //   name: "setBrightness",
+  //   titleColor: "background-color: #F2F3F5",
+  //   iconColor: "background-color: rgb(254, 44, 85); color: #FFF",
+  //   bodyColor: "background-color: #FFF",
+  //   brightness: 50
+  // },
   {
     icon: "battery_full",
     title: "Set Low Power Mode",
