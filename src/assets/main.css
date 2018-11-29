@@ -118,3 +118,7 @@ h3 .headline {
 button {
   outline: none;
 }
+
+svg:hover #iconPicker {
+  fill: #969696;
+}

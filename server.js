@@ -80,11 +80,11 @@ app.post("/createShortcut", (req, res) => {
     // Generating QR Code
     var shortcutQr = qr.image(
       "shortcuts://import-workflow?url=" +
-      serverUrl +
-      "/static/shortcuts/" +
-      shortcutName +
-      ".shortcut&name=" +
-      req.body.shortcutName,
+        serverUrl +
+        "/static/shortcuts/" +
+        shortcutName +
+        ".shortcut&name=" +
+        req.body.shortcutName,
       { type: "svg" }
     );
     shortcutQr.pipe(
@@ -631,16 +631,21 @@ const actionMap = {
       requestBody: action.requestBody
     });
   },
-  getDictionaryValue: action => getDictionaryValue({ key: action.key, get: action.get }),
+  getDictionaryValue: action =>
+    getDictionaryValue({ key: action.key, get: action.get }),
   getName: action => getName({}),
   getType: action => getType({}),
   getVariable: action => getVariable({ variable: action.text }),
   nothing: action => nothing({}),
   number: action => number({ number: parseInt(action.number) }),
-  runShortcut: action => runShortcut({ name: action.nameField, show: action.show }),
+  runShortcut: action =>
+    runShortcut({ name: action.nameField, show: action.show }),
   setAirplaneMode: action => setAirplaneMode({ value: action.value }),
   setLowPowerMode: action => setLowPowerMode({ value: action.value }),
-  setBrightness: action => setBrightness({ brightness: parseInt(action.brightness) }),
+  setBrightness: action => {
+    var brightness = "0." + action.brightness;
+    return setBrightness({ brightness: parseInt(brightness) });
+  },
   setName: action =>
     setName({
       name: action.text,

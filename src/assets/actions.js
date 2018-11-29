@@ -137,11 +137,12 @@ export const actions = [
     number: 0
   },
   {
-    icon: "settings",
+    icon: "",
     title: "Run Shortcut",
     name: "runShortcut",
     titleColor: "background-color: #F2F3F5",
-    iconColor: "background-color: rgb(118, 118, 123); color: #FFF",
+    iconColor:
+      "background-image: url(/static/shortcuts.png); background-position: center; background-repeat: no-repeat; background-size: cover;",
     bodyColor: "background-color: #FFF",
     nameField: "",
     show: true

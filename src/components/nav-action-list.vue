@@ -60,20 +60,17 @@
                         :id="glyph.id"
                         class="glyph"
                       >
-                        <v-btn
-                          fab
-                          outline
+                        <svg
                           @click="shortcutGlyph = glyph.id"
-                          style="overflow: hidden"
+                          :viewBox="glyph.viewBox"
+                          style="max-height: 3em; width: 3em; margin: 6px 0 0 px"
                         >
-                          <svg :viewBox="glyph.viewBox" style="max-height: 3em; width: 3em;">
-                            <path
-                              :d="glyph.d"
-                              transform="translate(0,1024) scale(1, -1)"
-                              style="fill: currentcolor;"
-                            ></path>
-                          </svg>
-                        </v-btn>
+                          <path
+                            id="iconPicker"
+                            :d="glyph.d"
+                            transform="translate(0,1024) scale(1, -1)"
+                          ></path>
+                        </svg>
                       </v-flex>
                     </v-layout>
                   </v-container>

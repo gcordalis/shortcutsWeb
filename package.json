@@ -12,6 +12,7 @@
     "heroku-postbuild": "npm install --only=dev --no-shrinkwrap && npm run build"
   },
   "dependencies": {
+    "@chenfengyuan/vue-number-input": "^0.5.2",
     "@joshfarrant/shortcuts-js": "^0.1.7",
     "axios": "^0.18.0",
     "body-parser": "^1.18.3",
