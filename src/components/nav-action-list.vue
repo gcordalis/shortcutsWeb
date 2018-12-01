@@ -6,11 +6,12 @@
         <v-flex xs2>
           <div class="text-xs-center">
             <v-dialog v-model="iconSelector" width="1000">
-              <div slot="activator" class="actionIcon" :style="shortcutRgb + '; color: #FFF'">
-                <svg
-                  :viewBox="shortcutGlyphs[shortcutGlyph].viewBox"
-                  style="width: 75%; fill: #FFF; margin: 3px 0px 0px 7px"
-                >
+              <div
+                slot="activator"
+                class="actionIcon shortcutIconContainer"
+                :style="shortcutRgb + '; color: #FFF'"
+              >
+                <svg :viewBox="shortcutGlyphs[shortcutGlyph].viewBox" class="shortcutIconNav">
                   <path
                     :d="shortcutGlyphs[shortcutGlyph].d"
                     transform="translate(0,1024) scale(1, -1)"
@@ -19,11 +20,11 @@
               </div>
               <v-card>
                 <v-card-title class="headline grey lighten-2" primary-title>
-                  <div class="actionIcon" :style="shortcutRgb + '; color: #FFF'">
-                    <svg
-                      :viewBox="shortcutGlyphs[shortcutGlyph].viewBox"
-                      style="width: 75%; fill: #FFF; margin: 3px 0px 0px 7px"
-                    >
+                  <div
+                    class="actionIcon shortcutIconContainer"
+                    :style="shortcutRgb + '; color: #FFF'"
+                  >
+                    <svg :viewBox="shortcutGlyphs[shortcutGlyph].viewBox" class="shortcutIcon">
                       <path
                         :d="shortcutGlyphs[shortcutGlyph].d"
                         transform="translate(0,1024) scale(1, -1)"

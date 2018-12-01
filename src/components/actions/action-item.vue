@@ -4,18 +4,17 @@
       <v-layout align-center justify-center>
         <v-flex xs8 class="text-xs-left">
           <h3 class="headline mb-0">
-            <v-icon v-html="action.icon" class="actionIcon" :style="action.iconColor"></v-icon>
+            <v-icon
+              v-html="action.icon"
+              class="actionIcon"
+              :style="action.iconColor"
+              @click="duplicateAction(action)"
+            ></v-icon>
             {{ action.title }}
           </h3>
         </v-flex>
         <v-flex xs4 class="text-xs-right">
           <h3 class="headline mb-0">
-            <!-- <v-icon
-              class="actionCloseIcon"
-              @click="console.log('move up')"
-              style="transform: rotateZ(180deg);"
-            >arrow_drop_down_circle</v-icon>
-            <v-icon class="actionCloseIcon" @click="console.log('move down')">arrow_drop_down_circle</v-icon>-->
             <v-icon
               class="actionCloseIcon"
               @click="action.isVisible = !action.isVisible"
@@ -109,8 +108,12 @@ export default {
   },
   methods: {
     ...mapMutations(["removeAction"]),
+    ...mapMutations(["duplicateAction"]),
     removeActionLocal(action) {
       this.removeAction(action.id);
+    },
+    duplicateActionLocal(action) {
+      this.duplicateAction(action);
     }
   }
 };

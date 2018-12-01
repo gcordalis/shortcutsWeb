@@ -27,7 +27,7 @@ const store = new Vuex.Store({
   },
   mutations: {
     addAction(state, action) {
-      console.log('Added Action', action.name)
+      console.log("Added Action", action.name);
       state.actionsUsed.push(
         Object.assign(
           {
@@ -52,6 +52,13 @@ const store = new Vuex.Store({
     reOrderActions(state, data) {
       state.actionsUsed = [];
       data.forEach(action => state.actionsUsed.push(action));
+    },
+    duplicateAction(state, action) {
+      console.log(action);
+      const updatedAction = Object.assign({}, action);
+      updatedAction.id =
+        new Date().getTime() + updatedAction.name + " - testing2";
+      state.actionsUsed.push(updatedAction);
     }
   }
 });

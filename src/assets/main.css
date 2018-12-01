@@ -122,3 +122,25 @@ button {
 svg:hover #iconPicker {
   fill: #969696;
 }
+
+.shortcutIconContainer {
+  position: relative;
+}
+
+.shortcutIcon {
+  position: absolute;
+  top: 50%;
+  bottom: 50%;
+  transform: translate(27%, -42%);
+  width: 75%;
+  fill: #fff;
+}
+
+.shortcutIconNav {
+  position: absolute;
+  top: 50%;
+  bottom: 50%;
+  transform: translate(-41%, -42%);
+  width: 75%;
+  fill: #fff;
+}
