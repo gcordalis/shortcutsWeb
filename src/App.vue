@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <v-slide-y-transition mode="out-in">
-      <v-navigation-drawer clipped app v-if="['editor'].includes($route.name)">
+      <v-navigation-drawer clipped app v-if="['editor'].includes($route.name)" v-model="drawer">
         <NavActionList/>
       </v-navigation-drawer>
     </v-slide-y-transition>
@@ -12,6 +12,7 @@
       :clipped-left="clipped"
       :style="'background-image: linear-gradient(to bottom right,' + rgbTop + ',' + rgbBottom + '); color: #FFF'"
     >
+      <v-toolbar-side-icon dark @click.stop="drawer = !drawer"></v-toolbar-side-icon>
       <v-toolbar-title v-text="title"></v-toolbar-title>
       <!--      <v-spacer></v-spacer>
       <router-link to="/">
@@ -36,6 +37,7 @@ export default {
   data() {
     return {
       clipped: true,
+      drawer: true,
       title: "Shortcuts Web",
       shortcutRgb:
         "background-image: linear-gradient(to bottom right, rgb(252, 17, 57), rgb(182, 0, 23)",
