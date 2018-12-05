@@ -1,21 +1,28 @@
 # Shortcuts Web
+[![GitHub license](https://img.shields.io/badge/license-GPL-blue.svg)](https://github.com/joshfarrant/shortcuts-js/blob/master/LICENSE)
 
-> web based shortcuts editor
+A web based Shortcuts creator.
 
-## Build Setup
+Built with Vue.js and Vuetify.
 
-```bash
-# install dependencies
-npm install
+A live version is available at [shortcutsweb.app](https://shortcutsweb.app) however you're welcome to set up and configure your own instance.
 
-# serve with hot reload at localhost:8080
-npm run dev
+## Shortcuts-JS
+Shortcuts Web utilises the amazing work by [Josh Farrant](https://github.com/joshfarrant) and the other contributers working on [Shortcuts-JS](https://github.com/joshfarrant/shortcuts-js).
 
-# build for production with minification
-npm run build
+If the action you want isn't available please check out the [contributing guidelines](https://github.com/joshfarrant/shortcuts-js/blob/master/CONTRIBUTING.md) for Shortcuts-JS. I strive to update Shortcuts Web with new actions as soon as they're available.
 
-# build for production and view the bundle analyzer report
-npm run build --report
-```
+### Contributing
+Please use [Issue Tracker](https://github.com/gcordalis/shortcutsWeb/issues) here on Github for Issues & Feature Requests. I'll gladly merge Pull Requests if you're keen to get hands on with development.
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+### Development
+To get started with developement you must have Node installed.
+- `git clone https://github.com/gcordalis/shortcutsweb`
+- `cd shortcutsweb`
+- `npm install`
+- `npm run dev` (starts the frontend)
+- `node server.js` (starts the backend)
+
+### Building and Running for Production
+- `npm run build`
+- `node server.js`
