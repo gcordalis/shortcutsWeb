@@ -29,10 +29,12 @@
       <TextAction :id="action.id" v-if="action.name === 'text'"/>
       <Number :id="action.id" v-if="action.name === 'number'"/>
       <Calculate :id="action.id" v-if="action.name === 'calculate'"/>
+      <Conditional :id="action.id" v-if="action.name === 'conditional'"/>
       <ShowResult :id="action.id" v-if="action.name === 'showResult'"/>
       <Wait :id="action.id" v-if="action.name === 'wait'"/>
       <URL :id="action.id" v-if="action.name === 'url'"/>
       <GetContentsOfUrl :id="action.id" v-if="action.title === 'Get Contents of URL'"/>
+      <GetCurrentIpAddress :id="action.id" v-if="action.title === 'Get Current IP Address'"/>
       <SetTorch :id="action.id" v-if="action.name === 'setTorch'"/>
       <SetName :id="action.id" v-if="action.name === 'setName'"/>
       <SetLowPowerMode :id="action.id" v-if="action.name === 'setLowPowerMode'"/>
@@ -45,14 +47,31 @@
       <RunShortcut :id="action.id" v-if="action.name === 'runShortcut'"/>
       <setAirplaneMode :id="action.id" v-if="action.name === 'setAirplaneMode'"/>
       <setBrightness :id="action.id" v-if="action.name === 'setBrightness'"/>
+      <setWiFi :id="action.id" v-if="action.name === 'setWiFi'"/>
+      <setCellularData :id="action.id" v-if="action.name === 'setCellularData'"/>
+      <setBluetooth :id="action.id" v-if="action.name === 'setBluetooth'"/>
+      <skipBack :id="action.id" v-if="action.name === 'skipBack'"/>
+      <setVolume :id="action.id" v-if="action.name === 'setVolume'"/>
+      <generateHash :id="action.id" v-if="action.name === 'generateHash'"/>
+      <base64Encode :id="action.id" v-if="action.name === 'base64Encode'"/>
+      <calculateStatistics :id="action.id" v-if="action.name === 'calculateStatistics'"/>
+      <randomNumber :id="action.id" v-if="action.name === 'randomNumber'"/>
+      <getDeviceDetails :id="action.id" v-if="action.name === 'getDeviceDetails'"/>
+      <getNetworkDetails :id="action.id" v-if="action.name === 'getNetworkDetails'"/>
+      <showAlert :id="action.id" v-if="action.name === 'showAlert'"/>
+      <showNotification :id="action.id" v-if="action.name === 'showNotification'"/>
+      <setDoNotDisturb :id="action.id" v-if="action.name === 'setDoNotDisturb'"/>
+      <runScriptOverSSH :id="action.id" v-if="action.name === 'runScriptOverSSH'"/>
     </v-card-text>
   </v-card>
 </template>
 
 <script>
-import Comment from "@/components/actions/templates/comment";
 import Calculate from "@/components/actions/templates/calculate";
+import Comment from "@/components/actions/templates/comment";
+import Conditional from "@/components/actions/templates/conditional";
 import GetContentsOfUrl from "@/components/actions/templates/getContentsOfUrl";
+import GetCurrentIpAddress from "@/components/actions/templates/getCurrentIpAddress";
 import TextAction from "@/components/actions/templates/text";
 import Number from "@/components/actions/templates/number";
 import ShowResult from "@/components/actions/templates/showResult";
@@ -70,6 +89,21 @@ import GetDictionaryValue from "@/components/actions/templates/getDictionaryValu
 import RunShortcut from "@/components/actions/templates/runShortcut";
 import SetAirplaneMode from "@/components/actions/templates/setAirplaneMode";
 import SetBrightness from "@/components/actions/templates/setBrightness";
+import SetWiFi from "@/components/actions/templates/setWiFi";
+import SetCellularData from "@/components/actions/templates/setCellularData";
+import SetBluetooth from "@/components/actions/templates/setBluetooth";
+import SkipBack from "@/components/actions/templates/skipBack";
+import SetVolume from "@/components/actions/templates/setVolume";
+import GenerateHash from "@/components/actions/templates/generateHash";
+import Base64Encode from "@/components/actions/templates/base64Encode";
+import CalculateStatistics from "@/components/actions/templates/calculateStatistics";
+import RandomNumber from "@/components/actions/templates/randomNumber";
+import GetDeviceDetails from "@/components/actions/templates/getDeviceDetails";
+import GetNetworkDetails from "@/components/actions/templates/getNetworkDetails";
+import ShowAlert from "@/components/actions/templates/showAlert";
+import ShowNotification from "@/components/actions/templates/showNotification";
+import SetDoNotDisturb from "@/components/actions/templates/setDoNotDisturb";
+import RunScriptOverSSH from "@/components/actions/templates/runScriptOverSSH";
 import { mapState, mapMutations } from "vuex";
 
 export default {
@@ -79,9 +113,11 @@ export default {
   },
   props: ["action"],
   components: {
-    Comment,
     Calculate,
+    Comment,
+    Conditional,
     GetContentsOfUrl,
+    GetCurrentIpAddress,
     TextAction,
     Number,
     ShowResult,
@@ -98,7 +134,22 @@ export default {
     GetDictionaryValue,
     RunShortcut,
     SetAirplaneMode,
-    SetBrightness
+    SetBrightness,
+    SetWiFi,
+    SetCellularData,
+    SetBluetooth,
+    SkipBack,
+    SetVolume,
+    GenerateHash,
+    Base64Encode,
+    CalculateStatistics,
+    RandomNumber,
+    GetDeviceDetails,
+    GetNetworkDetails,
+    ShowAlert,
+    ShowNotification,
+    SetDoNotDisturb,
+    RunScriptOverSSH
   },
   computed: {
     ...mapState({

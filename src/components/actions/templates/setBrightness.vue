@@ -8,7 +8,6 @@
       </v-flex>
       <v-flex xs4>
         <v-text-field placeholder="42" type="number" v-model="action.brightness" reverse></v-text-field>
-        <!-- <v-slider v-model="action.brightness"></v-slider> -->
       </v-flex>
     </v-layout>
   </div>

@@ -1,13 +1,13 @@
 <template>
   <div>
     <v-layout align-center justify-center>
-      <v-flex xs11>
+      <v-flex xs10>
         <v-list-tile-content>
-          <v-list-tile-title v-text="'Torch'"></v-list-tile-title>
+          <v-list-tile-title v-text="'Skip To'"></v-list-tile-title>
         </v-list-tile-content>
       </v-flex>
-      <v-flex xs1>
-        <v-select :items="action.settingOptions" v-model="action.setting"></v-select>
+      <v-flex xs2 class="text-xs-right">
+        <v-select :items="action.options" v-model="action.text"></v-select>
       </v-flex>
     </v-layout>
   </div>
@@ -17,7 +17,7 @@
 import Mixin from "@/mixins/template-mixin";
 
 export default {
-  name: "SetTorch",
+  name: "SkipBack",
   mixins: [Mixin]
 };
 </script>
