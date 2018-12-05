@@ -36,7 +36,7 @@ export const actions = [
     name: "calculate",
     titleColor: "background-color: #F2F3F5",
     iconColor:
-      "background-image: url(/static/appIcons/calculator.png); background-position: center; background-repeat: no-repeat; background-size: cover;",
+      "background-image: url(/static/appIcons/calculator.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
     bodyColor: "background-color: #FFF",
     operand: 42,
     operation: "+",
@@ -65,7 +65,7 @@ export const actions = [
     name: "calculateStatistics",
     titleColor: "background-color: #F2F3F5",
     iconColor:
-      "background-image: url(/static/appIcons/calculator.png); background-position: center; background-repeat: no-repeat; background-size: cover;",
+      "background-image: url(/static/appIcons/calculator.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
     bodyColor: "background-color: #FFF",
     operation: "Average",
     operationOptions: [
@@ -102,7 +102,7 @@ export const actions = [
     name: "count",
     titleColor: "background-color: #F2F3F5",
     iconColor:
-      "background-image: url(/static/appIcons/calculator.png); background-position: center; background-repeat: no-repeat; background-size: cover;",
+      "background-image: url(/static/appIcons/calculator.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
     bodyColor: "background-color: #FFF",
     countOptions: ["Items", "Characters", "Words", "Sentences", "Lines"]
   },
@@ -267,7 +267,7 @@ export const actions = [
     name: "number",
     titleColor: "background-color: #F2F3F5",
     iconColor:
-      "background-image: url(/static/appIcons/calculator.png); background-position: center; background-repeat: no-repeat; background-size: cover;",
+      "background-image: url(/static/appIcons/calculator.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
     bodyColor: "background-color: #FFF",
     number: 0
   },
@@ -310,7 +310,7 @@ export const actions = [
     name: "randomNumber",
     titleColor: "background-color: #F2F3F5",
     iconColor:
-      "background-image: url(/static/appIcons/calculator.png); background-position: center; background-repeat: no-repeat; background-size: cover;",
+      "background-image: url(/static/appIcons/calculator.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
     bodyColor: "background-color: #FFF",
     minimum: 0,
     maximum: 100
@@ -334,7 +334,7 @@ export const actions = [
     name: "runShortcut",
     titleColor: "background-color: #F2F3F5",
     iconColor:
-      "background-image: url(/static/appIcons/shortcuts.png); background-position: center; background-repeat: no-repeat; background-size: cover;",
+      "background-image: url(/static/appIcons/shortcuts.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
     bodyColor: "background-color: #FFF",
     nameField: "",
     show: true
