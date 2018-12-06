@@ -198,8 +198,13 @@ app.get("/inspectShortcut", (req, res) => {
       })
       .catch(error => {
         console.log(`${error.code}? How could this happen!`);
+      
+        res.status(500);
         res.send("Error retrieving shortcut");
       });
+  } else {
+    res.status(422);
+    res.send("You must provide a URL to the shortcut you would like to inspect");
   }
 });
 
