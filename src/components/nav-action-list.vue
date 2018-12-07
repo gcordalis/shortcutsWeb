@@ -152,7 +152,7 @@ export default {
       var self = this;
       return this.actions.filter(function(action) {
         return (
-          action.name.toLowerCase().indexOf(self.search.toLowerCase()) >= 0
+          action.title.toLowerCase().indexOf(self.search.toLowerCase()) >= 0
         );
       });
     }
