@@ -152,36 +152,27 @@ app.post("/createShortcut", (req, res) => {
       return res.end("Error saving shortcut");
     }
 
-    // Generating QR Code
-    var shortcutQr = qr.image(
-      "shortcuts://import-workflow?url=" +
+    // Generating QR Code as base64 png
+    var shortcutQr = Buffer.from(
+      qr.imageSync(
+        "shortcuts://import-workflow?url=" +
         serverUrl +
         "/static/shortcuts/" +
         shortcutName +
         ".shortcut&name=" +
         req.body.shortcutName,
-      { type: "svg" }
-    );
-    shortcutQr.pipe(
-      require("fs").createWriteStream(
-        "dist/static/shortcuts/qr/" + shortcutName + ".svg",
-        console.log("Dist QR Saved")
+        {
+          type: "png"
+        }
       )
-    );
-    shortcutQr.pipe(
-      require("fs").createWriteStream(
-        "static/shortcuts/qr/" + shortcutName + ".svg",
-        console.log("Static QR Saved")
-      )
-    );
-  });
-
-  res.send({
-    shortcutsResult: {
-      shortcutName: req.body.shortcutName,
-      shortcutPath: "static/shortcuts/" + shortcutName + ".shortcut",
-      qrPath: "static/shortcuts/qr/" + shortcutName + ".svg"
-    }
+    ).toString("base64");
+    res.send({
+      shortcutsResult: {
+        shortcutName: req.body.shortcutName,
+        shortcutPath: "static/shortcuts/" + shortcutName + ".shortcut",
+        qrPath: "data: image/png;base64, " + shortcutQr
+      }
+    });
   });
 });
 
