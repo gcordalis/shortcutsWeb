@@ -1,12 +1,13 @@
 export const actions = [
-  {
-    icon: "extension",
-    title: "Add to Variable",
-    name: "addToVariable",
-    titleColor: "background-color: #F2F3F5",
-    iconColor: "background-color: rgb(248, 116, 15); color: #FFF",
-    bodyColor: "background-color: #FFF"
-  },
+  // {
+  //   icon: "extension",
+  //   title: "Add to Variable",
+  //   name: "addToVariable",
+  //   titleColor: "background-color: #F2F3F5",
+  //   iconColor: "background-color: rgb(248, 116, 15); color: #FFF",
+  //   bodyColor: "background-color: #FFF",
+  //   text: ""
+  // },
   {
     icon: "settings",
     title: "Ask for Input",
@@ -216,14 +217,14 @@ export const actions = [
     iconColor: "background-color: rgb(118, 118, 123); color: #FFF",
     bodyColor: "background-color: #FFF"
   },
-  {
-    icon: "extension",
-    title: "Get Variable",
-    name: "getVariable",
-    titleColor: "background-color: #F2F3F5",
-    iconColor: "background-color: rgb(248, 116, 15); color: #FFF",
-    bodyColor: "background-color: #FFF"
-  },
+  // {
+  //   icon: "extension",
+  //   title: "Get Variable",
+  //   name: "getVariable",
+  //   titleColor: "background-color: #F2F3F5",
+  //   iconColor: "background-color: rgb(248, 116, 15); color: #FFF",
+  //   bodyColor: "background-color: #FFF"
+  // },
   {
     icon: "settings",
     title: "If",
@@ -416,14 +417,14 @@ export const actions = [
     setting: "On",
     settingOptions: ["On", "Off", "Toggle"]
   },
-  {
-    icon: "extension",
-    title: "Set Variable",
-    name: "setVariable",
-    titleColor: "background-color: #F2F3F5",
-    iconColor: "background-color: rgb(248, 116, 15); color: #FFF",
-    bodyColor: "background-color: #FFF"
-  },
+  // {
+  //   icon: "extension",
+  //   title: "Set Variable",
+  //   name: "setVariable",
+  //   titleColor: "background-color: #F2F3F5",
+  //   iconColor: "background-color: rgb(248, 116, 15); color: #FFF",
+  //   bodyColor: "background-color: #FFF"
+  // },
   {
     icon: "volume_up",
     title: "Set Volume",
