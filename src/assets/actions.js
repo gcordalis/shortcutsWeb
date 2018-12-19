@@ -1,15 +1,4 @@
 export const actions = [
-<<<<<<< HEAD
-  // {
-  //   icon: "extension",
-  //   title: "Add to Variable",
-  //   name: "addToVariable",
-  //   titleColor: "background-color: #F2F3F5",
-  //   iconColor: "background-color: rgb(248, 116, 15); color: #FFF",
-  //   bodyColor: "background-color: #FFF",
-  //   text: ""
-  // },
-=======
   {
     icon: "",
     title: "Add to Reading List",
@@ -36,7 +25,6 @@ export const actions = [
     iconColor: "background-color: rgb(26, 133, 245); color: #FFF",
     bodyColor: "background-color: #FFF"
   },
->>>>>>> Added 63 new actions and re-added support for add to/get/set variable. Further work on shortcuts inspector and preliminary work for "what's new".
   {
     icon: "settings",
     title: "Ask for Input",
@@ -562,16 +550,6 @@ export const actions = [
     iconColor: "background-color: rgb(118, 118, 123); color: #FFF",
     bodyColor: "background-color: #FFF"
   },
-<<<<<<< HEAD
-  // {
-  //   icon: "extension",
-  //   title: "Get Variable",
-  //   name: "getVariable",
-  //   titleColor: "background-color: #F2F3F5",
-  //   iconColor: "background-color: rgb(248, 116, 15); color: #FFF",
-  //   bodyColor: "background-color: #FFF"
-  // },
-=======
   {
     icon: "link",
     title: "Get URLs from Input",
@@ -588,7 +566,6 @@ export const actions = [
     iconColor: "background-color: rgb(248, 116, 15); color: #FFF",
     bodyColor: "background-color: #FFF"
   },
->>>>>>> Added 63 new actions and re-added support for add to/get/set variable. Further work on shortcuts inspector and preliminary work for "what's new".
   {
     icon: "settings",
     title: "If",

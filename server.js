@@ -223,19 +223,11 @@ app.post("/createShortcut", (req, res) => {
     var shortcutQr = Buffer.from(
       qr.imageSync(
         "shortcuts://import-workflow?url=" +
-<<<<<<< HEAD
-        serverUrl +
-        "/static/shortcuts/" +
-        shortcutName +
-        ".shortcut&name=" +
-        req.body.shortcutName,
-=======
           serverUrl +
           "/static/shortcuts/" +
           shortcutName +
           ".shortcut&name=" +
           req.body.shortcutName,
->>>>>>> Added 63 new actions and re-added support for add to/get/set variable. Further work on shortcuts inspector and preliminary work for "what's new".
         {
           type: "png"
         }
