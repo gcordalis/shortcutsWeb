@@ -1,4 +1,5 @@
 export const actions = [
+<<<<<<< HEAD
   // {
   //   icon: "extension",
   //   title: "Add to Variable",
@@ -8,6 +9,34 @@ export const actions = [
   //   bodyColor: "background-color: #FFF",
   //   text: ""
   // },
+=======
+  {
+    icon: "",
+    title: "Add to Reading List",
+    name: "addToReadingList",
+    titleColor: "background-color: #F2F3F5",
+    iconColor:
+      "background-image: url(/static/appIcons/safari.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+    bodyColor: "background-color: #FFF"
+  },
+  {
+    icon: "extension",
+    title: "Add to Variable",
+    name: "addToVariable",
+    titleColor: "background-color: #F2F3F5",
+    iconColor: "background-color: rgb(248, 116, 15); color: #FFF",
+    bodyColor: "background-color: #FFF",
+    text: ""
+  },
+  {
+    icon: "wifi_tethering",
+    title: "AirDrop",
+    name: "airDrop",
+    titleColor: "background-color: #F2F3F5",
+    iconColor: "background-color: rgb(26, 133, 245); color: #FFF",
+    bodyColor: "background-color: #FFF"
+  },
+>>>>>>> Added 63 new actions and re-added support for add to/get/set variable. Further work on shortcuts inspector and preliminary work for "what's new".
   {
     icon: "settings",
     title: "Ask for Input",
@@ -81,6 +110,15 @@ export const actions = [
     ]
   },
   {
+    icon: "",
+    title: "Clear Up Next",
+    name: "clearUpNext",
+    titleColor: "background-color: #F2F3F5",
+    iconColor:
+      "background-image: url(/static/appIcons/music.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+    bodyColor: "background-color: #FFF"
+  },
+  {
     icon: "notes",
     title: "Comment",
     name: "comment",
@@ -98,6 +136,14 @@ export const actions = [
     bodyColor: "background-color: #FFF"
   },
   {
+    icon: "notes",
+    title: "Correct Spelling",
+    name: "correctSpelling",
+    titleColor: "background-color: #F2F3F5",
+    iconColor: "background-color: rgb(251, 195, 6); color: #FFF",
+    bodyColor: "background-color: #FFF"
+  },
+  {
     icon: "",
     title: "Count",
     name: "count",
@@ -108,12 +154,90 @@ export const actions = [
     countOptions: ["Items", "Characters", "Words", "Sentences", "Lines"]
   },
   {
+    icon: "",
+    title: "Create Note",
+    name: "createNote",
+    titleColor: "background-color: #F2F3F5",
+    iconColor:
+      "background-image: url(/static/appIcons/notes.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+    bodyColor: "background-color: #FFF"
+  },
+  {
+    icon: "date_range",
+    title: "Date",
+    name: "date",
+    titleColor: "background-color: #F2F3F5",
+    iconColor: "background-color: rgb(249, 36, 37); color: #FFF",
+    bodyColor: "background-color: #FFF",
+    useOptions: ["Current Date", "Specified Date"],
+    use: "Current Date",
+    date: ""
+  },
+  {
+    icon: "",
+    title: "Delete Photos",
+    name: "deletePhotos",
+    titleColor: "background-color: #F2F3F5",
+    iconColor:
+      "background-image: url(/static/appIcons/photos.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+    bodyColor: "background-color: #FFF"
+  },
+  {
+    icon: "language",
+    title: "Detect Language with Microsoft",
+    name: "detectLanguageWithMicrosoft",
+    titleColor: "background-color: #F2F3F5",
+    iconColor: "background-color: rgb(251, 195, 6); color: #FFF",
+    bodyColor: "background-color: #FFF"
+  },
+  {
     icon: "settings",
     title: "Exit Shortcut",
     name: "exitShortcut",
     titleColor: "background-color: #F2F3F5",
     iconColor: "background-color: rgb(118, 118, 123); color: #FFF",
     bodyColor: "background-color: #FFF"
+  },
+  {
+    icon: "link",
+    title: "Expand URL",
+    name: "expandURL",
+    titleColor: "background-color: #F2F3F5",
+    iconColor: "background-color: rgb(25, 109, 242); color: #FFF",
+    bodyColor: "background-color: #FFF"
+  },
+  {
+    icon: "unarchive",
+    title: "Extract Archive",
+    name: "extractArchive",
+    titleColor: "background-color: #F2F3F5",
+    iconColor: "background-color: rgb(121, 0, 254); color: #FFF",
+    bodyColor: "background-color: #FFF"
+  },
+  {
+    icon: "date_range",
+    title: "Format Date",
+    name: "formatDate",
+    titleColor: "background-color: #F2F3F5",
+    iconColor: "background-color: rgb(249, 36, 37); color: #FFF",
+    bodyColor: "background-color: #FFF",
+    dateFormatOptions: [
+      "None",
+      "Short",
+      "Medium",
+      "Long",
+      "Relative",
+      "RFC 2822",
+      "ISO 8601",
+      "Custom"
+    ],
+    dateFormat: "Short",
+    timeFormatOptions: ["None", "Short", "Medium", "Long", "Relative"],
+    timeFormat: "Short",
+    alternativeFormatOptions: ["Short", "Medium", "Long"],
+    alternativeFormat: "Medium",
+    includeISO8601Time: false,
+    formatString: "EEE, dd MMM yyyy HH:mm:ss Z"
   },
   {
     icon: "settings",
@@ -126,11 +250,37 @@ export const actions = [
     hash: "MD5"
   },
   {
+    icon: "",
+    title: "Get Addresses from Input",
+    name: "getAddressesFromInput",
+    titleColor: "background-color: #F2F3F5",
+    iconColor:
+      "background-image: url(/static/appIcons/maps.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+    bodyColor: "background-color: #FFF"
+  },
+  {
     icon: "battery_full",
     title: "Get Battery Level",
     name: "getBatteryLevel",
     titleColor: "background-color: #F2F3F5",
     iconColor: "background-color: rgb(63, 215, 82); color: #FFF",
+    bodyColor: "background-color: #FFF"
+  },
+  {
+    icon: "assignment_returned",
+    title: "Get Clipboard",
+    name: "getClipboard",
+    titleColor: "background-color: #F2F3F5",
+    iconColor: "background-color: rgb(250, 42, 64); color: #FFF",
+    bodyColor: "background-color: #FFF"
+  },
+  {
+    icon: "",
+    title: "Get Contacts from Input",
+    name: "getContactsFromInput",
+    titleColor: "background-color: #F2F3F5",
+    iconColor:
+      "background-image: url(/static/appIcons/contacts.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
     bodyColor: "background-color: #FFF"
   },
   {
@@ -149,6 +299,15 @@ export const actions = [
     requestOptions: ["JSON", "Form", "File"]
   },
   {
+    icon: "",
+    title: "Get Contents of Web Page",
+    name: "getContentsOfWebPage",
+    titleColor: "background-color: #F2F3F5",
+    iconColor:
+      "background-image: url(/static/appIcons/safari.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+    bodyColor: "background-color: #FFF"
+  },
+  {
     icon: "trip_origin",
     title: "Get Current IP Address",
     name: "getCurrentIpAddress",
@@ -159,6 +318,23 @@ export const actions = [
     typeOptions: ["IPv4", "IPv6"],
     source: "External",
     sourceOptions: ["External", "Internal"]
+  },
+  {
+    icon: "",
+    title: "Get Current Song",
+    name: "getCurrentSong",
+    titleColor: "background-color: #F2F3F5",
+    iconColor:
+      "background-image: url(/static/appIcons/music.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+    bodyColor: "background-color: #FFF"
+  },
+  {
+    icon: "date_range",
+    title: "Get Dates from Input",
+    name: "getDatesFromInput",
+    titleColor: "background-color: #F2F3F5",
+    iconColor: "background-color: rgb(249, 36, 37); color: #FFF",
+    bodyColor: "background-color: #FFF"
   },
   {
     icon: "settings",
@@ -180,6 +356,14 @@ export const actions = [
   },
   {
     icon: "settings",
+    title: "Get Dictionary from Input",
+    name: "getDictionaryFromInput",
+    titleColor: "background-color: #F2F3F5",
+    iconColor: "background-color: rgb(118, 118, 123); color: #FFF",
+    bodyColor: "background-color: #FFF"
+  },
+  {
+    icon: "settings",
     title: "Get Dictionary Value",
     name: "getDictionaryValue",
     titleColor: "background-color: #F2F3F5",
@@ -190,11 +374,134 @@ export const actions = [
     key: ""
   },
   {
+    icon: "assignment",
+    title: "Get Diffbot Article from Web Page",
+    name: "getDiffbotArticleFromWebPage",
+    titleColor: "background-color: #F2F3F5",
+    iconColor: "background-color: rgb(32, 178, 6); color: #FFF",
+    bodyColor: "background-color: #FFF"
+  },
+  {
+    icon: "",
+    title: "Get Email Addresses from Input",
+    name: "getEmailAddressesFromInput",
+    titleColor: "background-color: #F2F3F5",
+    iconColor:
+      "background-image: url(/static/appIcons/mail.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+    bodyColor: "background-color: #FFF"
+  },
+  {
+    icon: "blur_linear",
+    title: "Get Frames from Image",
+    name: "getFramesFromImage",
+    titleColor: "background-color: #F2F3F5",
+    iconColor: "background-color: rgb(204, 40, 207); color: #FFF",
+    bodyColor: "background-color: #FFF"
+  },
+  {
+    icon: "link",
+    title: "Get Headers of URL",
+    name: "getHeadersOfURL",
+    titleColor: "background-color: #F2F3F5",
+    iconColor: "background-color: rgb(32, 178, 6); color: #FFF",
+    bodyColor: "background-color: #FFF"
+  },
+  {
+    icon: "photo_library",
+    title: "Get Images from Input",
+    name: "getImagesFromInput",
+    titleColor: "background-color: #F2F3F5",
+    iconColor: "background-color: rgb(2, 97, 254); color: #FFF",
+    bodyColor: "background-color: #FFF"
+  },
+  {
+    icon: "",
+    title: "Get Last Import",
+    name: "getLastImport",
+    titleColor: "background-color: #F2F3F5",
+    iconColor:
+      "background-image: url(/static/appIcons/photos.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+    bodyColor: "background-color: #FFF"
+  },
+  {
+    icon: "burst_mode",
+    title: "Get Latest Bursts",
+    name: "getLatestBursts",
+    titleColor: "background-color: #F2F3F5",
+    iconColor: "background-color: rgb(204, 40, 207); color: #FFF",
+    bodyColor: "background-color: #FFF",
+    count: 1
+  },
+  {
+    icon: "",
+    title: "Get Latest Live Photos",
+    name: "getLatestLivePhotos",
+    titleColor: "background-color: #F2F3F5",
+    iconColor:
+      "background-image: url(/static/appIcons/livePhoto.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+    bodyColor: "background-color: #FFF",
+    count: 1
+  },
+  {
+    icon: "",
+    title: "Get Latest Screenshots",
+    name: "getLatestScreenshots",
+    titleColor: "background-color: #F2F3F5",
+    iconColor:
+      "background-image: url(/static/appIcons/photos.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+    bodyColor: "background-color: #FFF",
+    count: 1
+  },
+  {
+    icon: "",
+    title: "Get Latest Videos",
+    name: "getLatestVideos",
+    titleColor: "background-color: #F2F3F5",
+    iconColor:
+      "background-image: url(/static/appIcons/photos.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+    bodyColor: "background-color: #FFF",
+    count: 1
+  },
+  {
+    icon: "description",
+    title: "Get Link to File",
+    name: "getLinkToFile",
+    titleColor: "background-color: #F2F3F5",
+    iconColor: "background-color: rgb(121, 0, 254); color: #FFF",
+    bodyColor: "background-color: #FFF"
+  },
+  {
+    icon: "",
+    title: "Get Maps URL",
+    name: "getMapsURL",
+    titleColor: "background-color: #F2F3F5",
+    iconColor:
+      "background-image: url(/static/appIcons/maps.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+    bodyColor: "background-color: #FFF"
+  },
+  {
+    icon: "",
+    title: "Get My Shortcuts",
+    name: "getMyShortcuts",
+    titleColor: "background-color: #F2F3F5",
+    iconColor:
+      "background-image: url(/static/appIcons/shortcuts.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+    bodyColor: "background-color: #FFF"
+  },
+  {
     icon: "settings",
     title: "Get Name",
     name: "getName",
     titleColor: "background-color: #F2F3F5",
     iconColor: "background-color: rgb(118, 118, 123); color: #FFF",
+    bodyColor: "background-color: #FFF"
+  },
+  {
+    icon: "sentiment_satisfied_alt",
+    title: "Get Name of Emoji",
+    name: "getNameOfEmoji",
+    titleColor: "background-color: #F2F3F5",
+    iconColor: "background-color: rgb(242, 186, 68); color: #FFF",
     bodyColor: "background-color: #FFF"
   },
   {
@@ -210,6 +517,44 @@ export const actions = [
     getOptions: ["Network Name", "BSSID"]
   },
   {
+    icon: "phone",
+    title: "Get Phone Numbers from Input",
+    name: "getPhoneNumbersFromInput",
+    titleColor: "background-color: #F2F3F5",
+    iconColor: "background-color: rgb(11, 96, 253); color: #FFF",
+    bodyColor: "background-color: #FFF"
+  },
+  {
+    icon: "notes",
+    title: "Get Text from Input",
+    name: "getTextFromInput",
+    titleColor: "background-color: #F2F3F5",
+    iconColor: "background-color: rgb(251, 195, 6); color: #FFF",
+    bodyColor: "background-color: #FFF"
+  },
+  {
+    icon: "date_range",
+    title: "Get Time Between Dates",
+    name: "getTimeBetweenDates",
+    titleColor: "background-color: #F2F3F5",
+    iconColor: "background-color: rgb(249, 36, 37); color: #FFF",
+    bodyColor: "background-color: #FFF",
+    unitOptions: [
+      "Total Time",
+      "Seconds",
+      "Minutes",
+      "Hours",
+      "Days",
+      "Weeks",
+      "Months",
+      "Years"
+    ],
+    unit: "Hours",
+    time: "Right Now",
+    timeOptions: ["Right Now", "Other"],
+    date: ""
+  },
+  {
     icon: "settings",
     title: "Get Type",
     name: "getType",
@@ -217,6 +562,7 @@ export const actions = [
     iconColor: "background-color: rgb(118, 118, 123); color: #FFF",
     bodyColor: "background-color: #FFF"
   },
+<<<<<<< HEAD
   // {
   //   icon: "extension",
   //   title: "Get Variable",
@@ -225,6 +571,24 @@ export const actions = [
   //   iconColor: "background-color: rgb(248, 116, 15); color: #FFF",
   //   bodyColor: "background-color: #FFF"
   // },
+=======
+  {
+    icon: "link",
+    title: "Get URLs from Input",
+    name: "getURLsFromInput",
+    titleColor: "background-color: #F2F3F5",
+    iconColor: "background-color: rgb(25, 109, 242); color: #FFF",
+    bodyColor: "background-color: #FFF"
+  },
+  {
+    icon: "extension",
+    title: "Get Variable",
+    name: "getVariable",
+    titleColor: "background-color: #F2F3F5",
+    iconColor: "background-color: rgb(248, 116, 15); color: #FFF",
+    bodyColor: "background-color: #FFF"
+  },
+>>>>>>> Added 63 new actions and re-added support for add to/get/set variable. Further work on shortcuts inspector and preliminary work for "what's new".
   {
     icon: "settings",
     title: "If",
@@ -242,8 +606,7 @@ export const actions = [
     name: "otherwise",
     titleColor: "background-color: #F2F3F5",
     iconColor: "background-color: rgb(118, 118, 123); color: #FFF",
-    bodyColor: "background-color: #FFF",
-    text: ""
+    bodyColor: "background-color: #FFF"
   },
   {
     icon: "settings",
@@ -251,8 +614,69 @@ export const actions = [
     name: "endIf",
     titleColor: "background-color: #F2F3F5",
     iconColor: "background-color: rgb(118, 118, 123); color: #FFF",
+    bodyColor: "background-color: #FFF"
+  },
+  {
+    icon: "archive",
+    title: "Make Archive",
+    name: "makeArchive",
+    titleColor: "background-color: #F2F3F5",
+    iconColor: "background-color: rgb(121, 0, 254); color: #FFF",
     bodyColor: "background-color: #FFF",
-    text: ""
+    format: "zip",
+    formatOptions: [
+      "zip",
+      "tar.gz",
+      "tar.bz2",
+      "tar.xz",
+      "tar",
+      "gz",
+      "cpio",
+      "iso"
+    ],
+    archiveName: ""
+  },
+  {
+    icon: "description",
+    title: "Make Markdown from Rich Text",
+    name: "makeMarkdownFromRichText",
+    titleColor: "background-color: #F2F3F5",
+    iconColor: "background-color: rgb(26, 133, 245); color: #FFF",
+    bodyColor: "background-color: #FFF"
+  },
+  {
+    icon: "description",
+    title: "Make Rich Text from HTML",
+    name: "makeRichTextFromHTML",
+    titleColor: "background-color: #F2F3F5",
+    iconColor: "background-color: rgb(26, 133, 245); color: #FFF",
+    bodyColor: "background-color: #FFF"
+  },
+  {
+    icon: "description",
+    title: "Make Rich Text from Markdown",
+    name: "makeRichTextFromMarkdown",
+    titleColor: "background-color: #F2F3F5",
+    iconColor: "background-color: rgb(26, 133, 245); color: #FFF",
+    bodyColor: "background-color: #FFF"
+  },
+  {
+    icon: "brush",
+    title: "Markup",
+    name: "markup",
+    titleColor: "background-color: #F2F3F5",
+    iconColor: "background-color: rgb(255, 255, 255); color: #000",
+    bodyColor: "background-color: #FFF"
+  },
+  {
+    icon: "notes",
+    title: "Match Text",
+    name: "matchText",
+    titleColor: "background-color: #F2F3F5",
+    iconColor: "background-color: rgb(251, 195, 6); color: #FFF",
+    bodyColor: "background-color: #FFF",
+    pattern: "[0-9a-zA-Z]",
+    caseSensitive: true
   },
   {
     icon: "settings",
@@ -273,11 +697,73 @@ export const actions = [
     number: 0
   },
   {
+    icon: "",
+    title: "Open in Books",
+    name: "openInBooks",
+    titleColor: "background-color: #F2F3F5",
+    iconColor:
+      "background-image: url(/static/appIcons/books.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+    bodyColor: "background-color: #FFF"
+  },
+  {
+    icon: "link",
+    title: "Open URLs",
+    name: "openURLs",
+    titleColor: "background-color: #F2F3F5",
+    iconColor: "background-color: rgb(25, 109, 242); color: #FFF",
+    bodyColor: "background-color: #FFF"
+  },
+  {
     icon: "pause",
     title: "Pause Music",
     name: "pauseMusic",
     titleColor: "background-color: #F2F3F5",
     iconColor: "background-color: rgb(248, 15, 68); color: #FFF",
+    bodyColor: "background-color: #FFF"
+  },
+  {
+    icon: "volume_up",
+    title: "Play Sound",
+    name: "playSound",
+    titleColor: "background-color: #F2F3F5",
+    iconColor: "background-color: rgb(248, 15, 68); color: #FFF",
+    bodyColor: "background-color: #FFF"
+  },
+  {
+    icon: "",
+    title: "Post On Facebook",
+    name: "postOnFacebook",
+    titleColor: "background-color: #F2F3F5",
+    iconColor:
+      "background-image: url(/static/appIcons/facebook.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+    bodyColor: "background-color: #FFF"
+  },
+  {
+    icon: "",
+    title: "Post On Instagram",
+    name: "postOnInstagram",
+    titleColor: "background-color: #F2F3F5",
+    iconColor:
+      "background-image: url(/static/appIcons/instagram.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+    bodyColor: "background-color: #FFF",
+    caption: ""
+  },
+  {
+    icon: "",
+    title: "Post To Tumblr",
+    name: "postToTumblr",
+    titleColor: "background-color: #F2F3F5",
+    iconColor:
+      "background-image: url(/static/appIcons/tumblr.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+    bodyColor: "background-color: #FFF"
+  },
+  {
+    icon: "",
+    title: "Post To Wordpress",
+    name: "postToWordpress",
+    titleColor: "background-color: #F2F3F5",
+    iconColor:
+      "background-image: url(/static/appIcons/wordpress.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
     bodyColor: "background-color: #FFF"
   },
   {
@@ -298,15 +784,6 @@ export const actions = [
   },
   {
     icon: "",
-    title: "Open in Books",
-    name: "openInBooks",
-    titleColor: "background-color: #F2F3F5",
-    iconColor:
-      "background-image: url(/static/appIcons/books.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
-    bodyColor: "background-color: #FFF"
-  },
-  {
-    icon: "",
     title: "Random Number",
     name: "randomNumber",
     titleColor: "background-color: #F2F3F5",
@@ -315,6 +792,25 @@ export const actions = [
     bodyColor: "background-color: #FFF",
     minimum: 0,
     maximum: 100
+  },
+  {
+    icon: "",
+    title: "Remove Reminders",
+    name: "removeReminders",
+    titleColor: "background-color: #F2F3F5",
+    iconColor:
+      "background-image: url(/static/appIcons/reminders.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+    bodyColor: "background-color: #FFF"
+  },
+  {
+    icon: "",
+    title: "Run Javascript on Web Page",
+    name: "runJavascriptOnWebPage",
+    titleColor: "background-color: #F2F3F5",
+    iconColor:
+      "background-image: url(/static/appIcons/safari.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+    bodyColor: "background-color: #FFF",
+    code: ""
   },
   {
     icon: "settings",
@@ -339,6 +835,31 @@ export const actions = [
     bodyColor: "background-color: #FFF",
     nameField: "",
     show: true
+  },
+  {
+    icon: "grid_on",
+    title: "Scan QR/Barcode",
+    name: "scanQROrBarcode",
+    titleColor: "background-color: #F2F3F5",
+    iconColor: "background-color: rgb(250, 42, 64); color: #FFF",
+    bodyColor: "background-color: #FFF"
+  },
+  {
+    icon: "",
+    title: "Select Email Address",
+    name: "selectEmailAddress",
+    titleColor: "background-color: #F2F3F5",
+    iconColor:
+      "background-image: url(/static/appIcons/mail.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+    bodyColor: "background-color: #FFF"
+  },
+  {
+    icon: "phone",
+    title: "Select Phone Number",
+    name: "selectPhoneNumber",
+    titleColor: "background-color: #F2F3F5",
+    iconColor: "background-color: rgb(11, 96, 253); color: #FFF",
+    bodyColor: "background-color: #FFF"
   },
   {
     icon: "airplanemode_active",
@@ -366,6 +887,16 @@ export const actions = [
     iconColor: "background-color: rgb(254, 44, 85); color: #FFF",
     bodyColor: "background-color: #FFF",
     brightness: 50
+  },
+  {
+    icon: "settings",
+    title: "Set Dictionary Value",
+    name: "setDictionaryValue",
+    titleColor: "background-color: #F2F3F5",
+    iconColor: "background-color: rgb(118, 118, 123); color: #FFF",
+    bodyColor: "background-color: #FFF",
+    key: "",
+    value: ""
   },
   {
     icon: "brightness_3",
@@ -444,6 +975,22 @@ export const actions = [
     value: true
   },
   {
+    icon: "present_to_all",
+    title: "Share",
+    name: "share",
+    titleColor: "background-color: #F2F3F5",
+    iconColor: "background-color: rgb(26, 133, 245); color: #FFF",
+    bodyColor: "background-color: #FFF"
+  },
+  {
+    icon: "apps",
+    title: "Share with Extensions",
+    name: "shareWithExtensions",
+    titleColor: "background-color: #F2F3F5",
+    iconColor: "background-color: rgb(0, 0, 0); color: #FFF",
+    bodyColor: "background-color: #FFF"
+  },
+  {
     icon: "settings",
     title: "Show Alert",
     name: "showAlert",
@@ -453,6 +1000,40 @@ export const actions = [
     text: "",
     message: "Do you want to continue?",
     showCancelButton: true
+  },
+  {
+    icon: "font_download",
+    title: "Show Definition",
+    name: "showDefinition",
+    titleColor: "background-color: #F2F3F5",
+    iconColor: "background-color: rgb(250, 42, 64); color: #FFF",
+    bodyColor: "background-color: #FFF"
+  },
+  {
+    icon: "date_range",
+    title: "Show in Calendar",
+    name: "showInCalendar",
+    titleColor: "background-color: #F2F3F5",
+    iconColor: "background-color: rgb(249, 36, 37); color: #FFF",
+    bodyColor: "background-color: #FFF"
+  },
+  {
+    icon: "",
+    title: "Show in iTunes  Store",
+    name: "showInItunesStore",
+    titleColor: "background-color: #F2F3F5",
+    iconColor:
+      "background-image: url(/static/appIcons/itunes.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+    bodyColor: "background-color: #FFF"
+  },
+  {
+    icon: "",
+    title: "Show in Maps",
+    name: "showInMaps",
+    titleColor: "background-color: #F2F3F5",
+    iconColor:
+      "background-image: url(/static/appIcons/maps.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+    bodyColor: "background-color: #FFF"
   },
   {
     icon: "lens",
@@ -502,6 +1083,24 @@ export const actions = [
     text: ""
   },
   {
+    icon: "",
+    title: "Trim Media",
+    name: "trimMedia",
+    titleColor: "background-color: #F2F3F5",
+    iconColor:
+      "background-image: url(/static/appIcons/quicktime.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+    bodyColor: "background-color: #FFF"
+  },
+  {
+    icon: "",
+    title: "Tweet",
+    name: "tweet",
+    titleColor: "background-color: #F2F3F5",
+    iconColor:
+      "background-image: url(/static/appIcons/twitter.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+    bodyColor: "background-color: #FFF"
+  },
+  {
     icon: "link",
     title: "URL",
     name: "url",
@@ -509,6 +1108,16 @@ export const actions = [
     iconColor: "background-color: rgb(25, 109, 242); color: #FFF",
     bodyColor: "background-color: #FFF",
     url: ""
+  },
+  {
+    icon: "link",
+    title: "URL Encode",
+    name: "urlEncode",
+    titleColor: "background-color: #F2F3F5",
+    iconColor: "background-color: rgb(25, 109, 242); color: #FFF",
+    bodyColor: "background-color: #FFF",
+    encodeMode: "Encode",
+    encodeModeOptions: ["Encode", "Decode"]
   },
   {
     icon: "lens",

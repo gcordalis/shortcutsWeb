@@ -62,48 +62,75 @@
       <showNotification :id="action.id" v-if="action.name === 'showNotification'"/>
       <setDoNotDisturb :id="action.id" v-if="action.name === 'setDoNotDisturb'"/>
       <runScriptOverSSH :id="action.id" v-if="action.name === 'runScriptOverSSH'"/>
+      <postOnInstagram :id="action.id" v-if="action.name === 'postOnInstagram'"/>
+      <runJavascriptOnWebPage :id="action.id" v-if="action.name === 'runJavascriptOnWebPage'"/>
+      <date :id="action.id" v-if="action.name === 'date'"/>
+      <formatDate :id="action.id" v-if="action.name === 'formatDate'"/>
+      <setDictionaryValue :id="action.id" v-if="action.name === 'setDictionaryValue'"/>
+      <getLatestBursts :id="action.id" v-if="action.name === 'getLatestBursts'"/>
+      <getLatestLivePhotos :id="action.id" v-if="action.name === 'getLatestLivePhotos'"/>
+      <getLatestScreenshots :id="action.id" v-if="action.name === 'getLatestScreenshots'"/>
+      <getLatestVideos :id="action.id" v-if="action.name === 'getLatestVideos'"/>
+      <urlEncode :id="action.id" v-if="action.name === 'urlEncode'"/>
+      <makeArchive :id="action.id" v-if="action.name === 'makeArchive'"/>
+      <matchText :id="action.id" v-if="action.name === 'matchText'"/>
+      <getTimeBetweenDates :id="action.id" v-if="action.name === 'getTimeBetweenDates'"/>
     </v-card-text>
   </v-card>
 </template>
 
 <script>
+import AddToVariable from "@/components/actions/templates/addToVariable";
+import Ask from "@/components/actions/templates/ask";
+import Base64Encode from "@/components/actions/templates/base64Encode";
 import Calculate from "@/components/actions/templates/calculate";
+import CalculateStatistics from "@/components/actions/templates/calculateStatistics";
 import Comment from "@/components/actions/templates/comment";
 import Conditional from "@/components/actions/templates/conditional";
+import Count from "@/components/actions/templates/count";
+import Date from "@/components/actions/templates/date";
+import FormatDate from "@/components/actions/templates/formatDate";
+import GenerateHash from "@/components/actions/templates/generateHash";
 import GetContentsOfUrl from "@/components/actions/templates/getContentsOfUrl";
 import GetCurrentIpAddress from "@/components/actions/templates/getCurrentIpAddress";
-import TextAction from "@/components/actions/templates/text";
-import Number from "@/components/actions/templates/number";
-import ShowResult from "@/components/actions/templates/showResult";
-import Wait from "@/components/actions/templates/wait";
-import URL from "@/components/actions/templates/url";
-import SetTorch from "@/components/actions/templates/setTorch";
-import SetName from "@/components/actions/templates/setName";
-import SetLowPowerMode from "@/components/actions/templates/setLowPowerMode";
-import AddToVariable from "@/components/actions/templates/addToVariable";
-import SetVariable from "@/components/actions/templates/setVariable";
-import GetVariable from "@/components/actions/templates/getVariable";
-import Ask from "@/components/actions/templates/ask";
-import Count from "@/components/actions/templates/count";
+import GetDeviceDetails from "@/components/actions/templates/getDeviceDetails";
 import GetDictionaryValue from "@/components/actions/templates/getDictionaryValue";
+import GetLatestBursts from "@/components/actions/templates/getLatestBursts";
+import GetLatestLivePhotos from "@/components/actions/templates/getLatestLivePhotos";
+import GetLatestScreenshots from "@/components/actions/templates/getLatestScreenshots";
+import GetLatestVideos from "@/components/actions/templates/getLatestVideos";
+import GetNetworkDetails from "@/components/actions/templates/getNetworkDetails";
+import GetTimeBetweenDates from "@/components/actions/templates/getTimeBetweenDates";
+import GetVariable from "@/components/actions/templates/getVariable";
+import MakeArchive from "@/components/actions/templates/makeArchive";
+import MatchText from "@/components/actions/templates/matchText";
+import Number from "@/components/actions/templates/number";
+import PostOnInstagram from "@/components/actions/templates/postOnInstagram";
+import RandomNumber from "@/components/actions/templates/randomNumber";
+import RunJavascriptOnWebPage from "@/components/actions/templates/runJavascriptOnWebPage";
+import RunScriptOverSSH from "@/components/actions/templates/runScriptOverSSH";
 import RunShortcut from "@/components/actions/templates/runShortcut";
 import SetAirplaneMode from "@/components/actions/templates/setAirplaneMode";
-import SetBrightness from "@/components/actions/templates/setBrightness";
-import SetWiFi from "@/components/actions/templates/setWiFi";
-import SetCellularData from "@/components/actions/templates/setCellularData";
 import SetBluetooth from "@/components/actions/templates/setBluetooth";
-import SkipBack from "@/components/actions/templates/skipBack";
+import SetBrightness from "@/components/actions/templates/setBrightness";
+import SetCellularData from "@/components/actions/templates/setCellularData";
+import SetDictionaryValue from "@/components/actions/templates/setDictionaryValue";
+import SetDoNotDisturb from "@/components/actions/templates/setDoNotDisturb";
+import SetLowPowerMode from "@/components/actions/templates/setLowPowerMode";
+import SetName from "@/components/actions/templates/setName";
+import SetTorch from "@/components/actions/templates/setTorch";
+import SetVariable from "@/components/actions/templates/setVariable";
 import SetVolume from "@/components/actions/templates/setVolume";
-import GenerateHash from "@/components/actions/templates/generateHash";
-import Base64Encode from "@/components/actions/templates/base64Encode";
-import CalculateStatistics from "@/components/actions/templates/calculateStatistics";
-import RandomNumber from "@/components/actions/templates/randomNumber";
-import GetDeviceDetails from "@/components/actions/templates/getDeviceDetails";
-import GetNetworkDetails from "@/components/actions/templates/getNetworkDetails";
+import SetWiFi from "@/components/actions/templates/setWiFi";
 import ShowAlert from "@/components/actions/templates/showAlert";
 import ShowNotification from "@/components/actions/templates/showNotification";
-import SetDoNotDisturb from "@/components/actions/templates/setDoNotDisturb";
-import RunScriptOverSSH from "@/components/actions/templates/runScriptOverSSH";
+import ShowResult from "@/components/actions/templates/showResult";
+import SkipBack from "@/components/actions/templates/skipBack";
+import TextAction from "@/components/actions/templates/text";
+import URL from "@/components/actions/templates/url";
+import UrlEncode from "@/components/actions/templates/urlEncode";
+import Wait from "@/components/actions/templates/wait";
+
 import { mapState, mapMutations } from "vuex";
 
 export default {
@@ -113,43 +140,56 @@ export default {
   },
   props: ["action"],
   components: {
+    AddToVariable,
+    Ask,
+    Base64Encode,
     Calculate,
+    CalculateStatistics,
     Comment,
     Conditional,
+    Count,
+    Date,
+    FormatDate,
+    GenerateHash,
     GetContentsOfUrl,
     GetCurrentIpAddress,
-    TextAction,
-    Number,
-    ShowResult,
-    Wait,
-    URL,
-    SetTorch,
-    SetName,
-    SetLowPowerMode,
-    AddToVariable,
-    SetVariable,
-    GetVariable,
-    Ask,
-    Count,
+    GetDeviceDetails,
     GetDictionaryValue,
+    GetLatestBursts,
+    GetLatestLivePhotos,
+    GetLatestScreenshots,
+    GetLatestVideos,
+    GetNetworkDetails,
+    GetTimeBetweenDates,
+    GetVariable,
+    MakeArchive,
+    MatchText,
+    Number,
+    PostOnInstagram,
+    RandomNumber,
+    RunJavascriptOnWebPage,
+    RunScriptOverSSH,
     RunShortcut,
     SetAirplaneMode,
-    SetBrightness,
-    SetWiFi,
-    SetCellularData,
     SetBluetooth,
-    SkipBack,
+    SetBrightness,
+    SetCellularData,
+    SetDictionaryValue,
+    SetDoNotDisturb,
+    SetLowPowerMode,
+    SetName,
+    SetTorch,
+    SetVariable,
     SetVolume,
-    GenerateHash,
-    Base64Encode,
-    CalculateStatistics,
-    RandomNumber,
-    GetDeviceDetails,
-    GetNetworkDetails,
+    SetWiFi,
     ShowAlert,
     ShowNotification,
-    SetDoNotDisturb,
-    RunScriptOverSSH
+    ShowResult,
+    SkipBack,
+    TextAction,
+    URL,
+    UrlEncode,
+    Wait
   },
   computed: {
     ...mapState({

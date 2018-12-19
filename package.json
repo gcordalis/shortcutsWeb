@@ -1,6 +1,6 @@
 {
-  "name": "ShortcutsWeb",
-  "version": "1.0.0",
+  "name": "shortcutsweb",
+  "version": "0.2.0",
   "description": "web based shortcuts editor",
   "author": "",
   "private": true,
@@ -12,7 +12,7 @@
     "heroku-postbuild": "npm install --only=dev --no-shrinkwrap && npm run build"
   },
   "dependencies": {
-    "@joshfarrant/shortcuts-js": "^0.3.0",
+    "@joshfarrant/shortcuts-js": "^0.3.1",
     "axios": "^0.18.0",
     "body-parser": "^1.18.3",
     "cors": "^2.8.5",
@@ -20,11 +20,14 @@
     "express": "^4.16.4",
     "fs": "0.0.1-security",
     "http": "0.0.0",
+    "module": "^1.2.5",
     "moment": "^2.22.2",
     "momentjs": "^2.0.0",
+    "monaco-editor-forvue": "^1.0.3",
     "path": "^0.12.7",
     "qr-image": "^3.2.0",
     "shortcuts.js": "^3.0.0",
+    "source-map-support": "^0.5.9",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1",
     "vuedraggable": "^2.16.0",

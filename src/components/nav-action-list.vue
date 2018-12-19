@@ -95,7 +95,7 @@
       value="true"
       v-for="(action, index) in filteredActions"
       :key="action.name + '-' + index"
-      @click="addAction(action);"
+      @click="addAction(action); search = ''"
     >
       <v-list-tile-action>
         <v-icon v-html="action.icon" class="actionIcon" :style="action.iconColor"></v-icon>

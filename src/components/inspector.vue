@@ -29,7 +29,10 @@
                       <div
                         class="caption"
                       >{{ metadata[0].actions.length }} Actions, Shared {{ moment(shortcut[0].creationDate).fromNow() }}</div>
-                      <div class="caption"></div>
+                      <div class="caption">
+                        Shortcuts version:
+                        <b>{{ metadata[0].client.release }}</b>
+                      </div>
                       <a :href="downloadUrl" _blank download>
                         <v-btn>Download</v-btn>
                       </a>
@@ -37,26 +40,81 @@
                   </v-card-title>
                 </v-flex>
                 <v-flex xs12 md2>
-                  <v-img
-                    src="/static/shortcuts/qr/google.svg"
-                    height="125px"
-                    contain
-                    style="margin: 10px 0"
-                  ></v-img>
+                  <v-img :src="iconUrl" height="125px" contain style="margin: 10px 0"></v-img>
                 </v-flex>
               </v-layout>
             </v-card>
           </v-flex>
         </v-layout>
         <v-layout row align-center justify-center>
-          <v-flex xs12 md6>
+          <v-flex xs6>
             <div class="headline">Import Questions</div>
           </v-flex>
         </v-layout>
+        <v-layout
+          row
+          align-center
+          justify-center
+          v-for="(i, index) in metadata[0].importQuestions"
+          :key="index"
+        >
+          <v-flex xs6>
+            <v-card class="actionCard">
+              <v-card-title primary-title style="background-color: #F2F3F5">
+                <v-layout align-center justify-center>
+                  <v-flex xs12 class="text-xs-left">
+                    <h3 class="headline mb-0">
+                      <!-- <v-icon
+                          v-html="action.icon"
+                          class="actionIcon"
+                          :style="action.iconColor"
+                          @click="duplicateAction(action)"
+                      ></v-icon>-->
+                      {{ i.parameterKey }}
+                    </h3>
+                  </v-flex>
+                  <!-- <v-flex xs4 class="text-xs-right">
+                      <h3 class="headline mb-0">
+                        <v-icon
+                          class="actionCloseIcon"
+                          @click="action.isVisible = !action.isVisible"
+                        >remove_circle</v-icon>
+                        <v-icon class="actionCloseIcon" @click="removeActionLocal(action)">cancel</v-icon>
+                      </h3>
+                  </v-flex>-->
+                </v-layout>
+              </v-card-title>
+              <v-card-text>
+                <v-textarea disabled no-resize rows="3" :value="i.text"></v-textarea>
+              </v-card-text>
+            </v-card>
+          </v-flex>
+        </v-layout>
         <v-layout row align-center justify-center>
-          <v-flex xs12 md6 v-for="(i, index) in metadata[0].importQuestions" :key="index">
-            {{ i.parameterKey }}
-            {{ i.text }}
+          <v-flex xs6>
+            <div class="headline">Actions</div>
+          </v-flex>
+        </v-layout>
+        <v-layout
+          row
+          align-center
+          justify-center
+          v-for="(i, index) in metadata[0].actions"
+          :key="index"
+        >
+          <v-flex xs6>
+            <v-card class="actionCard">
+              <v-card-title primary-title style="background-color: #F2F3F5">
+                <v-layout align-center justify-center>
+                  <v-flex xs12 class="text-xs-left">
+                    <h3 class="headline mb-0">{{ i.identifier }}</h3>
+                  </v-flex>
+                </v-layout>
+              </v-card-title>
+              <!-- <v-card-text>
+                <v-textarea disabled no-resize rows="3" :value="i.parameters"></v-textarea>
+              </v-card-text>-->
+            </v-card>
           </v-flex>
         </v-layout>
       </v-container>
@@ -76,6 +134,7 @@ export default {
       metadata: "",
       shortcut: "",
       downloadUrl: "",
+      iconUrl: "",
       sample:
         "https://www.icloud.com/shortcuts/29c46ce343f546c8ae5d8972b5fffedc"
     };
@@ -94,6 +153,8 @@ export default {
           this.metadata = res.data.metadata;
           this.shortcut = res.data.shortcut;
           this.downloadUrl = res.data.downloadURL;
+          this.iconUrl = res.data.iconURL;
+          this.qrPath = res.data.qrPath;
         })
         .catch(error => {
           console.error(error);
