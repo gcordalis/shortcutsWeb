@@ -97,9 +97,12 @@
       :key="action.name + '-' + index"
       @click="addAction(action); search = ''"
     >
-      <v-list-tile-action>
-        <v-icon v-html="action.icon" class="actionIcon" :style="action.iconColor"></v-icon>
-      </v-list-tile-action>
+      <v-tooltip bottom>
+        <v-list-tile-action slot="activator">
+          <v-icon v-html="action.icon" class="actionIcon" :style="action.iconColor"></v-icon>
+        </v-list-tile-action>
+        <span>{{ action.description }}</span>
+      </v-tooltip>
       <v-list-tile-content>
         <button @click="search = ''">
           <v-list-tile-title v-text="action.title"></v-list-tile-title>

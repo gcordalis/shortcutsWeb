@@ -18,7 +18,13 @@
             <v-icon
               class="actionCloseIcon"
               @click="action.isVisible = !action.isVisible"
+              v-if="action.isVisible"
             >remove_circle</v-icon>
+            <v-icon
+              class="actionCloseIcon"
+              @click="action.isVisible = !action.isVisible"
+              v-if="!action.isVisible"
+            >add_circle</v-icon>
             <v-icon class="actionCloseIcon" @click="removeActionLocal(action)">cancel</v-icon>
           </h3>
         </v-flex>
