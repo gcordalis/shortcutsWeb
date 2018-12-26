@@ -842,13 +842,14 @@ export const actions = [
     bodyColor: "background-color: #FFF"
   },
   {
-    icon: "pause",
+    icon: "",
     title: "Pause Music",
     name: "pauseMusic",
     description:
       "Pauses the currently playing music. This action passes input through as output.",
     titleColor: "background-color: #F2F3F5",
-    iconColor: "background-color: rgb(248, 15, 68); color: #FFF",
+    iconColor:
+      "background-image: url(/static/appIcons/pause.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
     bodyColor: "background-color: #FFF"
   },
   {
@@ -1163,13 +1164,14 @@ export const actions = [
     bodyColor: "background-color: #FFF"
   },
   {
-    icon: "apps",
+    icon: "",
     title: "Share with Extensions",
     name: "shareWithExtensions",
     description:
       "Prompts to share the input using action extensions and sharing extensions provided by other apps.",
     titleColor: "background-color: #F2F3F5",
-    iconColor: "background-color: rgb(0, 0, 0); color: #FFF",
+    iconColor:
+      "background-image: url(/static/appIcons/appextensions.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
     bodyColor: "background-color: #FFF"
   },
   {
@@ -1187,12 +1189,13 @@ export const actions = [
     showCancelButton: true
   },
   {
-    icon: "font_download",
+    icon: "",
     title: "Show Definition",
     name: "showDefinition",
     description: "Shows the definition of the word passed into the action.",
     titleColor: "background-color: #F2F3F5",
-    iconColor: "background-color: rgb(250, 42, 64); color: #FFF",
+    iconColor:
+      "background-image: url(/static/appIcons/textdetail.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
     bodyColor: "background-color: #FFF"
   },
   {
@@ -1254,25 +1257,27 @@ export const actions = [
     text: ""
   },
   {
-    icon: "fast_rewind",
+    icon: "",
     title: "Skip Back",
     name: "skipBack",
     description:
       "Skips to the previous song in the current music queue. This action passes input through as output.",
     titleColor: "background-color: #F2F3F5",
-    iconColor: "background-color: rgb(248, 15, 68); color: #FFF",
+    iconColor:
+      "background-image: url(/static/appIcons/skipback.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
     bodyColor: "background-color: #FFF",
     text: "",
     options: ["Beginning", "Previous Song"]
   },
   {
-    icon: "fast_forward",
+    icon: "",
     title: "Skip Forward",
     name: "skipForward",
     description:
       "Skips to the next song in the current music queue. This action passes input through as output.",
     titleColor: "background-color: #F2F3F5",
-    iconColor: "background-color: rgb(248, 15, 68); color: #FFF",
+    iconColor:
+      "background-image: url(/static/appIcons/skipforward.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
     bodyColor: "background-color: #FFF"
   },
   {
@@ -1332,24 +1337,26 @@ export const actions = [
     encodeModeOptions: ["Encode", "Decode"]
   },
   {
-    icon: "lens",
+    icon: "",
     title: "Vibrate Device",
     name: "vibrateDevice",
     description:
       "Vibrates the device for a short amount of time. This action passes input through as output.",
     titleColor: "background-color: #F2F3F5",
-    iconColor: "background-color: rgb(248, 37, 37); color: #FFF",
+    iconColor:
+      "background-image: url(/static/appIcons/notification.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
     bodyColor: "background-color: #FFF",
     text: ""
   },
   {
-    icon: "category",
+    icon: "",
     title: "View Content Graph",
     name: "viewContentGraph",
     description:
       "Shows the results of the previous action in the Content Graph.",
     titleColor: "background-color: #F2F3F5",
-    iconColor: "background-color: rgb(41, 88, 212); color: #FFF",
+    iconColor:
+      "background-image: url(/static/appIcons/contentgraph.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
     bodyColor: "background-color: #FFF",
     text: ""
   },
