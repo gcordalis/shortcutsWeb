@@ -437,13 +437,14 @@ export const actions = [
     key: ""
   },
   {
-    icon: "assignment",
+    icon: "",
     title: "Get Diffbot Article from Web Page",
     name: "getDiffbotArticleFromWebPage",
     description:
       "Gets article details, including the body text, author, publish date and more, from every URL passed into the action.",
     titleColor: "background-color: #F2F3F5",
-    iconColor: "background-color: rgb(32, 178, 6); color: #FFF",
+    iconColor:
+      "background-image: url(/static/appIcons/diffbot.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
     bodyColor: "background-color: #FFF"
   },
   {
@@ -480,13 +481,14 @@ export const actions = [
     bodyColor: "background-color: #FFF"
   },
   {
-    icon: "photo_library",
+    icon: "",
     title: "Get Images from Input",
     name: "getImagesFromInput",
     description:
       "Gets images from the result of the previous action. For example, this action can get the album art of a song, or all the images on a web page.",
     titleColor: "background-color: #F2F3F5",
-    iconColor: "background-color: rgb(2, 97, 254); color: #FFF",
+    iconColor:
+      "background-image: url(/static/appIcons/images.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
     bodyColor: "background-color: #FFF"
   },
   {
@@ -1059,14 +1061,14 @@ export const actions = [
     value: ""
   },
   {
-    icon: "brightness_3",
+    icon: "",
     title: "Set Do Not Disturb",
     name: "setDoNotDisturb",
     description:
       "Sets the device's Do Not Disturb on or off. This action passes input through as output.",
     titleColor: "background-color: #F2F3F5",
     iconColor:
-      "background-color: rgb(67, 59, 205); color: #FFF; transform: rotate(180deg)",
+      "background-image: url(/static/appIcons/donotdisturb.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
     bodyColor: "background-color: #FFF",
     value: false,
     untilOptions: ["Turned Off", "Time", "I Leave", "Event Ends"],
