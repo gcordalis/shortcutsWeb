@@ -307,12 +307,13 @@ export const actions = [
     bodyColor: "background-color: #FFF"
   },
   {
-    icon: "assignment_returned",
+    icon: "",
     title: "Get Clipboard",
     name: "getClipboard",
     description: "Passes the contents of the clipboard to the next action.",
     titleColor: "background-color: #F2F3F5",
-    iconColor: "background-color: rgb(250, 42, 64); color: #FFF",
+    iconColor:
+      "background-image: url(/static/appIcons/clipboard.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
     bodyColor: "background-color: #FFF"
   },
   {
