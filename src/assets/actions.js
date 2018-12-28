@@ -444,7 +444,7 @@ export const actions = [
       "Gets article details, including the body text, author, publish date and more, from every URL passed into the action.",
     titleColor: "background-color: #F2F3F5",
     iconColor:
-      "background-image: url(/static/appIcons/diffbot.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+      "background-image: url(/static/appIcons/diffbotarticle.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
     bodyColor: "background-color: #FFF"
   },
   {
