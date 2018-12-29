@@ -54,11 +54,16 @@ const store = new Vuex.Store({
       data.forEach(action => state.actionsUsed.push(action));
     },
     duplicateAction(state, action) {
-      console.log(action);
       const updatedAction = Object.assign({}, action);
-      updatedAction.id =
-        new Date().getTime() + updatedAction.name + " - testing2";
+      updatedAction.id = new Date().getTime() + updatedAction.name;
       state.actionsUsed.push(updatedAction);
+    },
+    duplicateActionBelow(state, action) {
+      const index = state.actionsUsed.map(a => a.id).indexOf(action.id);
+      const updatedAction = Object.assign({}, action);
+      const updatedIndex = index + 1;
+      updatedAction.id = new Date().getTime() + updatedAction.name;
+      state.actionsUsed.splice(updatedIndex, 0, updatedAction);
     }
   }
 });

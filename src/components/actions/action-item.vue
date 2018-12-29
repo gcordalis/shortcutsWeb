@@ -17,6 +17,10 @@
           <h3 class="headline mb-0">
             <v-icon
               class="actionCloseIcon"
+              @click="duplicateActionBelowLocal(action)"
+            >arrow_drop_down_circle</v-icon>
+            <v-icon
+              class="actionCloseIcon"
               @click="action.isVisible = !action.isVisible"
               v-if="action.isVisible"
             >remove_circle</v-icon>
@@ -206,11 +210,15 @@ export default {
   methods: {
     ...mapMutations(["removeAction"]),
     ...mapMutations(["duplicateAction"]),
+    ...mapMutations(["duplicateActionBelow"]),
     removeActionLocal(action) {
       this.removeAction(action.id);
     },
     duplicateActionLocal(action) {
       this.duplicateAction(action);
+    },
+    duplicateActionBelowLocal(action) {
+      this.duplicateActionBelow(action);
     }
   }
 };
