@@ -46,7 +46,7 @@
             </v-card>
           </v-flex>
         </v-layout>
-        <v-layout row align-center justify-center>
+        <v-layout row align-center justify-center v-if="metadata[0].importQuestions.length > 0">
           <v-flex xs6>
             <div class="headline">Import Questions</div>
           </v-flex>

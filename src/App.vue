@@ -5,15 +5,18 @@
         <NavActionList/>
       </v-navigation-drawer>
     </v-slide-y-transition>
-    <!-- <v-slide-y-transition mode="out-in">
-      <v-navigation-drawer clipped app right v-model="info">
-        <NavActionList/>
-      </v-navigation-drawer>
-    </v-slide-y-transition>-->
+    <v-slide-y-transition mode="out-in">
+      <v-card class="d-inline-block elevation-12">
+        <v-navigation-drawer temporary app right v-model="changeLog">
+          <ChangeLog/>
+        </v-navigation-drawer>
+      </v-card>
+    </v-slide-y-transition>
     <v-toolbar
       align-center
       justify-center
       app
+      flat
       :clipped-left="clipped"
       :style="'background-image: linear-gradient(to bottom right,' + rgbTop + ',' + rgbBottom + '); color: #FFF'"
     >
@@ -24,9 +27,9 @@
       ></v-toolbar-side-icon>
       <v-toolbar-title v-text="title"></v-toolbar-title>
       <v-spacer></v-spacer>
-      <!-- <v-btn dark icon @click.stop="info = !info">
+      <v-btn dark icon @click.stop="changeLog = !changeLog">
         <v-icon>new_releases</v-icon>
-      </v-btn>-->
+      </v-btn>
       <!-- <v-toolbar-side-icon></v-toolbar-side-icon> -->
       <!-- <router-link to="/">
         <v-btn>Editor</v-btn>
@@ -44,6 +47,7 @@
 <script>
 import ActionMaster from "@/components/actions/action-master";
 import NavActionList from "@/components/nav-action-list";
+import ChangeLog from "@/components/change-log";
 import { mapState, mapMutations } from "vuex";
 
 export default {
@@ -51,7 +55,7 @@ export default {
     return {
       clipped: true,
       drawer: true,
-      info: true,
+      changeLog: false,
       title: "Shortcuts Web",
       shortcutRgb:
         "background-image: linear-gradient(to bottom right, rgb(252, 17, 57), rgb(182, 0, 23)",
@@ -62,7 +66,8 @@ export default {
   name: "App",
   components: {
     ActionMaster,
-    NavActionList
+    NavActionList,
+    ChangeLog
   },
   computed: {
     ...mapState({
