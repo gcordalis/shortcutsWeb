@@ -85,6 +85,7 @@
       <makeArchive :id="action.id" v-if="action.name === 'makeArchive'"/>
       <matchText :id="action.id" v-if="action.name === 'matchText'"/>
       <getTimeBetweenDates :id="action.id" v-if="action.name === 'getTimeBetweenDates'"/>
+      <createAlarm :id="action.id" v-if="action.name === 'createAlarm'"/>
     </v-card-text>
   </v-card>
 </template>
@@ -98,6 +99,7 @@ import CalculateStatistics from "@/components/actions/templates/calculateStatist
 import Comment from "@/components/actions/templates/comment";
 import Conditional from "@/components/actions/templates/conditional";
 import Count from "@/components/actions/templates/count";
+import CreateAlarm from "@/components/actions/templates/createAlarm";
 import Date from "@/components/actions/templates/date";
 import FormatDate from "@/components/actions/templates/formatDate";
 import GenerateHash from "@/components/actions/templates/generateHash";
@@ -158,6 +160,7 @@ export default {
     Comment,
     Conditional,
     Count,
+    CreateAlarm,
     Date,
     FormatDate,
     GenerateHash,

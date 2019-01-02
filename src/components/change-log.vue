@@ -28,8 +28,16 @@ import { mapState, mapMutations } from "vuex";
 export default {
   data() {
     return {
+      axios: require("axios"),
       moment: require("moment"),
       changelog: [
+        {
+          title: "Added Create Alarm",
+          badges: ["new"],
+          date: "2019-01-03T08:18+1300",
+          description:
+            "Added Create Alarm action"
+        },
         {
           title: "Added What's New",
           badges: ["new"],

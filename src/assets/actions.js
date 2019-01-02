@@ -171,6 +171,20 @@ export const actions = [
   },
   {
     icon: "",
+    title: "Create Alarm",
+    name: "createAlarm",
+    description: "Creates an alarm in the Clock app.",
+    titleColor: "background-color: #F2F3F5",
+    iconColor:
+      "background-image: url(/static/appIcons/clock.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+    bodyColor: "background-color: #FFF",
+    label: "",
+    time: "",
+    repeat: ["Never"],
+    repeatOptions: ["Never", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
+  },
+  {
+    icon: "",
     title: "Create Note",
     name: "createNote",
     description: "Shares the input with Notes",
