@@ -350,7 +350,12 @@ const actionMap = {
   continueShortcutInApp: action => continueShortcutInApp({}),
   correctSpelling: action => correctSpelling({}),
   count: action => count({ type: action.text }),
-  createAlarm: action => createAlarm({ label: action.label, time: action.time, repeat: action.repeat }),
+  createAlarm: action =>
+    createAlarm({
+      label: action.label,
+      time: action.time,
+      repeat: action.repeat
+    }),
   createNote: action => createNote({}),
   date: action => date({ date: action.date, use: action.use }),
   deletePhotos: action => deletePhotos({}),
