@@ -1,5 +1,11 @@
 [
   {
+    "title": "Added maps provider selection for Show in Maps",
+    "badges": ["improvement"],
+    "date": "2019-01-04T08:34+1100",
+    "description": "You can now choose between Apple Maps, Google Maps or Waze."
+  },
+  {
     "title": "Added What's New",
     "badges": ["new"],
     "date": "2019-01-01T08:54+1300",
