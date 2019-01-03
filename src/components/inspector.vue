@@ -112,7 +112,14 @@
                 </v-layout>
               </v-card-title>
               <!-- <v-card-text>
-                <v-textarea disabled no-resize rows="3" :value="i.parameters"></v-textarea>
+                <v-textarea
+                  disabled
+                  no-resize
+                  rows="2"
+                  v-for="(params, index) in i.parameters"
+                  :value="params"
+                  :key="index"
+                ></v-textarea>
               </v-card-text>-->
             </v-card>
           </v-flex>

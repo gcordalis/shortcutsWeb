@@ -85,6 +85,7 @@
       <makeArchive :id="action.id" v-if="action.name === 'makeArchive'"/>
       <matchText :id="action.id" v-if="action.name === 'matchText'"/>
       <getTimeBetweenDates :id="action.id" v-if="action.name === 'getTimeBetweenDates'"/>
+      <showInMaps :id="action.id" v-if="action.name === 'showInMaps'"/>
     </v-card-text>
   </v-card>
 </template>
@@ -133,6 +134,7 @@ import SetVariable from "@/components/actions/templates/setVariable";
 import SetVolume from "@/components/actions/templates/setVolume";
 import SetWiFi from "@/components/actions/templates/setWiFi";
 import ShowAlert from "@/components/actions/templates/showAlert";
+import ShowInMaps from "@/components/actions/templates/showInMaps";
 import ShowNotification from "@/components/actions/templates/showNotification";
 import ShowResult from "@/components/actions/templates/showResult";
 import SkipBack from "@/components/actions/templates/skipBack";
@@ -193,6 +195,7 @@ export default {
     SetVolume,
     SetWiFi,
     ShowAlert,
+    ShowInMaps,
     ShowNotification,
     ShowResult,
     SkipBack,

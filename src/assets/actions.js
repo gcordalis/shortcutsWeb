@@ -1229,7 +1229,9 @@ export const actions = [
     titleColor: "background-color: #F2F3F5",
     iconColor:
       "background-image: url(/static/appIcons/maps.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
-    bodyColor: "background-color: #FFF"
+    bodyColor: "background-color: #FFF",
+    app: "",
+    appOptions: ["Apple Maps", "Google Maps", "Waze"]
   },
   {
     icon: "",

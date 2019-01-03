@@ -1,7 +1,7 @@
 <template>
   <v-container>
     <v-layout row align-center justify-center>
-      <v-flex xs12 headline>What's new with Shortcuts Web</v-flex>
+      <v-flex xs12 headline>What's new</v-flex>
     </v-layout>
     <v-card flat v-for="(log, index) in changelog" :key="log.title + '-' + index">
       <v-layout row title>
@@ -29,45 +29,16 @@ export default {
   data() {
     return {
       moment: require("moment"),
-      changelog: [
-        {
-          title: "Added What's New",
-          badges: ["new"],
-          date: "2019-01-01T08:54+1300",
-          description:
-            "Added What's New sidebar to provide a better way to communicate when new actions/features are added."
-        },
-        {
-          title: "Added Tooltips",
-          badges: ["improvement"],
-          date: "2018-12-22T09:00+1300",
-          description:
-            "Added tool tips with action descriptions to the actions list."
-        },
-        {
-          title: "Added New Actions",
-          badges: ["improvement"],
-          date: "2018-12-08T09:00+1300",
-          description: "63 new actions were added"
-        },
-        {
-          title: "QR Code Rewrite",
-          badges: ["improvement"],
-          date: "2018-12-08T09:00+1300",
-          description:
-            "Changed the way QR codes are generated to provide a more reliable solution and improved compatibility across browsers."
-        },
-        {
-          title: "Updated Action Search",
-          badges: ["fix"],
-          date: "2018-12-07T09:00+1300",
-          description:
-            "Fixed the way search works to return the expected actions."
-        }
-      ]
+      axios: require("axios"),
+      changelog: []
     };
   },
-  name: "change-log"
+  name: "whats-new",
+  created() {
+    this.axios.get("/static/whatsnew.json").then(res => {
+      this.changelog = res.data;
+    });
+  }
 };
 </script>
 

@@ -504,7 +504,7 @@ const actionMap = {
   showDefinition: action => showDefinition({}),
   showInCalendar: action => showInCalendar({}),
   showInItunesStore: action => showInItunesStore({}),
-  showInMaps: action => showInMaps({}),
+  showInMaps: action => showInMaps({ app: action.app }),
   showNotification: action =>
     showNotification({
       body: action.body,
