@@ -374,11 +374,15 @@ const actionMap = {
     action.headers.forEach(header => {
       headers[header.key] = header.value;
     });
+    const requestBody = {};
+    action.requestBody.forEach(body => {
+      requestBody[body.key] = body.value;
+    });
     return getContentsOfUrl({
       headers,
       method: action.method,
       requestBodyType: action.requestBodyType,
-      requestBody: action.requestBody
+      requestBody: requestBody
     });
   },
   getContentsOfWebPage: action => getContentsOfWebPage({}),

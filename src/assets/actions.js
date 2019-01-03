@@ -340,9 +340,10 @@ export const actions = [
     headersVisible: false,
     method: "GET",
     methodOptions: ["GET", "POST", "PUT", "PATCH", "DELETE"],
-    requestBodyType: "",
-    requestBody: {},
-    requestOptions: ["JSON", "Form", "File"]
+    requestBodyVisible: false,
+    requestBodyType: "Form",
+    requestBody: [{ key: "", value: "" }],
+    requestOptions: ["Form"]
   },
   {
     icon: "",
