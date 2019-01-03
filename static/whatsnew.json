@@ -1,5 +1,11 @@
 [
   {
+    "title": "Get Contents of URL",
+    "badges": ["improvement"],
+    "date": "2019-01-04T09:45+1100",
+    "description": "Added support for FORM request body type when using POST, PUT, PATCH, & Delete."
+  },
+  {
     "title": "Added maps provider selection for Show in Maps",
     "badges": ["improvement"],
     "date": "2019-01-04T08:34+1100",
