@@ -74,7 +74,7 @@
     <v-layout
       v-if="action.method !== 'GET' &&  action.requestBodyVisible"
       v-for="(header, index) in action.requestBody"
-      :key="index"
+      :key="'body-' + index"
     >
       <v-flex xs1>
         <v-list-tile-content>
