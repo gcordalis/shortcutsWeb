@@ -520,7 +520,7 @@ export const actions = [
     description: "Gets the most recent Live Photos from the camera roll.",
     titleColor: "background-color: #F2F3F5",
     iconColor:
-      "background-image: url(/static/appIcons/livephoto.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+      "background-image: url(/static/appIcons/livephotos.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
     bodyColor: "background-color: #FFF",
     count: 1
   },
