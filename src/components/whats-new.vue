@@ -53,19 +53,19 @@ export default {
 .badge-new {
   background: #3778ff !important;
   border: 1px solid #3778ff;
-  color: white;
+  color: white !important;
 }
 
 .badge-fix {
   background: #ff4772 !important;
   border: 1px solid #ff4772;
-  color: white;
+  color: white !important;
 }
 
 .badge-improvement {
   background: #3aaa55 !important;
   border: 1px solid #3aaa55;
-  color: white;
+  color: white !important;
 }
 
 /* Border and padding around each log item */
