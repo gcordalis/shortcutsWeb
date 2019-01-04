@@ -51,19 +51,19 @@ export default {
 }
 
 .badge-new {
-  background-color: #3778ff;
+  background: #3778ff;
   border: 1px solid #3778ff;
   color: white;
 }
 
 .badge-fix {
-  background-color: #ff4772;
+  background: #ff4772;
   border: 1px solid #ff4772;
   color: white;
 }
 
 .badge-improvement {
-  background-color: #3aaa55;
+  background: #3aaa55;
   border: 1px solid #3aaa55;
   color: white;
 }
