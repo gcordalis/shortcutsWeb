@@ -6,7 +6,7 @@ export const actions = [
     description: "Adds URLs passed into the action to your reading list.",
     titleColor: "background-color: #F2F3F5",
     iconColor:
-      "background-image: url(/static/appIcons/safari.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+      "background-image: url(/static/images/appIcons/safari.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
     bodyColor: "background-color: #FFF",
     fullIcon: "safari"
   },
@@ -18,7 +18,7 @@ export const actions = [
       "Appends this action's input to the specified variable, creating the variable if it does not exist. This allows you to make a variable hold multiple items.",
     titleColor: "background-color: #F2F3F5",
     iconColor:
-      "background-image: url(/static/appIcons/variables.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+      "background-image: url(/static/images/appIcons/variables.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
     bodyColor: "background-color: #FFF",
     text: ""
   },
@@ -29,7 +29,7 @@ export const actions = [
     description: "Prompts to share the input via AirDrop.",
     titleColor: "background-color: #F2F3F5",
     iconColor:
-      "background-image: url(/static/appIcons/airdrop.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+      "background-image: url(/static/images/appIcons/airdrop.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
     bodyColor: "background-color: #FFF"
   },
   {
@@ -40,7 +40,7 @@ export const actions = [
       "Displays a dialogue prompting the user to enter a piece of information.",
     titleColor: "background-color: #F2F3F5",
     iconColor:
-      "background-image: url(/static/appIcons/settings.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+      "background-image: url(/static/images/appIcons/settings.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
     bodyColor: "background-color: #FFF",
     inputType: "Text",
     defaultAnswer: "",
@@ -53,7 +53,7 @@ export const actions = [
     description: "Encodes or decodes the text or files using Base64 encoding.",
     titleColor: "background-color: #F2F3F5",
     iconColor:
-      "background-image: url(/static/appIcons/settings.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+      "background-image: url(/static/images/appIcons/settings.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
     bodyColor: "background-color: #FFF",
     lineBreakOptions: ["None", "Every 64 Characters", "Every 76 Characters"],
     encodeOptions: ["Encode", "Decode"],
@@ -68,7 +68,7 @@ export const actions = [
       "Performs a number operation on the input and returns the result.",
     titleColor: "background-color: #F2F3F5",
     iconColor:
-      "background-image: url(/static/appIcons/calculator.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+      "background-image: url(/static/images/appIcons/calculator.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
     bodyColor: "background-color: #FFF",
     operand: 42,
     operation: "+",
@@ -99,7 +99,7 @@ export const actions = [
       "Calculates statistics on the numbers that are provided as input.",
     titleColor: "background-color: #F2F3F5",
     iconColor:
-      "background-image: url(/static/appIcons/calculator.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+      "background-image: url(/static/images/appIcons/calculator.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
     bodyColor: "background-color: #FFF",
     operation: "Average",
     operationOptions: [
@@ -121,7 +121,7 @@ export const actions = [
       "Clears all the music in your Up Nextg queue. This action passes input through as output.",
     titleColor: "background-color: #F2F3F5",
     iconColor:
-      "background-image: url(/static/appIcons/music.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+      "background-image: url(/static/images/appIcons/music.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
     bodyColor: "background-color: #FFF"
   },
   {
@@ -132,7 +132,7 @@ export const actions = [
       "This action lets you explain how part of a shortcut works. When run, this action does nothing. This action passes input through as output.",
     titleColor: "background-color: rgb(246, 231, 198)",
     iconColor:
-      "background-image: url(/static/appIcons/text.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+      "background-image: url(/static/images/appIcons/text.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
     bodyColor: "background-color: rgb(248, 242, 226)",
     text: ""
   },
@@ -144,7 +144,7 @@ export const actions = [
       "Switches into the Shortcuts app and continues to the next action. This action passes input through as output.",
     titleColor: "background-color: #F2F3F5",
     iconColor:
-      "background-image: url(/static/appIcons/continueinapp.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+      "background-image: url(/static/images/appIcons/continueinapp.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
     bodyColor: "background-color: #FFF"
   },
   {
@@ -154,7 +154,7 @@ export const actions = [
     description: "Autocorrects the spelling of text passed into the action.",
     titleColor: "background-color: #F2F3F5",
     iconColor:
-      "background-image: url(/static/appIcons/text.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+      "background-image: url(/static/images/appIcons/text.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
     bodyColor: "background-color: #FFF"
   },
   {
@@ -165,7 +165,7 @@ export const actions = [
       "Counts the number of items, characters, words, sentences or lines passed as input.",
     titleColor: "background-color: #F2F3F5",
     iconColor:
-      "background-image: url(/static/appIcons/calculator.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+      "background-image: url(/static/images/appIcons/calculator.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
     bodyColor: "background-color: #FFF",
     countOptions: ["Items", "Characters", "Words", "Sentences", "Lines"]
   },
@@ -176,7 +176,7 @@ export const actions = [
     description: "Shares the input with Notes",
     titleColor: "background-color: #F2F3F5",
     iconColor:
-      "background-image: url(/static/appIcons/notes.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+      "background-image: url(/static/images/appIcons/notes.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
     bodyColor: "background-color: #FFF"
   },
   {
@@ -186,7 +186,7 @@ export const actions = [
     description: "Passes the specified date and time to the next action.",
     titleColor: "background-color: #F2F3F5",
     iconColor:
-      "background-image: url(/static/appIcons/date.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+      "background-image: url(/static/images/appIcons/date.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
     bodyColor: "background-color: #FFF",
     useOptions: ["Current Date", "Specified Date"],
     use: "Current Date",
@@ -200,7 +200,7 @@ export const actions = [
       "Deletes the photos passed as input from the device's photo library. This action asks for confirmation before the deletion.",
     titleColor: "background-color: #F2F3F5",
     iconColor:
-      "background-image: url(/static/appIcons/photos.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+      "background-image: url(/static/images/appIcons/photos.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
     bodyColor: "background-color: #FFF"
   },
   {
@@ -210,7 +210,7 @@ export const actions = [
     description: "Detects the language of the text provided as input.",
     titleColor: "background-color: #F2F3F5",
     iconColor:
-      "background-image: url(/static/appIcons/language.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+      "background-image: url(/static/images/appIcons/language.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
     bodyColor: "background-color: #FFF"
   },
   {
@@ -221,7 +221,7 @@ export const actions = [
       "Stops execution of the current shortcut and dismisses the shortcut onscreen. No more actions will be run after this action.",
     titleColor: "background-color: #F2F3F5",
     iconColor:
-      "background-image: url(/static/appIcons/settings.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+      "background-image: url(/static/images/appIcons/settings.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
     bodyColor: "background-color: #FFF"
   },
   {
@@ -232,7 +232,7 @@ export const actions = [
       "This action expands and cleans up URLs that have been shortened using a URL shortening service like TinyURL or Bit.ly.",
     titleColor: "background-color: #F2F3F5",
     iconColor:
-      "background-image: url(/static/appIcons/url.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+      "background-image: url(/static/images/appIcons/url.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
     bodyColor: "background-color: #FFF"
   },
   {
@@ -252,7 +252,7 @@ export const actions = [
     description: "Formats a date and time into text.",
     titleColor: "background-color: #F2F3F5",
     iconColor:
-      "background-image: url(/static/appIcons/date.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+      "background-image: url(/static/images/appIcons/date.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
     bodyColor: "background-color: #FFF",
     dateFormatOptions: [
       "None",
@@ -279,7 +279,7 @@ export const actions = [
     description: "Generates an MD5/SHA1 hash from the input.",
     titleColor: "background-color: #F2F3F5",
     iconColor:
-      "background-image: url(/static/appIcons/settings.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+      "background-image: url(/static/images/appIcons/settings.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
     bodyColor: "background-color: #FFF",
     hashOptions: ["MD5", "SHA1", "SHA256", "SHA512"],
     hash: "MD5"
@@ -292,7 +292,7 @@ export const actions = [
       "Returns any street addresses found in the output from the previous action.",
     titleColor: "background-color: #F2F3F5",
     iconColor:
-      "background-image: url(/static/appIcons/maps.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+      "background-image: url(/static/images/appIcons/maps.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
     bodyColor: "background-color: #FFF"
   },
   {
@@ -303,7 +303,7 @@ export const actions = [
       "Outputs the percentage of battery remaining as a number from 0 to 100.",
     titleColor: "background-color: #F2F3F5",
     iconColor:
-      "background-image: url(/static/appIcons/battery.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+      "background-image: url(/static/images/appIcons/battery.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
     bodyColor: "background-color: #FFF"
   },
   {
@@ -313,7 +313,7 @@ export const actions = [
     description: "Passes the contents of the clipboard to the next action.",
     titleColor: "background-color: #F2F3F5",
     iconColor:
-      "background-image: url(/static/appIcons/clipboard.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+      "background-image: url(/static/images/appIcons/clipboard.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
     bodyColor: "background-color: #FFF"
   },
   {
@@ -323,7 +323,7 @@ export const actions = [
     description: "Gets contacts from the result of the previous action.",
     titleColor: "background-color: #F2F3F5",
     iconColor:
-      "background-image: url(/static/appIcons/contacts.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+      "background-image: url(/static/images/appIcons/contacts.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
     bodyColor: "background-color: #FFF"
   },
   {
@@ -334,7 +334,7 @@ export const actions = [
       "Gets the contents of URLs passed into the action. Useful for downloading files and web content, or for making API requests.",
     titleColor: "background-color: #F2F3F5",
     iconColor:
-      "background-image: url(/static/appIcons/get.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+      "background-image: url(/static/images/appIcons/get.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
     bodyColor: "background-color: #FFF",
     headers: [{ key: "", value: "" }],
     headersVisible: false,
@@ -353,7 +353,7 @@ export const actions = [
       "Extracts the contents of the web pages passed into the action.",
     titleColor: "background-color: #F2F3F5",
     iconColor:
-      "background-image: url(/static/appIcons/safari.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+      "background-image: url(/static/images/appIcons/safari.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
     bodyColor: "background-color: #FFF"
   },
   {
@@ -363,7 +363,7 @@ export const actions = [
     description: "Returns the local or external IP address of the device.",
     titleColor: "background-color: #F2F3F5",
     iconColor:
-      "background-image: url(/static/appIcons/globe.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+      "background-image: url(/static/images/appIcons/globe.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
     bodyColor: "background-color: #FFF",
     type: "IPv4",
     typeOptions: ["IPv4", "IPv6"],
@@ -378,7 +378,7 @@ export const actions = [
       "Retuns the song that is currently playing in the Music app, if any.",
     titleColor: "background-color: #F2F3F5",
     iconColor:
-      "background-image: url(/static/appIcons/music.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+      "background-image: url(/static/images/appIcons/music.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
     bodyColor: "background-color: #FFF"
   },
   {
@@ -389,7 +389,7 @@ export const actions = [
       "Returns any dates found in the output from the previous action.",
     titleColor: "background-color: #F2F3F5",
     iconColor:
-      "background-image: url(/static/appIcons/date.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+      "background-image: url(/static/images/appIcons/date.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
     bodyColor: "background-color: #FFF"
   },
   {
@@ -399,7 +399,7 @@ export const actions = [
     description: "Gets information about the current device.",
     titleColor: "background-color: #F2F3F5",
     iconColor:
-      "background-image: url(/static/appIcons/settings.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+      "background-image: url(/static/images/appIcons/settings.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
     bodyColor: "background-color: #FFF",
     detail: "Average",
     detailOptions: [
@@ -420,7 +420,7 @@ export const actions = [
       'Makes a dictionary from the text passed as input. JSON (like {"foo": "bar"}), key-value pairs (like foo=bar&baz=biz) and XML-based plists are supported.',
     titleColor: "background-color: #F2F3F5",
     iconColor:
-      "background-image: url(/static/appIcons/settings.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+      "background-image: url(/static/images/appIcons/settings.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
     bodyColor: "background-color: #FFF"
   },
   {
@@ -431,7 +431,7 @@ export const actions = [
       "Gets the value for the specified key in the dictionary passed into the action.",
     titleColor: "background-color: #F2F3F5",
     iconColor:
-      "background-image: url(/static/appIcons/settings.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+      "background-image: url(/static/images/appIcons/settings.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
     bodyColor: "background-color: #FFF",
     getOptions: ["Value", "All Keys", "All Values"],
     get: "Value",
@@ -445,7 +445,7 @@ export const actions = [
       "Gets article details, including the body text, author, publish date and more, from every URL passed into the action.",
     titleColor: "background-color: #F2F3F5",
     iconColor:
-      "background-image: url(/static/appIcons/diffbotarticle.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+      "background-image: url(/static/images/appIcons/diffbotarticle.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
     bodyColor: "background-color: #FFF"
   },
   {
@@ -456,7 +456,7 @@ export const actions = [
       "Returns any email addresses found in the output from the previous action.",
     titleColor: "background-color: #F2F3F5",
     iconColor:
-      "background-image: url(/static/appIcons/mail.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+      "background-image: url(/static/images/appIcons/mail.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
     bodyColor: "background-color: #FFF"
   },
   {
@@ -467,7 +467,7 @@ export const actions = [
       "Splits an animated GIF or a photo burst into individual frames.",
     titleColor: "background-color: #F2F3F5",
     iconColor:
-      "background-image: url(/static/appIcons/gif.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+      "background-image: url(/static/images/appIcons/gif.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
     bodyColor: "background-color: #FFF"
   },
   {
@@ -478,7 +478,7 @@ export const actions = [
       "Retrieves the HTTP headers of the URL passed as input using a HEAD request.",
     titleColor: "background-color: #F2F3F5",
     iconColor:
-      "background-image: url(/static/appIcons/get.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+      "background-image: url(/static/images/appIcons/get.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
     bodyColor: "background-color: #FFF"
   },
   {
@@ -489,7 +489,7 @@ export const actions = [
       "Gets images from the result of the previous action. For example, this action can get the album art of a song, or all the images on a web page.",
     titleColor: "background-color: #F2F3F5",
     iconColor:
-      "background-image: url(/static/appIcons/images.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+      "background-image: url(/static/images/appIcons/images.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
     bodyColor: "background-color: #FFF"
   },
   {
@@ -499,7 +499,7 @@ export const actions = [
     description: "Gets the most recent photo import from the Photos app.",
     titleColor: "background-color: #F2F3F5",
     iconColor:
-      "background-image: url(/static/appIcons/photos.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+      "background-image: url(/static/images/appIcons/photos.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
     bodyColor: "background-color: #FFF"
   },
   {
@@ -509,7 +509,7 @@ export const actions = [
     description: "Gets the most recent burst photos from the camera roll.",
     titleColor: "background-color: #F2F3F5",
     iconColor:
-      "background-image: url(/static/appIcons/burstphoto.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+      "background-image: url(/static/images/appIcons/burstphoto.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
     bodyColor: "background-color: #FFF",
     count: 1
   },
@@ -520,7 +520,7 @@ export const actions = [
     description: "Gets the most recent Live Photos from the camera roll.",
     titleColor: "background-color: #F2F3F5",
     iconColor:
-      "background-image: url(/static/appIcons/livephotos.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+      "background-image: url(/static/images/appIcons/livephotos.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
     bodyColor: "background-color: #FFF",
     count: 1
   },
@@ -531,7 +531,7 @@ export const actions = [
     description: "Gets the most recent screenshots from the camera roll.",
     titleColor: "background-color: #F2F3F5",
     iconColor:
-      "background-image: url(/static/appIcons/photos.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+      "background-image: url(/static/images/appIcons/photos.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
     bodyColor: "background-color: #FFF",
     count: 1
   },
@@ -542,7 +542,7 @@ export const actions = [
     description: "Gets the most recent videos from the camera roll.",
     titleColor: "background-color: #F2F3F5",
     iconColor:
-      "background-image: url(/static/appIcons/photos.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+      "background-image: url(/static/images/appIcons/photos.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
     bodyColor: "background-color: #FFF",
     count: 1
   },
@@ -563,7 +563,7 @@ export const actions = [
       "Creates a URL to search for the location, place or text that was passed into the action in a separate maps app.",
     titleColor: "background-color: #F2F3F5",
     iconColor:
-      "background-image: url(/static/appIcons/maps.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+      "background-image: url(/static/images/appIcons/maps.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
     bodyColor: "background-color: #FFF"
   },
   {
@@ -574,7 +574,7 @@ export const actions = [
       "Gets the shortcuts stored on this device. For example, you could use this action with the Make Archive action to zip up your shortcuts.",
     titleColor: "background-color: #F2F3F5",
     iconColor:
-      "background-image: url(/static/appIcons/shortcuts.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+      "background-image: url(/static/images/appIcons/shortcuts.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
     bodyColor: "background-color: #FFF"
   },
   {
@@ -585,7 +585,7 @@ export const actions = [
       "Returns the name of every item passed as input. Depending on the input, this could be a filename, the title of a website, the title of a calendar event, etc.",
     titleColor: "background-color: #F2F3F5",
     iconColor:
-      "background-image: url(/static/appIcons/settings.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+      "background-image: url(/static/images/appIcons/settings.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
     bodyColor: "background-color: #FFF"
   },
   {
@@ -628,7 +628,7 @@ export const actions = [
     name: "getTextFromInput",
     titleColor: "background-color: #F2F3F5",
     iconColor:
-      "background-image: url(/static/appIcons/text.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+      "background-image: url(/static/images/appIcons/text.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
     bodyColor: "background-color: #FFF"
   },
   {
@@ -639,7 +639,7 @@ export const actions = [
       "Subtracts the specified date from the date passed into the action. For example, this action could get the number of minutes from now until a calendar event passed in as input.",
     titleColor: "background-color: #F2F3F5",
     iconColor:
-      "background-image: url(/static/appIcons/date.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+      "background-image: url(/static/images/appIcons/date.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
     bodyColor: "background-color: #FFF",
     unitOptions: [
       "Total Time",
@@ -664,7 +664,7 @@ export const actions = [
       'Returns the type of every item passed as input. For example, if a URL is passed, this action will return "URL".',
     titleColor: "background-color: #F2F3F5",
     iconColor:
-      "background-image: url(/static/appIcons/settings.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+      "background-image: url(/static/images/appIcons/settings.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
     bodyColor: "background-color: #FFF"
   },
   {
@@ -675,7 +675,7 @@ export const actions = [
       "Returns any links found in the output from the previous action.",
     titleColor: "background-color: #F2F3F5",
     iconColor:
-      "background-image: url(/static/appIcons/url.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+      "background-image: url(/static/images/appIcons/url.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
     bodyColor: "background-color: #FFF"
   },
   {
@@ -686,7 +686,7 @@ export const actions = [
       "Gets the value of the specified variable and passes it to the next action.",
     titleColor: "background-color: #F2F3F5",
     iconColor:
-      "background-image: url(/static/appIcons/variables.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+      "background-image: url(/static/images/appIcons/variables.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
     bodyColor: "background-color: #FFF"
   },
   {
@@ -697,7 +697,7 @@ export const actions = [
       'Tests if any item passed as input matches the specified condition, and if so, runs the actions inside. Otherwise, the actions under "Otherwise" are run.',
     titleColor: "background-color: #F2F3F5",
     iconColor:
-      "background-image: url(/static/appIcons/settings.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+      "background-image: url(/static/images/appIcons/settings.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
     bodyColor: "background-color: #FFF",
     inputOptions: ["Equals", "Is Greater Than", "Is Less Than", "Contains"],
     input: "Contains",
@@ -711,7 +711,7 @@ export const actions = [
       'Tests if any item passed as input matches the specified condition, and if so, runs the actions inside. Otherwise, the actions under "Otherwise" are run.',
     titleColor: "background-color: #F2F3F5",
     iconColor:
-      "background-image: url(/static/appIcons/settings.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+      "background-image: url(/static/images/appIcons/settings.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
     bodyColor: "background-color: #FFF"
   },
   {
@@ -722,7 +722,7 @@ export const actions = [
       'Tests if any item passed as input matches the specified condition, and if so, runs the actions inside. Otherwise, the actions under "Otherwise" are run.',
     titleColor: "background-color: #F2F3F5",
     iconColor:
-      "background-image: url(/static/appIcons/settings.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+      "background-image: url(/static/images/appIcons/settings.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
     bodyColor: "background-color: #FFF"
   },
   {
@@ -784,7 +784,7 @@ export const actions = [
     description: "Edits an image or PDF with Markup.",
     titleColor: "background-color: #F2F3F5",
     iconColor:
-      "background-image: url(/static/appIcons/markup.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+      "background-image: url(/static/images/appIcons/markup.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
     bodyColor: "background-color: #FFF"
   },
   {
@@ -795,7 +795,7 @@ export const actions = [
       "Searches text passed into the action for matches to a regular expression.",
     titleColor: "background-color: #F2F3F5",
     iconColor:
-      "background-image: url(/static/appIcons/text.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+      "background-image: url(/static/images/appIcons/text.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
     bodyColor: "background-color: #FFF",
     pattern: "[0-9a-zA-Z]",
     caseSensitive: true
@@ -808,7 +808,7 @@ export const actions = [
       "This action does nothing and produces no output. It is useful to separate blocks of actions or to ensure that no input is passed to the next action.",
     titleColor: "background-color: #F2F3F5",
     iconColor:
-      "background-image: url(/static/appIcons/settings.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+      "background-image: url(/static/images/appIcons/settings.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
     bodyColor: "background-color: #FFF"
   },
   {
@@ -818,7 +818,7 @@ export const actions = [
     description: "Passes a number to the next action.",
     titleColor: "background-color: #F2F3F5",
     iconColor:
-      "background-image: url(/static/appIcons/calculator.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+      "background-image: url(/static/images/appIcons/calculator.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
     bodyColor: "background-color: #FFF",
     number: 0
   },
@@ -829,7 +829,7 @@ export const actions = [
     description: "Opens the input as a PDF in Books.",
     titleColor: "background-color: #F2F3F5",
     iconColor:
-      "background-image: url(/static/appIcons/books.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+      "background-image: url(/static/images/appIcons/books.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
     bodyColor: "background-color: #FFF"
   },
   {
@@ -839,7 +839,7 @@ export const actions = [
     description: "Opens URLs passed into the action in Safari.",
     titleColor: "background-color: #F2F3F5",
     iconColor:
-      "background-image: url(/static/appIcons/url.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+      "background-image: url(/static/images/appIcons/url.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
     bodyColor: "background-color: #FFF"
   },
   {
@@ -850,7 +850,7 @@ export const actions = [
       "Pauses the currently playing music. This action passes input through as output.",
     titleColor: "background-color: #F2F3F5",
     iconColor:
-      "background-image: url(/static/appIcons/pause.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+      "background-image: url(/static/images/appIcons/pause.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
     bodyColor: "background-color: #FFF"
   },
   {
@@ -870,7 +870,7 @@ export const actions = [
     description: "Shares the input on Facebook",
     titleColor: "background-color: #F2F3F5",
     iconColor:
-      "background-image: url(/static/appIcons/facebook.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+      "background-image: url(/static/images/appIcons/facebook.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
     bodyColor: "background-color: #FFF"
   },
   {
@@ -881,7 +881,7 @@ export const actions = [
       "Opens the photo passed into this action in the Instagram app and copies the caption to the clipboard.",
     titleColor: "background-color: #F2F3F5",
     iconColor:
-      "background-image: url(/static/appIcons/instagram.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+      "background-image: url(/static/images/appIcons/instagram.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
     bodyColor: "background-color: #FFF",
     caption: ""
   },
@@ -892,7 +892,7 @@ export const actions = [
     description: "Posts the content passed into the action to Tumblr.",
     titleColor: "background-color: #F2F3F5",
     iconColor:
-      "background-image: url(/static/appIcons/tumblr.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+      "background-image: url(/static/images/appIcons/tumblr.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
     bodyColor: "background-color: #FFF"
   },
   {
@@ -902,7 +902,7 @@ export const actions = [
     description: "Posts the input to a WordPress blog as a new post or page.",
     titleColor: "background-color: #F2F3F5",
     iconColor:
-      "background-image: url(/static/appIcons/wordpress.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+      "background-image: url(/static/images/appIcons/wordpress.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
     bodyColor: "background-color: #FFF"
   },
   {
@@ -931,7 +931,7 @@ export const actions = [
       "Passes a random number between the given minimum and maximum to the next action. The minimum and maximum numbers are included as possible results.",
     titleColor: "background-color: #F2F3F5",
     iconColor:
-      "background-image: url(/static/appIcons/calculator.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+      "background-image: url(/static/images/appIcons/calculator.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
     bodyColor: "background-color: #FFF",
     minimum: 0,
     maximum: 100
@@ -944,7 +944,7 @@ export const actions = [
       "Removes all reminders passed into the action from the lists they are contained in.",
     titleColor: "background-color: #F2F3F5",
     iconColor:
-      "background-image: url(/static/appIcons/reminders.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+      "background-image: url(/static/images/appIcons/reminders.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
     bodyColor: "background-color: #FFF"
   },
   {
@@ -954,7 +954,7 @@ export const actions = [
     description: "Runs JavaScript on a Safari web page passed in as input.",
     titleColor: "background-color: #F2F3F5",
     iconColor:
-      "background-image: url(/static/appIcons/safari.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+      "background-image: url(/static/images/appIcons/safari.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
     bodyColor: "background-color: #FFF",
     code: ""
   },
@@ -965,7 +965,7 @@ export const actions = [
     description: "Runs a script on a remote computer over SSH",
     titleColor: "background-color: #F2F3F5",
     iconColor:
-      "background-image: url(/static/appIcons/settings.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+      "background-image: url(/static/images/appIcons/settings.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
     bodyColor: "background-color: #FFF",
     host: "",
     password: "",
@@ -980,7 +980,7 @@ export const actions = [
     description: "Run a shortcut from your shortcut.",
     titleColor: "background-color: #F2F3F5",
     iconColor:
-      "background-image: url(/static/appIcons/shortcuts.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+      "background-image: url(/static/images/appIcons/shortcuts.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
     bodyColor: "background-color: #FFF",
     nameField: "",
     show: true
@@ -993,7 +993,7 @@ export const actions = [
       "Scans a QR code or barcode using the camera, and returns the text/URL that is found.",
     titleColor: "background-color: #F2F3F5",
     iconColor:
-      "background-image: url(/static/appIcons/qrcode.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+      "background-image: url(/static/images/appIcons/qrcode.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
     bodyColor: "background-color: #FFF"
   },
   {
@@ -1004,7 +1004,7 @@ export const actions = [
       "Prompts to pick an email address from your contacts and passes the selection to the next action.",
     titleColor: "background-color: #F2F3F5",
     iconColor:
-      "background-image: url(/static/appIcons/mail.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+      "background-image: url(/static/images/appIcons/mail.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
     bodyColor: "background-color: #FFF"
   },
   {
@@ -1057,7 +1057,7 @@ export const actions = [
     description: "Sets a value in the dictionary passed into the action.",
     titleColor: "background-color: #F2F3F5",
     iconColor:
-      "background-image: url(/static/appIcons/settings.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+      "background-image: url(/static/images/appIcons/settings.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
     bodyColor: "background-color: #FFF",
     key: "",
     value: ""
@@ -1070,7 +1070,7 @@ export const actions = [
       "Sets the device's Do Not Disturb on or off. This action passes input through as output.",
     titleColor: "background-color: #F2F3F5",
     iconColor:
-      "background-image: url(/static/appIcons/donotdisturb.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+      "background-image: url(/static/images/appIcons/donotdisturb.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
     bodyColor: "background-color: #FFF",
     value: false,
     untilOptions: ["Turned Off", "Time", "I Leave", "Event Ends"],
@@ -1106,7 +1106,7 @@ export const actions = [
     description: "Sets the name of the item passed as input.",
     titleColor: "background-color: #F2F3F5",
     iconColor:
-      "background-image: url(/static/appIcons/settings.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+      "background-image: url(/static/images/appIcons/settings.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
     bodyColor: "background-color: #FFF",
     dontIncludeFileExtension: false
   },
@@ -1118,7 +1118,7 @@ export const actions = [
       "Turns on or off the torch near the device's camera. This action passes input through as output.",
     titleColor: "background-color: #F2F3F5",
     iconColor:
-      "background-image: url(/static/appIcons/torch.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+      "background-image: url(/static/images/appIcons/torch.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
     bodyColor: "background-color: #FFF",
     setting: "On",
     settingOptions: ["On", "Off", "Toggle"]
@@ -1131,7 +1131,7 @@ export const actions = [
       "Sets the value of the specified variable to the input of this action.",
     titleColor: "background-color: #F2F3F5",
     iconColor:
-      "background-image: url(/static/appIcons/variables.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+      "background-image: url(/static/images/appIcons/variables.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
     bodyColor: "background-color: #FFF"
   },
   {
@@ -1172,7 +1172,7 @@ export const actions = [
       "Prompts to share the input using action extensions and sharing extensions provided by other apps.",
     titleColor: "background-color: #F2F3F5",
     iconColor:
-      "background-image: url(/static/appIcons/appextensions.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+      "background-image: url(/static/images/appIcons/appextensions.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
     bodyColor: "background-color: #FFF"
   },
   {
@@ -1183,7 +1183,7 @@ export const actions = [
       "Displays an alert with a title, a message and two buttons. If the user selects the OK button, the shortcut continues. The Cancel button stops the shortcut. This action passes input through as output.",
     titleColor: "background-color: #F2F3F5",
     iconColor:
-      "background-image: url(/static/appIcons/settings.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+      "background-image: url(/static/images/appIcons/settings.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
     bodyColor: "background-color: #FFF",
     text: "",
     message: "Do you want to continue?",
@@ -1196,7 +1196,7 @@ export const actions = [
     description: "Shows the definition of the word passed into the action.",
     titleColor: "background-color: #F2F3F5",
     iconColor:
-      "background-image: url(/static/appIcons/textdetail.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+      "background-image: url(/static/images/appIcons/textdetail.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
     bodyColor: "background-color: #FFF"
   },
   {
@@ -1207,7 +1207,7 @@ export const actions = [
       "Shows the date or calendar event passed as input in the Calendar app.",
     titleColor: "background-color: #F2F3F5",
     iconColor:
-      "background-image: url(/static/appIcons/date.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+      "background-image: url(/static/images/appIcons/date.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
     bodyColor: "background-color: #FFF"
   },
   {
@@ -1218,7 +1218,7 @@ export const actions = [
       "Shows the iTunes products or App Store apps passed as input in a store sheet. This is useful with the Search iTunes Store and Search App Store actions.",
     titleColor: "background-color: #F2F3F5",
     iconColor:
-      "background-image: url(/static/appIcons/itunes.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+      "background-image: url(/static/images/appIcons/itunes.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
     bodyColor: "background-color: #FFF"
   },
   {
@@ -1229,7 +1229,7 @@ export const actions = [
       "Opens your choice of Maps, Google Maps or Waze, and searches for the location, place or text that was passed into the action.",
     titleColor: "background-color: #F2F3F5",
     iconColor:
-      "background-image: url(/static/appIcons/maps.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+      "background-image: url(/static/images/appIcons/maps.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
     bodyColor: "background-color: #FFF",
     app: "",
     appOptions: ["Apple Maps", "Google Maps", "Waze"]
@@ -1241,7 +1241,7 @@ export const actions = [
     description: "Displays a local notification.",
     titleColor: "background-color: #F2F3F5",
     iconColor:
-      "background-image: url(/static/appIcons/notification.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+      "background-image: url(/static/images/appIcons/notification.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
     bodyColor: "background-color: #FFF",
     text: "",
     body: "Hello World",
@@ -1255,7 +1255,7 @@ export const actions = [
       "Shows the specified text in Siri or in an alert. This action passes input through as output.",
     titleColor: "background-color: #F2F3F5",
     iconColor:
-      "background-image: url(/static/appIcons/settings.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+      "background-image: url(/static/images/appIcons/settings.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
     bodyColor: "background-color: #FFF",
     text: ""
   },
@@ -1267,7 +1267,7 @@ export const actions = [
       "Skips to the previous song in the current music queue. This action passes input through as output.",
     titleColor: "background-color: #F2F3F5",
     iconColor:
-      "background-image: url(/static/appIcons/skipback.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+      "background-image: url(/static/images/appIcons/skipback.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
     bodyColor: "background-color: #FFF",
     text: "",
     options: ["Beginning", "Previous Song"]
@@ -1280,7 +1280,7 @@ export const actions = [
       "Skips to the next song in the current music queue. This action passes input through as output.",
     titleColor: "background-color: #F2F3F5",
     iconColor:
-      "background-image: url(/static/appIcons/skipforward.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+      "background-image: url(/static/images/appIcons/skipforward.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
     bodyColor: "background-color: #FFF"
   },
   {
@@ -1290,7 +1290,7 @@ export const actions = [
     description: "Passes the specified text to the next action.",
     titleColor: "background-color: #F2F3F5",
     iconColor:
-      "background-image: url(/static/appIcons/text.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+      "background-image: url(/static/images/appIcons/text.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
     bodyColor: "background-color: #FFF",
     text: ""
   },
@@ -1302,7 +1302,7 @@ export const actions = [
       "Presents a view allowing you to trim the media passed into the action.",
     titleColor: "background-color: #F2F3F5",
     iconColor:
-      "background-image: url(/static/appIcons/quicktime.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+      "background-image: url(/static/images/appIcons/quicktime.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
     bodyColor: "background-color: #FFF"
   },
   {
@@ -1312,7 +1312,7 @@ export const actions = [
     description: "Tweets the input.",
     titleColor: "background-color: #F2F3F5",
     iconColor:
-      "background-image: url(/static/appIcons/twitter.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+      "background-image: url(/static/images/appIcons/twitter.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
     bodyColor: "background-color: #FFF"
   },
   {
@@ -1322,7 +1322,7 @@ export const actions = [
     description: "Passes the specified URL to the next action.",
     titleColor: "background-color: #F2F3F5",
     iconColor:
-      "background-image: url(/static/appIcons/url.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+      "background-image: url(/static/images/appIcons/url.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
     bodyColor: "background-color: #FFF",
     url: ""
   },
@@ -1334,7 +1334,7 @@ export const actions = [
       "Encodes or decodes text passed into the action to be suitable for inclusion in a URL by adding or removing per cent espcapes when appropriate.",
     titleColor: "background-color: #F2F3F5",
     iconColor:
-      "background-image: url(/static/appIcons/url.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+      "background-image: url(/static/images/appIcons/url.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
     bodyColor: "background-color: #FFF",
     encodeMode: "Encode",
     encodeModeOptions: ["Encode", "Decode"]
@@ -1347,7 +1347,7 @@ export const actions = [
       "Vibrates the device for a short amount of time. This action passes input through as output.",
     titleColor: "background-color: #F2F3F5",
     iconColor:
-      "background-image: url(/static/appIcons/notification.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+      "background-image: url(/static/images/appIcons/notification.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
     bodyColor: "background-color: #FFF",
     text: ""
   },
@@ -1359,7 +1359,7 @@ export const actions = [
       "Shows the results of the previous action in the Content Graph.",
     titleColor: "background-color: #F2F3F5",
     iconColor:
-      "background-image: url(/static/appIcons/contentgraph.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+      "background-image: url(/static/images/appIcons/contentgraph.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
     bodyColor: "background-color: #FFF",
     text: ""
   },
@@ -1371,7 +1371,7 @@ export const actions = [
       "Waits for the specified number of seconds before continuing with the next action. This action passes input through as output.",
     titleColor: "background-color: #F2F3F5",
     iconColor:
-      "background-image: url(/static/appIcons/settings.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+      "background-image: url(/static/images/appIcons/settings.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
     bodyColor: "background-color: #FFF",
     text: "",
     time: 1
@@ -1384,7 +1384,7 @@ export const actions = [
       "Pauses execution until you leave the Shortcuts app and return to it. This action might be useful after an action that switches apps in order to pause execution until you return to the Shortcuts app. This action passes input through as output.",
     titleColor: "background-color: #F2F3F5",
     iconColor:
-      "background-image: url(/static/appIcons/settings.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
+      "background-image: url(/static/images/appIcons/settings.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;",
     bodyColor: "background-color: #FFF",
     text: ""
   }
