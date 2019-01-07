@@ -18,6 +18,12 @@
     "description": "The What's New sidebar provides information on updates to Shortcuts Web."
   },
   {
+    "title": "Added Duplicate Below",
+    "badges": ["improvement"],
+    "date": "2018-12-30T10:00+1300",
+    "description": "You can now duplicate actions below the current action or to the end of the shortcut."
+  },
+  {
     "title": "Added Tooltips",
     "badges": ["improvement"],
     "date": "2018-12-22T09:00+1300",
