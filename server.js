@@ -262,70 +262,35 @@ app.get("/inspectShortcut", (req, res) => {
           res.send("Error retrieving shortcut");
         });
     } else if (req.query.info === "complete") {
-      console.log("Getting shortcut info -", req.query.info);
-      const shortcutDetails = [];
-      const metadataDetails = [];
-      shortcuts
-        .getShortcutDetails(id)
-        .then(shortcut => {
-          shortcutDetails.push(shortcut);
-          return shortcut.getMetadata();
-        })
-        .then(metadata => {
-          metadataDetails.push(metadata);
-          res.send({
-            result: "success",
-            shortcut: shortcutDetails,
-            metadata: metadataDetails,
-            downloadURL: shortcutDetails[0].downloadURL.replace(
-              "${f}",
-              shortcutDetails[0].name + ".shortcut"
-            ),
-            iconURL: shortcutDetails[0].icon.downloadURL.replace(
-              "${f}",
-              shortcutDetails[0].name + ".png"
-            )
-          });
-        })
-        .catch(error => {
-          console.log(`${error.code}? How could this happen!`);
-          res.send({
-            result: "success",
-            error: error.code
-          });
-        });
+      getCompleteInfo(res, id);
     } else if (req.query.info === "basic") {
-      console.log("Getting shortcut info -", req.query.info);
-      const shortcutDetails = [];
+      getBasicInfo(res, id);
+    }
+  } else if (req.query.id) {
+    const id = req.query.id;
+    if (!req.query.info) {
       shortcuts
         .getShortcutDetails(id)
         .then(shortcut => {
-          shortcutDetails.push(shortcut);
-          res.send({
-            result: true,
-            name: shortcutDetails[0].name,
-            icon: shortcutDetails[0].icon.downloadURL.replace(
-              "${f}",
-              shortcutDetails[0].name + ".png"
-            ),
-            downloadURL: shortcutDetails[0].downloadURL.replace(
-              "${f}",
-              shortcutDetails[0].name + ".shortcut"
-            )
-          });
+          res.redirect(
+            shortcut.downloadURL.replace("${f}", shortcut.name + ".shortcut")
+          );
         })
         .catch(error => {
           console.log(`${error.code}? How could this happen!`);
-          res.send({
-            result: false,
-            error: error.code
-          });
+
+          res.status(500);
+          res.send("Error retrieving shortcut");
         });
+    } else if (req.query.info === "complete") {
+      getCompleteInfo(res, id);
+    } else if (req.query.info === "basic") {
+      getBasicInfo(res, id);
     }
   } else {
     res.status(422);
     res.send(
-      "You must provide a URL to the shortcut you would like to inspect"
+      "You must provide a URL or ID to the shortcut you would like to inspect"
     );
   }
 });
@@ -380,6 +345,68 @@ app.post("/inspectShortcut", (req, res) => {
 
 app.listen(process.env.PORT || 8086);
 console.log("Shortcuts Web has started");
+
+function getCompleteInfo(res, id) {
+  const shortcutDetails = [];
+  const metadataDetails = [];
+  shortcuts
+    .getShortcutDetails(id)
+    .then(shortcut => {
+      shortcutDetails.push(shortcut);
+      return shortcut.getMetadata();
+    })
+    .then(metadata => {
+      metadataDetails.push(metadata);
+      res.send({
+        result: "success",
+        shortcut: shortcutDetails,
+        metadata: metadataDetails,
+        downloadURL: shortcutDetails[0].downloadURL.replace(
+          "${f}",
+          shortcutDetails[0].name + ".shortcut"
+        ),
+        iconURL: shortcutDetails[0].icon.downloadURL.replace(
+          "${f}",
+          shortcutDetails[0].name + ".png"
+        )
+      });
+    })
+    .catch(error => {
+      console.log(`${error.code}? How could this happen!`);
+      res.send({
+        result: "success",
+        error: error.code
+      });
+    });
+}
+
+function getBasicInfo(res, id) {
+  const shortcutDetails = [];
+  shortcuts
+    .getShortcutDetails(id)
+    .then(shortcut => {
+      shortcutDetails.push(shortcut);
+      res.send({
+        result: true,
+        name: shortcutDetails[0].name,
+        icon: shortcutDetails[0].icon.downloadURL.replace(
+          "${f}",
+          shortcutDetails[0].name + ".png"
+        ),
+        downloadURL: shortcutDetails[0].downloadURL.replace(
+          "${f}",
+          shortcutDetails[0].name + ".shortcut"
+        )
+      });
+    })
+    .catch(error => {
+      console.log(`${error.code}? How could this happen!`);
+      res.send({
+        result: false,
+        error: error.code
+      });
+    });
+}
 
 const actionMap = {
   addToVariable: action => addToVariable({ variable: variable(action.text) }),
