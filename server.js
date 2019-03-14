@@ -247,19 +247,81 @@ app.get("/inspectShortcut", (req, res) => {
   if (req.query.url) {
     const id = shortcuts.idFromURL(req.query.url);
 
-    shortcuts
-      .getShortcutDetails(id)
-      .then(shortcut => {
-        res.redirect(
-          shortcut.downloadURL.replace("${f}", shortcut.name + ".shortcut")
-        );
-      })
-      .catch(error => {
-        console.log(`${error.code}? How could this happen!`);
+    if (!req.query.info) {
+      shortcuts
+        .getShortcutDetails(id)
+        .then(shortcut => {
+          res.redirect(
+            shortcut.downloadURL.replace("${f}", shortcut.name + ".shortcut")
+          );
+        })
+        .catch(error => {
+          console.log(`${error.code}? How could this happen!`);
 
-        res.status(500);
-        res.send("Error retrieving shortcut");
-      });
+          res.status(500);
+          res.send("Error retrieving shortcut");
+        });
+    } else if (req.query.info === "complete") {
+      console.log("Getting shortcut info -", req.query.info);
+      const shortcutDetails = [];
+      const metadataDetails = [];
+      shortcuts
+        .getShortcutDetails(id)
+        .then(shortcut => {
+          shortcutDetails.push(shortcut);
+          return shortcut.getMetadata();
+        })
+        .then(metadata => {
+          metadataDetails.push(metadata);
+          res.send({
+            result: "success",
+            shortcut: shortcutDetails,
+            metadata: metadataDetails,
+            downloadURL: shortcutDetails[0].downloadURL.replace(
+              "${f}",
+              shortcutDetails[0].name + ".shortcut"
+            ),
+            iconURL: shortcutDetails[0].icon.downloadURL.replace(
+              "${f}",
+              shortcutDetails[0].name + ".png"
+            )
+          });
+        })
+        .catch(error => {
+          console.log(`${error.code}? How could this happen!`);
+          res.send({
+            result: "success",
+            error: error.code
+          });
+        });
+    } else if (req.query.info === "basic") {
+      console.log("Getting shortcut info -", req.query.info);
+      const shortcutDetails = [];
+      shortcuts
+        .getShortcutDetails(id)
+        .then(shortcut => {
+          shortcutDetails.push(shortcut);
+          res.send({
+            result: true,
+            name: shortcutDetails[0].name,
+            icon: shortcutDetails[0].icon.downloadURL.replace(
+              "${f}",
+              shortcutDetails[0].name + ".png"
+            ),
+            downloadURL: shortcutDetails[0].downloadURL.replace(
+              "${f}",
+              shortcutDetails[0].name + ".shortcut"
+            )
+          });
+        })
+        .catch(error => {
+          console.log(`${error.code}? How could this happen!`);
+          res.send({
+            result: false,
+            error: error.code
+          });
+        });
+    }
   } else {
     res.status(422);
     res.send(
