@@ -1,4 +1,5 @@
 const express = require("express");
+const fileUpload = require("express-fileupload");
 const cors = require("cors");
 const app = express();
 const port = 8086;
@@ -132,8 +133,14 @@ const {
 } = require("@joshfarrant/shortcuts-js/actions");
 
 app.use(express.static(__dirname + "/dist"));
-app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
+app.use(bodyParser.json({ limit: "15mb" }));
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(
+  fileUpload({
+    limits: { fileSize: 50 * 1024 * 1024 }
+  })
+);
 app.use(cors());
 
 app.post("/createShortcut", (req, res) => {
@@ -341,6 +348,41 @@ app.post("/inspectShortcut", (req, res) => {
         console.log(`${error.code}? How could this happen!`);
       });
   }
+});
+
+app.post("/uploadShortcut", (req, res) => {
+  var shortcutName = req.body.shortcutName;
+  var shortcutPath = "dist/static/shortcuts/" + shortcutName + ".shortcut";
+  var shortcut = req.files.shortcut.data;
+
+  fs.writeFile(shortcutPath, shortcut, err => {
+    if (err) {
+      console.error("Something went wrong :(", err);
+      return res.end("Error saving shortcut");
+    }
+
+    // Generating QR Code as base64 png
+    var shortcutQr = Buffer.from(
+      qr.imageSync(
+        "shortcuts://import-shortcut?url=" +
+          serverUrl +
+          "/static/shortcuts/" +
+          shortcutName +
+          ".shortcut&name=" +
+          shortcutName,
+        {
+          type: "png"
+        }
+      )
+    ).toString("base64");
+    res.send({
+      shortcutsResult: {
+        shortcutName: shortcutName,
+        shortcutPath: "static/shortcuts/" + shortcutName + ".shortcut",
+        qrPath: "data: image/png;base64, " + shortcutQr
+      }
+    });
+  });
 });
 
 app.listen(process.env.PORT || 8086);
