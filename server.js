@@ -367,7 +367,7 @@ app.post("/uploadShortcut", (req, res) => {
         "shortcuts://import-shortcut?url=" +
           serverUrl +
           "/static/shortcuts/" +
-          shortcutName +
+          encodeURI(shortcutName) +
           ".shortcut&name=" +
           shortcutName,
         {
@@ -405,11 +405,11 @@ function getCompleteInfo(res, id) {
         metadata: metadataDetails,
         downloadURL: shortcutDetails[0].downloadURL.replace(
           "${f}",
-          shortcutDetails[0].name + ".shortcut"
+          encodeURI(shortcutDetails[0].name) + ".shortcut"
         ),
         iconURL: shortcutDetails[0].icon.downloadURL.replace(
           "${f}",
-          shortcutDetails[0].name + ".png"
+          encodeURI(shortcutDetails[0].name) + ".png"
         )
       });
     })
@@ -433,11 +433,11 @@ function getBasicInfo(res, id) {
         name: shortcutDetails[0].name,
         icon: shortcutDetails[0].icon.downloadURL.replace(
           "${f}",
-          shortcutDetails[0].name + ".png"
+          encodeURI(shortcutDetails[0].name) + ".png"
         ),
         downloadURL: shortcutDetails[0].downloadURL.replace(
           "${f}",
-          shortcutDetails[0].name + ".shortcut"
+          encodeURI(shortcutDetails[0].name) + ".shortcut"
         )
       });
     })
