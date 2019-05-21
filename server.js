@@ -218,7 +218,7 @@ app.post("/createShortcut", (req, res) => {
   };
 
   const shortcut = buildShortcut(actions, options);
-  var shortcutPath = "dist/static/shortcuts/" + encodeURI(shortcutName) + ".shortcut";
+  var shortcutPath = "dist/static/shortcuts/" + encodeURIComponent(shortcutName) + ".shortcut";
 
   fs.writeFile(shortcutPath, shortcut, err => {
     if (err) {
@@ -232,7 +232,7 @@ app.post("/createShortcut", (req, res) => {
         "shortcuts://import-workflow?url=" +
           serverUrl +
           "/static/shortcuts/" +
-          encodeURI(shortcutName) +
+          encodeURIComponent(shortcutName) +
           ".shortcut&name=" +
           req.body.shortcutName,
         {
@@ -243,7 +243,7 @@ app.post("/createShortcut", (req, res) => {
     res.send({
       shortcutsResult: {
         shortcutName: req.body.shortcutName,
-        shortcutPath: encodeURI("static/shortcuts/" + shortcutName + ".shortcut"),
+        shortcutPath: encodeURIComponent("static/shortcuts/" + shortcutName + ".shortcut"),
         qrPath: "data: image/png;base64, " + shortcutQr
       }
     });
@@ -259,7 +259,7 @@ app.get("/inspectShortcut", (req, res) => {
         .getShortcutDetails(id)
         .then(shortcut => {
           res.redirect(
-            shortcut.downloadURL.replace("${f}", encodeURI(shortcut.name) + ".shortcut")
+            shortcut.downloadURL.replace("${f}", encodeURIComponent(shortcut.name) + ".shortcut")
           );
         })
         .catch(error => {
@@ -280,7 +280,7 @@ app.get("/inspectShortcut", (req, res) => {
         .getShortcutDetails(id)
         .then(shortcut => {
           res.redirect(
-            shortcut.downloadURL.replace("${f}", encodeURI(shortcut.name) + ".shortcut")
+            shortcut.downloadURL.replace("${f}", encodeURIComponent(shortcut.name) + ".shortcut")
           );
         })
         .catch(error => {
@@ -310,7 +310,7 @@ app.post("/inspectShortcut", (req, res) => {
       .getShortcutDetails(id)
       .then(shortcut => {
         res.send({
-          url: shortcut.downloadURL.replace("${f}", shortcut.name + ".shortcut")
+          url: shortcut.downloadURL.replace("${f}", encodeURIComponent(shortcut.name) + ".shortcut")
         });
       })
       .catch(error => {
@@ -336,11 +336,11 @@ app.post("/inspectShortcut", (req, res) => {
           metadata: metadataDetails,
           downloadURL: shortcutDetails[0].downloadURL.replace(
             "${f}",
-            encodeURI(shortcutDetails[0].name) + ".shortcut"
+            encodeURIComponent(shortcutDetails[0].name) + ".shortcut"
           ),
           iconURL: shortcutDetails[0].icon.downloadURL.replace(
             "${f}",
-            encodeURI(shortcutDetails[0].name) + ".png"
+            encodeURIComponent(shortcutDetails[0].name) + ".png"
           )
         });
       })
@@ -405,11 +405,11 @@ function getCompleteInfo(res, id) {
         metadata: metadataDetails,
         downloadURL: shortcutDetails[0].downloadURL.replace(
           "${f}",
-          encodeURI(shortcutDetails[0].name) + ".shortcut"
+          encodeURIComponent(shortcutDetails[0].name) + ".shortcut"
         ),
         iconURL: shortcutDetails[0].icon.downloadURL.replace(
           "${f}",
-          encodeURI(shortcutDetails[0].name) + ".png"
+          encodeURIComponent(shortcutDetails[0].name) + ".png"
         )
       });
     })
@@ -433,11 +433,11 @@ function getBasicInfo(res, id) {
         name: shortcutDetails[0].name,
         icon: shortcutDetails[0].icon.downloadURL.replace(
           "${f}",
-          encodeURI(shortcutDetails[0].name) + ".png"
+          encodeURIComponent(shortcutDetails[0].name) + ".png"
         ),
         downloadURL: shortcutDetails[0].downloadURL.replace(
           "${f}",
-          encodeURI(shortcutDetails[0].name) + ".shortcut"
+          encodeURIComponent(shortcutDetails[0].name) + ".shortcut"
         )
       });
     })
