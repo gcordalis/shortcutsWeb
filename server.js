@@ -243,7 +243,7 @@ app.post("/createShortcut", (req, res) => {
     res.send({
       shortcutsResult: {
         shortcutName: req.body.shortcutName,
-        shortcutPath: "static/shortcuts/" + shortcutName + ".shortcut",
+        shortcutPath: encodeURI("static/shortcuts/" + shortcutName + ".shortcut"),
         qrPath: "data: image/png;base64, " + shortcutQr
       }
     });
