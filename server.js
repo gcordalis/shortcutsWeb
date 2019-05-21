@@ -259,7 +259,7 @@ app.get("/inspectShortcut", (req, res) => {
         .getShortcutDetails(id)
         .then(shortcut => {
           res.redirect(
-            shortcut.downloadURL.replace("${f}", shortcut.name + ".shortcut")
+            shortcut.downloadURL.replace("${f}", encodeURI(shortcut.name) + ".shortcut")
           );
         })
         .catch(error => {
@@ -336,11 +336,11 @@ app.post("/inspectShortcut", (req, res) => {
           metadata: metadataDetails,
           downloadURL: shortcutDetails[0].downloadURL.replace(
             "${f}",
-            shortcutDetails[0].name + ".shortcut"
+            encodeURI(shortcutDetails[0].name) + ".shortcut"
           ),
           iconURL: shortcutDetails[0].icon.downloadURL.replace(
             "${f}",
-            shortcutDetails[0].name + ".png"
+            encodeURI(shortcutDetails[0].name) + ".png"
           )
         });
       })
