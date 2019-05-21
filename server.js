@@ -218,7 +218,7 @@ app.post("/createShortcut", (req, res) => {
   };
 
   const shortcut = buildShortcut(actions, options);
-  var shortcutPath = "dist/static/shortcuts/" + shortcutName + ".shortcut";
+  var shortcutPath = "dist/static/shortcuts/" + encodeURI(shortcutName) + ".shortcut";
 
   fs.writeFile(shortcutPath, shortcut, err => {
     if (err) {
@@ -232,7 +232,7 @@ app.post("/createShortcut", (req, res) => {
         "shortcuts://import-workflow?url=" +
           serverUrl +
           "/static/shortcuts/" +
-          shortcutName +
+          encodeURI(shortcutName) +
           ".shortcut&name=" +
           req.body.shortcutName,
         {
