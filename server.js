@@ -280,7 +280,7 @@ app.get("/inspectShortcut", (req, res) => {
         .getShortcutDetails(id)
         .then(shortcut => {
           res.redirect(
-            shortcut.downloadURL.replace("${f}", shortcut.name + ".shortcut")
+            shortcut.downloadURL.replace("${f}", encodeURI(shortcut.name) + ".shortcut")
           );
         })
         .catch(error => {
