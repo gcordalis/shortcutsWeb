@@ -22,7 +22,7 @@
     "fs": "0.0.1-security",
     "http": "0.0.0",
     "module": "^1.2.5",
-    "moment": "^2.22.2",
+    "moment": "^2.29.4",
     "momentjs": "^2.0.0",
     "monaco-editor-forvue": "^1.0.3",
     "path": "^0.12.7",
